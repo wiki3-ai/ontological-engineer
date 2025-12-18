@@ -1,0 +1,510 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/BusinessCentersIndividuals/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Locations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/CommonInterestRates/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/DerivativesContracts/Swaps/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesIdentification/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/BusinessDates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/ProductsAndServices/ProductsAndServices/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Debt/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/InterestRates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/DebtInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/RateDerivatives/IRSwaps/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecurityAssets/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/ISO4217-CurrencyCodes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Contracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/FinancialProductsAndServices/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Arrangements/Documents/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/FinancialInstruments/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CurrencyAmount/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of this ontology was modified to move the property 'exchanges' to FND given that it could be applied more generally than with respect to swaps only."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of this ontology was modified to correct properties that were modified in the main ontology but not in the examples."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC) and to eliminate redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of this ontology was revised to replace uses of hasTag in Relations with hasTag from LCC, as the more complex union of datatypes in the Relations concept is not needed here."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of the ontology was modified to replace concepts from several FIBO FND ontologies with their counterparts added to the Commons Ontology Library (Commons) v1.1."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interest Rate Swap Example Individuals Ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2018-2025 EDM Council, Inc.\nCopyright (c) 2018-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2025 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2025 Object Management Group, Inc."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides examples of how to represent individuals for interest rate swaps and swap legs based on the Mizuho mocked-up sample data provided in the FIBO wiki."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract IY7VKEUR45886"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-ZZZWWK96TRQY0F2IY7VK"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-A"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isIncludedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/PortfolioAlpha"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/isIdentifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/IY7VKEUR45886"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ISIN-ZZ216659451"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedFloatSingleCurrencyInterestRateSwap" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/exchanges" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "contract IY7VKEUR45886 that is a fixed/float, single currency interest rate swap"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestRate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-InterestRate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/hasTerminationDate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-TerminationDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 IY7VKEUR45886"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FixedInterestRateLeg" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Need to create the 1st period fixing date, payment days offset, discount notional amount, average remaining notional currency, net present value currency (pair, of type monetary amount)"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isMandatedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "contract IY7VKEUR45886 swap leg 1 that is a fixed interest rate leg"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSeller" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-A"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasBuyer" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-ZZZWWK96TRQY0F2IY7VK"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-NotionalAmount"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasEffectiveDate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-EffectiveDate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasInterestPaymentTerms" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-InterestPaymentTerms"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-EffectiveDate",
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasDateValue" : [ {
+    "@value" : "2015-12-12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 IY7VKEUR45886 effective date"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-InterestPaymentTerms",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/hasBusinessDayConvention" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/EuropeanCentralBankBBusinessDayAdjustment"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestRate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-InterestRate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestPaymentFrequency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/OneYear"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasAccrualBasis" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30E360"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "interest payment terms for contract IY7VKEUR45886 swap leg 1 that is a fixed interest rate leg"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 interest payment terms IY7VKEUR45886"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-InterestRate",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasRateValue" : [ {
+    "@value" : "1.0579",
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 IY7VKEUR45886 fixed interest rate"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/FixedInterestRate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-NotionalAmount",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/Euro"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasAmount" : [ {
+    "@value" : "1286805.0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 IY7VKEUR45886 notional amount"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg1-IY7VKEUR45886-TerminationDate",
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasDateValue" : [ {
+    "@value" : "2025-08-17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 1 IY7VKEUR45886 termination date"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/FloatingInterestRateLeg", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasEffectiveDate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-EffectiveDate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/hasTerminationDate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-TerminationDate"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Need to create the interest rate reset schedule or add a simple payment frequency, need a separate property for reference interest rate, need rate tenor"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isMandatedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasSeller" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-ZZZWWK96TRQY0F2IY7VK"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "contract IY7VKEUR45886 swap leg 2 that is a floating interest rate leg"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestRate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-InterestRate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/hasBuyer" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-A"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasInterestPaymentTerms" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-InterestPaymentTerms"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-NotionalAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 IY7VKEUR45886"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-EffectiveDate",
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasDateValue" : [ {
+    "@value" : "2015-12-12"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 IY7VKEUR45886 effective date"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-InterestPaymentTerms",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/hasBusinessDayConvention" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/EuropeanCentralBankBBusinessDayAdjustment"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestRate" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-InterestRate"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasInterestPaymentFrequency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/SixMonths"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasAccrualBasis" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention-30E360"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "interest payment terms for contract IY7VKEUR45886 swap leg 2 that is a floating interest rate leg"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 interest payment terms IY7VKEUR45886"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-InterestRate",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasRateValue" : [ {
+    "@value" : "0.309",
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 IY7VKEUR45886 floating interest rate"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/FloatingInterestRate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-NotionalAmount",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/Euro"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasAmount" : [ {
+    "@value" : "1286805.0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 IY7VKEUR45886 notional amount"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ContractLeg2-IY7VKEUR45886-TerminationDate",
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasDateValue" : [ {
+    "@value" : "2025-08-17"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract leg 2 IY7VKEUR45886 termination date"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/EuropeanCentralBankBBusinessDayAdjustment",
+  "https://www.omg.org/spec/Commons/Locations/hasBusinessCenter" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Frankfurt"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/hasBusinessDayConvention" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/BusinessDayModifiedFollowing"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "business day adjustment for the ECB"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Central Bank business day adjustment"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/BusinessDayConvention", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/ISIN-ZZ216659451",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "ZZ216659451"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ISIN for sample swap contract IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ZZ216659451"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/IY7VKEUR45886",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unique swap identifier for sample swap contract IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "IY7VKEUR45886"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/UniqueSwapIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/PortfolioAlpha",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sample contract portfolio Alpha"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "portfolio Alpha"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/PortfolioBeta",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sample contract portfolio Beta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "portfolio Beta"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/PortfolioDelta",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sample contract portfolio Delta"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "portfolio Delta"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/PortfolioGamma",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sample contract portfolio Gamma"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "portfolio Gamma"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecurityAssets/Portfolio", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SecuritiesTransaction-IY7VKEUR45886",
+  "https://www.omg.org/spec/Commons/ContextualDesignators/appliesTo" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Contract-IY7VKEUR45886"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Need to create the trade event - this is the activity (maybe we should rename these now? in FND to activity and event?) and add lifecycle elements - date and time, status of the trade and settlement status"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/isFacilitatedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Trader-J_Adams"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "securities transaction for contract IY7VKEUR45886"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "securities transaction IY7VKEUR45886"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/SecuritiesTransaction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-A",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "swap contract party A for all of the sample contracts in the sample swap data"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "swap contract party A"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapParty", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/SwapContractParty-ZZZWWK96TRQY0F2IY7VK",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "swap contract party ZZZWWK96TRQY0F2IY7VK"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "swap contract party ZZZWWK96TRQY0F2IY7VK"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/Counterparty", "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/SwapParty", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/Trader-J_Adams",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "trader J. Adams"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/Trader", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

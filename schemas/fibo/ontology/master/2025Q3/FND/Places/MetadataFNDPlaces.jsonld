@@ -1,0 +1,79 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/MetadataFNDPlaces/",
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2022-06-14T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This is the metadata ontology used to describe the Foundations Places Module."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2017-2024 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2017-2024 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2024-10-24T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Places/MetadataFNDPlaces/"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata for the EDMC-FIBO Foundations (FND) Places Module"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/MetadataFNDPlaces/PlacesModule",
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddresses/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/RealProperty/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/NorthAmerica/USPostalServiceAddressesIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Facilities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/VirtualPlaces/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Locations/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Places/MetadataFNDPlaces/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2017-2024 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2017-2024 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies defining concepts to do with real or virtual places and the addresses to such places."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "places module"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO FND Places Module"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Foundations (FND) Places Module"
+  } ]
+} ]

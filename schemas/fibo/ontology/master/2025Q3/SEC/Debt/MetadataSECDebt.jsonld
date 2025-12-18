@@ -1,0 +1,134 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MetadataSECDebt/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2024 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2024 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Securities (SEC) Debt Module"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The SEC Debt Module covers content specific to debt instruments, including but not limited to bonds and asset-backed securities. This ontology provides metadata about the Debt module and its contents."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2024-11-15T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/MetadataSECDebt/"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MetadataSECDebt/DebtModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Credit Suisse"
+  }, {
+    "@value" : "Dassault Systemes / No Magic"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "BIAN"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Quarule"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Mizuho"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "agnos.ai U.K. Ltd"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "ProBanker Simulations, LLC"
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Goldman Sachs"
+  }, {
+    "@value" : "Wells Fargo"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/CollateralizedDebtObligations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MortgageBackedSecurities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/AssetBackedSecurities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/SyntheticCDOs/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/ExerciseConventions/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DistributedLoans/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Securities and Equities (SEC) Debt Module"
+  }, {
+    "@value" : "FIBO SEC Debt Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "debt module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MetadataSECDebt/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module defines debt securities contracts both cash and synthetic, such as bonds, structured finance instruments, short term or money market instruments, and other contracts characterized by the holding of some debt of the issuer or primary party by the holder or counterparty."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2024 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2024 EDM Council, Inc."
+  } ]
+} ]

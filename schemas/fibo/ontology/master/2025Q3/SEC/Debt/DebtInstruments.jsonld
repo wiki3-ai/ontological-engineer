@@ -1,0 +1,1631 @@
+[ {
+  "@id" : "_:b0",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isConferredBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b1",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Margin"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/hasArgument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b10",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasRedemptionProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b11",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRelativePriceAtIssue"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b12",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasRedemptionProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b13",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRelativePriceAtRedemption"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b14",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b19",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/appliesTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b2",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@value" : "1",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/BaseRate"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/hasArgument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b20",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallNotificationProvision"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasNotificationProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b21",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallPremium"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b23",
+  "http://www.w3.org/2002/07/owl#distinctMembers" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtADiscount"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtAPremium"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDifferent" ]
+}, {
+  "@id" : "_:b25",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isConferredBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b26",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b3",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/hasDebtAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b30",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutWindow"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasDatePeriod"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b31",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b21"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b32",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallSchedule"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b35",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasDatePeriod"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b38",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b4",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b40",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b41",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b42"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b42",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutPremium"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b43",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b44",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isSubordinatedTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b47",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutNotificationProvision"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasNotificationProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b48",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b5",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/PrincipalRepaymentTerms"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRepaymentTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b50",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/Guarantor"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Guaranty/hasGuarantor"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b53",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b54",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b56",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallWindow"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasDatePeriod"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b57",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/StepEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b59",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b6",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasInterestPaymentTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b62",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutSchedule"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b7",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasPutFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b8",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasOffering"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b9",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasCallFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b5"
+  }, {
+    "@id" : "_:b6"
+  }, {
+    "@id" : "_:b7"
+  }, {
+    "@id" : "_:b8"
+  }, {
+    "@id" : "_:b9"
+  }, {
+    "@id" : "_:b10"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2016-2025 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2025 Object Management Group, Inc."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to move the property, 'is conferred on' to the Legal Capacity ontology and to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC), eliminating redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to generalize the definition of fixed income security."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to reflect use of actualExpression as an annotation rather than datatype property, to deprecate maturity-related properties which have been moved to financial instruments more generally, and to simplify restrictions on tradable debt instrument."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to support integration of the bonds ontology."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380) and to augment the ontology with details regarding schedules for interest rate calculations, payment calculations, rate resets and the like (FBC-317)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to reflect a change to make redemption provision a child of contractual commitment and move it to financial instruments, as such provisions apply to preferred shares and other instruments in addition to debt, and eliminate non-tradable and tradable debt instrument redemption provisions, which are synonymous, and adjust the hierarchy for call feature, notification provision, and put feature accordingly."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to eliminate certain constructs that are redundant and will never be materialized to reduce the number of nodes required for various contract-related constructs (FND-391)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to move the property, hasMaturityDate, to Financial Instruments, since a maturity date can apply to a preferred share in addition to a debt instrument or offering rename 'mayBeSubordinatedTo', which violates the policy related to masquerading properties, eliminate a circular definition and unnecessary references to external sources, eliminate call price and put price, which are overreaching and confusing, in favor of monetary price, and eliminate the restriction for hasTimeToMaturity from debt instrument, made redundant by the broader restriction in financial instruments."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to correct the declaration of the property 'has estate or death put feature' to remove an erroneous subproperty relationship and integrate the instrument pricing ontology."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to eliminate deprecated elements."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to make hasDefaultLotSize a subproperty of hasLotSize."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments.rdf version of this ontology was modified to loosen the constraint that a debt instrument must have at least one redemption provision, making it optional (LOAN-168)."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/InstrumentPricing/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/FinancialInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/Occurrences/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/EconomicIndicators/EconomicIndicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/FinancialProductsAndServices/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/InterestRates/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/BusinessDates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesIssuance/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Debt/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Guaranty/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Contracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CurrencyAmount/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/FinancialDates/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2016-2025 EDM Council, Inc.\nCopyright (c) 2018-2025 Object Management Group, Inc.\n\t\t\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Debt Instruments Ontology"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology defines concepts that are specific to debt instruments (tradable and non-tradable)."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtADiscount",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "below par"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a selling price that is less than the face or nominal value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "at a discount"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/AtAPremium",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "premium"
+  }, {
+    "@value" : "above par"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a selling price significantly above the stated face or redemption value due to high demand or timing of redemption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "at a premium"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallEvent",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an event associated with the call schedule for a debt instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "call provision"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Most corporate and municipal bonds have ten-year call features (termed call protection by holders); government securities typically have none."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "redemption provision defining the rights of the issuer to buy back a security at a call price after a call protection period"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b32"
+  }, {
+    "@id" : "_:b20"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallNotificationProvision",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "provision of a call feature defining notification requirements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call notification provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b56"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/NotificationProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallPremium",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the price over par paid by an issuer to redeem securities when exercising a call provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call premium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallSchedule",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a schedule of call prices and when they are in effect"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b31"
+  }, {
+    "@id" : "_:b40"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Schedule"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallWindow",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an explicit period of time prior to a call date during which an issuer or agent must give notice to holders"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "call window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/DebtOffering",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an offering of one or more debt instruments for sale"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "debt offering"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b19"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/SecuritiesOffering"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/FixedIncomeSecurity",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Fixed income securities provide payments according to a regular schedule. This does not necessarily mean that the payments themselves are of a fixed amount, however."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "tradeable debt instrument that provides a return in the form of fixed periodic payments and typically the return of principal at maturity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fixed income security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/FullyIndexedInterestRate",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Fully indexed interest rates are used for variable rate credit products. The interest rate on a variable (adjustable) rate mortgage corresponds to a specific benchmark (often the prime rate, but sometimes LIBOR, the one-year constant-maturity Treasury, or other benchmarks) plus a spread (also called the margin. The margin on a fully indexed interest rate product is determined by the underwriter and based on the borrower's credit quality."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a variable interest rate that is calculated by adding a margin to a specified index rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "fully-indexed interest rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b1"
+  }, {
+    "@id" : "_:b2"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Expression"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/FloatingInterestRate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/InterestOnlyStrip",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "IO strip",
+    "@language" : "en"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "An interest-only strip holder is interested in rising rates and no prepayment, as prepayment would cause them forfeit future interest payments and receive nothing from the return of the principal."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "An interest-only strip can be reintegrated into other synthetic or engineered products. For example, interest-only strips can be pooled to create or make up a portion of a larger collateralized mortgage obligation (CMO), asset-backed security (ABS) or collateralized debt obligation (CDO) structure."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a strip that represents the non-principal portion of the monthly payments on the underlying debt instrument, such as a bond",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interest-only strip",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Strip"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/IssuedDebt",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "debt that is set out by the borrower in some form of financial security in which the lender is the holder or counterparty of that security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "issued debt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b3"
+  }, {
+    "@id" : "_:b25"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/Debt"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/MakeWholeFeature",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "make whole provision"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The issuer typically has to make a lump sum payment to the investor derived from a formula based on the net present value (NPV) of future interest or coupon payments that will not be paid incrementally because of the call combined with the principal payment the investor would have received at maturity."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a call provision allowing the issuer to pay off remaining debt early"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "make whole feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Margin",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "spread"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a variable that is added to a specified index rate to determine the fully indexed interest rate charged to a borrower on a credit balance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "margin"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Variable"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/NonTradableDebtInstrument",
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Low-risk instruments such as savings bonds are examples of nonnegotiable debt instruments."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a debt instrument that may not be bought or sold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b11"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/WrittenContract"
+  }, {
+    "@id" : "_:b12"
+  }, {
+    "@id" : "_:b13"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Generally, a nonnegotiable instrument may be redeemed by the issuer, but this is often subject to some limitations."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "non-tradable debt instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/NotificationProvision",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "provision of a redemption feature defining notification requirements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "notification provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b35"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/ParValue",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "par"
+  }, {
+    "@value" : "nominal value"
+  }, {
+    "@value" : "face value"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the stated value of a negotiable instrument, stock, or bond, as compared with the value that instrument might receive when sold"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "par value"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PrescriptiveEvent",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "event related to the imposition or enforcement of a rule, method, formula, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "prescriptive event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/OccurrenceKind"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PrincipalOnlyStrip",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a strip that represents the principal portion of the monthly payments on the underlying debt instrument, such as a bond",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/InterestOnlyStrip"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "principal-only strip",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Strip"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PubliclyIssuedDebt",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an issued debt in the form of a tradable debt instrument (security)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "publicly issued debt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b0"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/IssuedDebt"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutEvent",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an event associated with the put schedule for a debt instrument, i.e., an event involving the 'put', or surrender of the instrument by the holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "put provision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "FIBIM has term \"Putable Date\" which (by implication, and comparing with definition for \"Next Call Date\") is presumably a single calendar date in the future, at a given point in time. That does not cover the definition of formal terms defining when and how the issue may be put, which is what is modeled here."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b47"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DebtTerms"
+  }, {
+    "@id" : "_:b62"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put feature"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "redemption provision giving the holder the right, but not the obligation, to sell a specified amount of the debt instrument (i.e., redeem it), prior to maturity"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutNotificationProvision",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a provision of a put feature defining notification requirements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put notification provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b30"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/NotificationProvision"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutPremium",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an amount over par that a debt instrument holder must pay to sell the security early"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put premium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutSchedule",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a schedule that defines the events associated with the put feature of a debt instrument, i.e, the dates on which the debt instrument may be sold at what price by the holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b41"
+  }, {
+    "@id" : "_:b48"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Schedule"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutWindow",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "an explicit period of time prior to a put date during which holder or agent must give notice to an issuer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "put window"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/DatePeriod"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RedemptionEvent",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a prescriptive event involving the return of an investor's principal in a fixed-income security, such as a preferred stock or bond, or the sale of units in a mutual fund"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "redemption event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PrescriptiveEvent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "security price specified in comparison with either a stated or market value for a debt instrument at some point in time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "relative price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/SecurityPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/StepEvent",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "event that prescribes a change in a contractual term, such as a rate or notional amount, for a given contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "step event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PrescriptiveEvent"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/CalculationEvent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/StepSchedule",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "schedule specifying the date(s) and change in a contractual term(s), e.g., rate or notional amount, for a contract that has a feature where stipulated changes occur at specified intervals or on specified dates"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "step schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b57"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Schedule"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/Strip",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "Separate Trading of Registered Interest and Principal of Securities",
+    "@language" : "en"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "STRIPS is an acronym for Separate Trading of Registered Interest and Principal of Securities, which has come to be used as a term in its own right.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a tradeable debt instrument created either through the process of removing coupons from a bond and then selling the separate parts as a zero coupon bond and an interest paying coupon bond or through taking the opposite position from some variant in the options market",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "strip",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/FixedIncomeSecurity"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Details from Ecofin: A [debt] instrument can be traded, if its features depend only on one borrower. If the instrument has no bilateral or multilateral obligations, the investor can easily transfer it to another investor without asking the borrower (except the terms prohibit this explicitly). This is simplified with securitised instruments, where the debt is already split into handy denominations which trade easily (e.g. in round thousands or millions as with bonds, commercial paper, etc.). But in principle it works also with interbank loans and similar instruments. FIBIM Definition: Financial instruments evidencing moneys owed by the issuer to the holder on terms as specified."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "a debt instrument that is also a security, i.e., that can be bought and sold by the holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "tradable debt instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b44"
+  }, {
+    "@id" : "_:b50"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Security"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DebtInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/VariableIncomeSecurity",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Variable-income securities provide investors with both greater risks as well as rewards."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "tradeable debt instrument that provide their owners with a rate of return that is dynamic and determined by market forces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "variable income security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/allowsAutoReinvestment",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the security allows automatically re-investing the interest on that security towards purchasing additional shares or units of the same security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "allows auto-reinvestment"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/allowsPaymentInKind",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the principal may be repaid in kind (i.e., replaced with another instrument) rather than in cash"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "allows payment in kind"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasCallFeature",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the specific terms related to any inherent call feature as specified in the offering/instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b43"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has call feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRepaymentTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasDatedDate",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Investors who purchase a fixed-income security between interest payment dates must also pay the seller or issuer any interest that has accrued from the dated date to the purchase date, or settlement date, in addition to the face value.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies the date on which interest begins to accrue on a fixed-income security"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has dated date"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasExplicitDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasDefaultLotSize",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "This is the minimum denomination required for transfer or change of ownership of a tradable debt security."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the default number of units of the security that may be held at any one time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b14"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has default lot size"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/InstrumentPricing/hasLotSize"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasEstateOrDeathPutFeature",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates that a security is subject to redemption upon the passing of the holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has estate or death put feature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasInterestPaymentTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the specific terms related to interest payments on the principal as specified in the instrument or a related contract document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/InterestPaymentTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has interest payment terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractualElement"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasNotificationProvision",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "relates the redemption provision of a debt instrument to a notification provision (e.g., call or put notification)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/NotificationProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has notification provision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractualElement"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasPoolNumber",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the pool number of the debt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PubliclyIssuedDebt"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has pool number"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/hasNumericValue"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasPriceAndYieldDayCountConvention",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the convention used to determine the number of days in a month and days in a year that are counted when performing calculations for yield and price figures"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DayCountConvention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has price and yield day count convention"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/hasBusinessRecurrenceIntervalConvention"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasPutFeature",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the specific terms related to any inherent put feature as specified in the offering/instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b53"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has put feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRepaymentTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRelativePriceAtIssue",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates a relative price with respect to the face value at which an instrument is issued, namely par, premium or discount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has relative price at issue"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRelativePriceAtMaturity",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates a relative price with respect to the face value at the time an instrument matures, namely par, discount or premium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has relative price at maturity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRelativePriceAtRedemption",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates a relative price with respect to the face value at the time an instrument is redeemed, namely par, discount or premium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/RelativePrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has relative price at redemption"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRepaymentTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the specific terms related to repayment of principal as specified in the instrument or a related contract document"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/PrincipalRepaymentTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has repayment terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractualElement"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasRightToRetain",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the holder has an option to retain the security in the event of an issuer exercising the put feature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "right to retain"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isCallable",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the issuer (writer) of the debt contract (the debtor) can call the debt prior to maturity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b54"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is callable"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isExchangeable",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the security can be exchanged for another security at the issuers discretion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b59"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is exchangeable"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isExtendableByHolder",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the expiration date or maturity date can be extended by the holder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is extendable by holder"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isExtendableByIssuer",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "If not, the issuer may only refinance the debt by calling the issue and creating a new issue."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the issuer has the option to extend the debt rather than refinancing"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/RedemptionProvision"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is extendable by issuer"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isPutable",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the holder has the right to ask for redemption of the security prior to final maturity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b38"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is putable"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isStrippable",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether or not the instrument can be stripped, so that interest and principal may be traded separately"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b4"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is strippable"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isSubordinated",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates whether the security is a subordinated security, meaning that the security has a lower priority than another security so that when the assets are liquidated this one is not first in line"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:b26"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is subordinated"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/isSubordinatedTo",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the target security (i.e., the one in the range) has a higher priority than the security in question"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/TradableDebtInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "is subordinated to"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

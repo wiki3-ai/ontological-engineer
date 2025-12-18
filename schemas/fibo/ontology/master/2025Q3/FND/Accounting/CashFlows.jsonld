@@ -1,0 +1,214 @@
+[ {
+  "@id" : "_:b0",
+  "http://www.w3.org/2002/07/owl#qualifiedCardinality" : [ {
+    "@value" : "1",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b1",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@value" : "1",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/hasTargetOfMoney"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b2",
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@value" : "1",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/hasSourceOfMoney"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b3",
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@value" : "1",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/Schedule"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/hasSchedule"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b4",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlow"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/hasMember"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b5",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/TriggeringEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/specifies"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/FinancialDates/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/Occurrences/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CurrencyAmount/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Provisional"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2025 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology defines cash flow concepts for use in defining other FIBO ontology elements."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CashFlows Ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2025 EDM Council, Inc.\nCopyright (c) 2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlow",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the movement of money from some source to some sink"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b0"
+  }, {
+    "@id" : "_:b1"
+  }, {
+    "@id" : "_:b2"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/DatedCollectionConstituent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://fastercapital.com/content/Transaction-Date--Transaction-Date-vs--Value-Date--Understanding-the-Timeline-of-Your-Money.html#Introduction-to-Transaction-Dates-and-Value-Dates"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "From the perspective of an individual investor, the transaction date is the day when the investor's order is executed in the market. However, the process doesn't end there. The value date, on the other hand, is when the transaction actually settles, meaning when the buyer receives the securities and the seller gets the money. This lag between the transaction and value dates is known as the settlement period, which can vary depending on the type of security involved."
+  }, {
+    "@value" : "One of the primary concepts in value dating is the 'value date', which is the date on which the funds from a transaction are considered available for use. This date can be influenced by various factors, including the type of transaction, the currencies involved, and the policies of the financial institutions handling the transaction. For instance, in international transactions, the value date might be delayed due to the time required for currency conversion and cross-border fund transfers."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cash flow"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlowStructure",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Cash flow structures may involve not only cash flows, but the kind of schedule, historic payments, projected payments, a link or links to the relevant contract(s) or account(s), and possibly some triggering event."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the structure related to one or more cash flows"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cash flow structure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b4"
+  }, {
+    "@id" : "_:b5"
+  }, {
+    "@id" : "_:b3"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/FinancialDates/DatedStructuredCollection"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/TriggeringEvent",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "A triggering event is typically a credit event, but could be anything that happens in the marketplace. For example, a weather-specific contract could be triggered by a hurricane - which wouldn't be considered a credit event per se.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "event that relates to or triggers some aspect of a credit default swap",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "triggering event",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/Occurrences/Occurrence"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/hasSourceOfMoney",
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Typical sources include accounts, payments, etc."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "refers to the origin of some amount of money"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has source of funds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/hasTargetOfMoney",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "refers to the sink for some amount of money"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has target of funds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+} ]

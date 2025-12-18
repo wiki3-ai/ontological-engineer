@@ -1,0 +1,1362 @@
+[ {
+  "@id" : "_:b0",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/Date"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Documents/hasExpirationDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b1",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasUnderlier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b10",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasAdditionalCosts"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b11",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Commodity"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/Basket"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/MarketRate"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EconomicIndicator"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ObservableValue"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/ForeignExchange/QuotedExchangeRate"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b13",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterDerivativeInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/identifies"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b14",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b24"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasUnderlier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b16",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/hasFormula"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b17",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/evaluates"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b19",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/Baskets/BasketOfIndices"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/MarketRate"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EconomicIndicator"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/ForeignExchange/QuotedExchangeRate"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b2",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ValuationTerms"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasValuationTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b21",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b11"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b22",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierServiceProvider"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b23",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/registers"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b24",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "_:b19"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b25",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowExpression"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/hasExpression"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b3",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasSettlementTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b31",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/Currency"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasValueExpressedIn"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b32",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/ReferenceInterestRate"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b35",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/EconomicIndicator"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b36",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UnderlyingAssetValuation"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/involves"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b37",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/hasDateOfAssessment"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b38",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b32"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasUnderlier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b39",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b35"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasUnderlier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b4",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/ScalarQuantityValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/hasQuantityValue"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b40",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasUnderlyingAssetPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b5",
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@value" : "0",
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CalculationAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasCalculationAgent"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b6",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifier"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/comprises"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b7",
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierReferenceDataLibrary"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/isIncludedIn"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b8",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterDerivativeInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/appliesTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b9",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/specifiesValueOf"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/",
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to replace hasContractSize with hasLotSize."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to add the concept of a credit derivative, modify the notion of an underlying asset valuation to be a kind of value assessment, and modify the concept of valuation terms to be a subclass of derivative terms."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC), eliminating redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to loosen the domain of the hasUnderlier property, which could be either an instrument or leg, refine the definition of Underlier and hasUnderlier based on recent work on swaps, add the definition of a contract for difference (CFD), simplify the contract party hierarchy where the subclasses of contract party do not add semantics, add the concepts of underlying asset valuation and calculation agent, which are needed for various derivatives (moved from forwards) and eliminate the language related to transactions as well as the distinction between an OTC contract and exchange-traded contract / listed security, given how blurry the lines are today, across derivatives."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to move calculation agent up to financial instruments (DER-55) and to eliminate certain constructs that are redundant and will never be materialized to reduce the number of nodes required for various contract-related constructs (FND-391)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to eliminate duplication with concepts in LCC and eliminate a redundant subclass declaration in observable value."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to address text formatting issues identified via hygiene testing."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380) and to eliminate a redundant restriction on derivative instrument (GitHub-2028)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary, and to move the definition of an underlier and the related property, has underlier, to financial instruments so that these concepts are also available for use in relation to pool-backed securities."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/RightsAndWarrants.rdf version of the ontology was modified to move a number of properties that appear to be needed on several kinds of derivatives to this ontology for better reusability (DER-151)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of the ontology was modified to eliminate deprecations that are more than 6 months old."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to move designated contract market to the markets ontology in FBC and eliminate the notion of NonPhysicalUnderlier, which was determined to add unnecessary overhead."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to eliminate hasThirdParty as a superproperty of hasCalculationAgent, which led to unintended reasoning consequences, added concepts and properties specific to settlement and valuation required for futures, forwards, and options, and moved general properties from forwards and swaps up to derivatives basics."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to support details of ISO 4914, Financial services - Unique Product Identifier (UPI), (DER-146), and refine definitions related to underliers (DER-112)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to extend the definition of has notional amount, covering the variations allowed by the ISO CFI standard (DER-127) and to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics.rdf version of this ontology was modified to further simplify and clarify definitions related to rate derivatives (DER-90)."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/ProductsAndServices/ProductsAndServices/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Organizations/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Arrangements/Assessments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/FinancialServicesEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CurrencyAmount/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/Indicators/Indicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Agreements/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/Markets/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/InstrumentPricing/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/Analytics/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/ProductsAndServices/PaymentsAndSchedules/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Arrangements/Documents/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/InterestRates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/Baskets/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Contracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/EconomicIndicators/EconomicIndicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/ForeignExchange/ForeignExchange/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/FinancialProductsAndServices/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualIdentifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/FinancialInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesListings/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Debt/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2015-2025 EDM Council, Inc.\nCopyright (c) 2015-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\nSee https://opensource.org/licenses/MIT."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2025 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology defines basic terminology common to derivative and over-the-counter (OTC) contracts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Derivatives Basics Ontology"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CalculationAgent",
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CalculationAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowExpression",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "expression that specifies a calculation of a cash flow as a component of a cashflow formula"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cashflow expression"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/QuantitiesAndUnits/Expression"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowFormula",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "formula for determining cashflows for a derivative instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cashflow formula"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b25"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/Analytics/Formula"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowTerms",
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Swap cashflows are known as Swapstreams and are the terms for payment to and from either party. These are defined in swap transaction messages and represent the terms of the contract implied by that transaction. Options (Nordea reviews): Cashflows are defined as Payouts. This is not the same as a model of a cashflow which is a consequence of applying some legal term for payment of interest or principal, but is a commitment expressed in purely cashflow terms. Review this though. Payout terms include: Values - values can only go up or down; Static values are defined for limits and the like. i.e. Constraints (and direction) - this covers caps and floors - these are read upward or downward Conditionality Formula relations (Input and Output): - these are values - these may have a cap or a floor on them also - these also may have Multiplication - there is also fixed margin - may have addition or substraction between these Linearity in covered in the above Timing / expiry Observaton (not terms): Probability Sensitivity"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "terms setting out a cashflow structure of payments committed to by one party to a contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "cashflow terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/DebtTerms"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ContractForDifference",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "These contracts can also be on the difference of two assets' prices. They can also be on the difference of a single asset of different maturities (like a bond or futures contracts).",
+    "@language" : "en"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "https://www.nasdaq.com/glossary/c/contract-for-difference",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  }, {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "For example, suppose the initial price of share XYZ is $100 and a CFD for 1000 shares is exchanged. Both the buyer and seller must post some margin. If the price goes to $105, then the buyer gets $5,000 from the seller. If the price goes to $95, the buyer pays the seller $5,000. This contract avoids ownership of the stock and all the associated transactions issues (like stamp taxes). The contract also allows for leverage (typically 10:1) because the margin that must be posted is only a fraction of the value of the underlying asset.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "CFD",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "contract for difference",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cash-settled derivative where the parties agree to exchange on the maturity of the contract the difference between the current value of the underlying asset and the initial value of that asset when the contract is initiated",
+    "@language" : "en"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/synonym" : [ {
+    "@value" : "spread trading",
+    "@language" : "en"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CreditDerivative",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The third party accepts the risk in return for payment, known as the premium.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Examples include credit default swaps (CDS), collateralized debt obligations (CDO), total return swaps, and credit spread options and forwards.",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "derivative instrument that is a privately held, negotiable bilateral contract traded over-the-counter (OTC) between two parties in a creditor/debtor relationship, enabling the creditor to effectively transfer some or all of the risk of a debtor defaulting to a third party",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "credit derivative",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeSettlementTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "settlement terms specifying additional details with respect to what is to be delivered when, to whom, under what conditions at the time of settlement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derivative settlement terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b40"
+  }, {
+    "@id" : "_:b10"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "contractual terms specific to derivative contracts, including terms related to payments and delivery between parties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derivative terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractualCommitment"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativesClearingOrganization",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Substitution may be done through contract novation, for example. A derivatives clearing organization (DCO) also arranges or provides, on a multilateral basis, for the settlement or netting of obligations, or otherwise provides clearing services or arrangements that mutualize or transfer credit risk among participants."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "http://www.cftc.gov/IndustryOversight/ClearingOrganizations/index.htm",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "DCO"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "clearing house that enables parties to substitute the credit of the DCO for the credit of the parties"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derivatives clearing organization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingHouse"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/EconomicRateBasedDerivative",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rate-based derivative whose underlier is some economic indicator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "economic rate-based derivative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b39"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ForwardRateAgreement",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The FRA determines the rates to be used along with the termination date and notional value. FRAs are cash-settled with the payment based on the net difference between the interest rate of the contract and the floating rate in the market called the reference rate. The notional amount is not exchanged, but rather a cash amount based on the rate differentials and the notional value of the contract.",
+    "@language" : "en"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "FRA",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "agreement to exchange an interest rate commitment on a notional amount at a future date",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "forward rate agreement",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/InterestRateDerivative"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/InterestRateDerivative",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth edition, 2019-10"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "For example, interest rate derivative strategies are the simultaneous trading of two or more rate contracts in which two counterparties agree to exchange interest rate cash flows on defined dates during an agreed period, based on a specified notional amount, from a fixed rate to a floating rate, floating to fixed, fixed to fixed, or floating to floating."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "rate-based derivative whose underlier is an interest rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interest rate derivative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b38"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/IntroducingBroker",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Introducing brokers do not accept money, securities, or property (or extend credit in lieu thereof) to margin, guarantee, or secure any trades or contracts that result or may result."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "http://www.cftc.gov/IndustryOversight/Intermediaries/index.htm",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "IB"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "broker that solicits or accepts orders for derivatives that are traded on or subject to the rules of an exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "introducing broker"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/Broker"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/NonDepositoryInstitution"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ObservableValue",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Derivatives, such as certain exotics, can be based on values ascribed to virtually anything, including weather. Typically, however, an observable value refers to something that can be readily observed in the marketplace, such as a quoted rate (e.g., interest rate, exchange rate), index value, commodity price, stock price, economic indicator, or something similar as of some point in time."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specification for the value for something discernible and for which evidence can be obtained"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://en.wikipedia.org/wiki/Fair_value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "observable value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b9"
+  }, {
+    "@id" : "_:b31"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/Specification"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterDerivativeInstrument",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "OTC derivative instrument"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "ISO 4914 defines an OTC derivative instrument as a financial instrument that is, or would be, identified by an ISIN with the prefix 'EZ' or 'ZZ'. Details regarding how the prefix of an ISIN is determined can be found in ISO 6166:2020, Annex A."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "derivative instrument that is not listed on an organized exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "ISO 4914:2021(en), Financial services - Unique product identifier (UPI)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "over-the-counter derivative instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/OverTheCounterInstrument",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "OTC instrument"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "financial instrument and bilateral contract that is not listed on an organized exchange"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/ListedSecurity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "over-the-counter instrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ParametricCashflowTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "terms for a set of cashflows defined according to a mathematical formula"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "parametric cashflow terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b16"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/CashflowTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/PayingParty",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "party responsible for making payments in a transaction specified in a contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "paying party"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Buyer"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payer"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/RateBasedDerivative",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Rate-based derivatives derive their value from movements in some rate, e.g, an interest rate, market rate, economic indicator, statistical measure calculated over some collection of indices, rather than from traditional assets like stocks or commodities. They are commonly used by institutions to manage risks associated with interest rate fluctuations."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth edition, 2019-10"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#example" : [ {
+    "@value" : "Examples of rate-based derivatives include interest rate swaps, forward rate agreements (FRAs), and interest rate options such as caps, floors, and collars."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "derivative instrument where the holder has the right but may not have the obligation, depending on the nature of the instrument, to enter into the underlying contract, or pay or receive payment related to the underlying financial rate (or rate contract) on a specified future date based on a specified future rate and term"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rate-based derivative"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b14"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ReceivingParty",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "party that receives payments in a transaction specified in a contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "receiving counterparty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/ProductsAndServices/Seller"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/ProductsAndServices/PaymentsAndSchedules/Payee"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/ContractParty"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UnderlyingAssetValuation",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "assessment activity to estimate the value of an underlying asset of a derivative",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "underlying asset valuation",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b17"
+  }, {
+    "@id" : "_:b5"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Arrangements/Assessments/ValueAssessment"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifier",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualIdentifiers/StructuredIdentifier"
+  }, {
+    "@id" : "_:b22"
+  }, {
+    "@id" : "_:b13"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/FinancialInstrumentIdentifier"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@value" : "At a minimum, the UPI code is applicable to OTC derivative instruments falling under the following categories of the Classification of Financial Instruments (ISO 10962):\n\t\t- Swaps (S)\n\t\t- Forwards (J)\n\t\t- Non-listed and complex listed options (H)\n\t\t- Others (miscellaneous) (M)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unique product identifier"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "ISO 4914:2021(en), Financial services - Unique product identifier (UPI)"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The UPI code consists of 12 alphanumeric characters decomposed as follows:\n\t\t- the two-character prefix 'QZ'\n\t\t- nine alphanumeric characters (upper case A-Z and 0-9 only, excluding the vowel characters (A, E, I, O, U) and the character Y) without separators or special characters\n\t\t- one alphanumeric check character (A-Z and 0-9 only, excluding the vowel characters (A, E, I, O, U) and the character Y), calculated using the method specified in Annex C of the specification document."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sequence of characters uniquely identifying an OTC derivative product that is reportable to a trade repository"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "UPI"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierReferenceDataLibrary",
+  "https://www.omg.org/spec/Commons/Organizations/isManagedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierServiceProvider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "set of data comprised of reference data elements with specific values that together describe the product"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unique product identifier reference data library"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegistrationAuthorities/Registry", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierRegistryEntry",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The Reference Data Library (RDL) is a set of reference data elements, together with their values, which is properly organized and maintained by the UPI service provider. The library associates UPI codes with the values of the reference data elements characterizing the product. Each entry in the library (the registry entry) contains a minimum number of elements as defined in the ISO standard, and may be extended by the service provider."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "entry in a unique product identifier registry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unique product identifier registry entry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b6"
+  }, {
+    "@id" : "_:b7"
+  }, {
+    "@id" : "_:b8"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistryEntry"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/UniqueProductIdentifierServiceProvider",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "UPI service provider"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@value" : "At the time of publication of the ISO 4914 standard, there was only one such provider, the Regulatory Oversight Committee, confirmed by the Financial Stability Board as the International Governance Body for globally harmonised identifiers used to track OTC derivatives transactions."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "organization designated by an external body of financial regulators to assign UPIs and operate a UPI reference data library"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "ISO 4914:2021(en), Financial services - Unique product identifier (UPI)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "unique product identifier service provider"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b23"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ValuationTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "contract terms specific to valuation of the underlying asset(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "valuation terms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b36"
+  }, {
+    "@id" : "_:b37"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/DerivativeTerms"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasAccretingNotionalAmount",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth Edition, 2019-10, clause 6.8.2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates that the notional amount increases through the life of the contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has accreting notional amount",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasAdditionalCosts",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates costs, such as up front costs, brokerage fees and the like, that must be paid on delivery",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has additional costs",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasAmortizingNotionalAmount",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth Edition, 2019-10, clause 6.8.2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates that the notional amount decreases through the life of the contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has amortizing notional amount",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasCalculationAgent",
+  "http://www.w3.org/2002/07/owl#equivalentProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/hasCalculationAgent"
+  } ],
+  "http://www.w3.org/2002/07/owl#deprecated" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasConstantNotionalAmount",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth Edition, 2019-10, clause 6.8.2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates that the notional amount is constant through the life of the contract"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has constant notional amount",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasCustomNotionalAmount",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "ISO 10962:2019, Securities and related financial instruments - Classification of financial instruments (CFI) code, Fourth Edition, 2019-10, clause 6.8.2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates that the notional amount is customized per a notional step schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has custom notional amount",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasNotionalAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasFirstDeliveryDate",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies the initial date in a range of dates by which the underlying asset (or some portion thereof) must be delivered in order for the terms of the contract to be fulfilled",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has first delivery date",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasExplicitDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasFirstNoticeDate",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies the initial date on which a delivery notice can be issued",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has first notice date",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasStartDate"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasExplicitDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasLastDeliveryDate",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies the final date in a range of dates by which the underlying asset (or some portion thereof) must be delivered in order for the terms of the contract to be fulfilled",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has last delivery date",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasExplicitDate"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasLastNoticeDate",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies the final date on which a delivery notice can be issued",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/ExplicitDate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has last notice date",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasExplicitDate"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/hasEndDate"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasSettlementTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "relates a derivative to contractual terms specific to the settlement process"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/SettlementTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has settlement terms",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractualElement"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasTickValue",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "indicates the cash value of one tick, i.e., the minimum price change of the contract",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryAmount"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has tick value",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasMonetaryAmount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasUnderlyingAssetPrice",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "specifies a price for something on which the contract is based"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/MonetaryPrice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has underlying asset price"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasPrice"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/hasValuationTerms",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "relates a derivative to contractual terms specific to valuation of the underlying asset(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/ValuationTerms"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has valuation terms",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasContractualElement"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/specifiesValueOf",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "relates a derivative to contractual terms specific to valuation of the underlying asset(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/DerivativesBasics/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "specifies value of",
+    "@language" : "en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/specifies"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/ContextualDesignators/appliesTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/usageNote" : [ {
+    "@value" : "Note that the quantity value associated with the derivative represents the quantity of the underlier. The price of the underlier is included in settlement terms."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b0"
+  }, {
+    "@id" : "_:b1"
+  }, {
+    "@id" : "_:b2"
+  }, {
+    "@id" : "_:b3"
+  }, {
+    "@id" : "_:b4"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Underlier",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b21"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+} ]

@@ -1,0 +1,1384 @@
+[ {
+  "@id" : "https://rdf.gleif.org/L1/L-213800D1EI4B9WTWWD28-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeAsLocalOperatingUnit"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangePlc"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "213800D1EI4B9WTWWD28"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for London Stock Exchange plc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange plc. legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-222100T6ICDIY8V4VX70-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDAsLocalOperatingUnit"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDSA"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "222100T6ICDIY8V4VX70"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for LuxCSD S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LuxCSD S.A. legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-506700D369548LQDC335-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmann"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAG"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "506700D369548LQDC335"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for SIX Financial Information AG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Financial Information AG legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-5299000J2N45DDNE4Y28-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmann"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmannGmbHAndCoKG-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "5299000J2N45DDNE4Y28"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-529900ZMNQFCPP762W05-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmann"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAG"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "529900ZMNQFCPP762W05"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for SIX Group AG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Group AG legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-5493000F4ZO33MV32P92-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300561UZND4C7B569-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300CBNW05DILT6870-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearSANV"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "549300CBNW05DILT6870"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for Euroclear SA/NV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear SA/NV legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300HBJLRO8YFMI370-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300NOPSIMGJNT8J31-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300OL514RA0SXJJ44-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDAsLocalOperatingUnit"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingSA"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "549300OL514RA0SXJJ44"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for Clearstream Banking S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking S.A. legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-549300PN6MKI0CLP4T28-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-EVK05KS7XY1DEII3R011-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData-NL"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "EVK05KS7XY1DEII3R011"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for Business Entity Data (BED) B.V."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V. legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-MLDY5N6PZ58ZE60QU102-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://rdf.gleif.org/L1/L-Y6X4K52KMJMZE7I7MY94-LEI",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/Corporations/Corporations/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/FinancialServicesEntities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/FinancialProductsAndServices/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Organizations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/FunctionalEntities/Publishers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/OwnershipAndControl/CorporateControl/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/LEIEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/CorporateBodies/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/BusinessCentersIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Places/Addresses/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/BusinessRegistries/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/FormalBusinessOrganizations/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Locations/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to eliminate usage of deprecated elements."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to reflect revisions to the GLEIF LEI representation for validation level."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC) and to eliminate redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC), eliminating redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was added via the FIBO 2.0 RFC."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was revised to clean up dead links."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was revised to replace uses of hasTag in Relations with hasTag from LCC, as the more complex union of datatypes in the Relations concept is not needed here."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was revised to add the SIX Group and SIX Financial Information, which owns and operates a number of exchanges and issues the valoren, which is a commonly used financial instrument identifier, as well as to update the LEI data for all LEIs to correspond to the content published by the GLEIF on data.world."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was revised to clarify the definitions of various LOUs as well as to update the LEI data for all LEIs to correspond to the content published by the GLEIF and clean up individual definitions as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of this ontology was modified to eliminate duplication of concepts in LCC, simplify addresses and merge countries with locations in FND."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals.rdf version of the ontology was modified to refine and streamline the definitions of some service providers (SEC-205)."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2017-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2017-2025 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology extends the primary financial services entities ontology in FBC with individuals representing additional kinds of entities that provide services internationally, such as international market data providers, organizations that provide exchanges in multiple countries, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Financial Services Entities Individuals Ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2017-2025 EDM Council, Inc.\nCopyright (c) 2017-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData-NL"
+  } ],
+  "https://www.omg.org/spec/Commons/Organizations/manages" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/GlobalMarketsEntityIdentifierRegistry"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "wholly-owned subsidiary of DTCC that owns and operates the Global Market Entity Identifier Utility (GMEI) legal entity identifier (LEI) solution in the federated Global LEI system (GLEIS)"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "individual representing Business Entity Data (BED) B.V."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.gmeiutility.org/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V."
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData-NL",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/PrivatelyHeldCompany", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "Business Entity Data (BED) B.V."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Besloten Vennootschap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V. NL"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityDataHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/hasGlobalUltimateParent" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/DepositoryTrustAndClearingCorporation"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityDataLegalAddress"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "individual representing Business Entity Data (BED) B.V. legal entity that is a privately held company in the Netherlands"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityDataHeadquartersAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Amsterdam"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Netherlands"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "1097 JB"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Bernhardplein 200"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters address for Business Entity Data (BED) B.V."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V. headquarters address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityDataLegalAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Amsterdam"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Netherlands"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "1097 JB"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Prins Bernhardplein 200"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal address for Business Entity Data (BED) B.V."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V. legal address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityDataLegalEntityIdentifierRegistryEntry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier Global LEI Index registry entry for Business Entity Data (BED) B.V."
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-EVK05KS7XY1DEII3R011-LEI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2021-09-15T15:32:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2012-06-06T15:54:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Business Entity Data (BED) B.V. legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2022-08-05T19:16:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/Clearstream",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/Publisher", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CentralSecuritiesDepository", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CentralCounterpartyClearingHouse", "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingBank", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Clearstream functional entity, which is an international central securities depository (ICSD) based in Luxembourg, providing post-trade infrastructure and securities services for the international market and 56 domestic markets worldwide"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.clearstream.com/clearstream-en/about-clearstream"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingSA"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingHeadquartersAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Luxembourg"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Luxembourg"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "L-1855"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "42, Avenue J.F. Kennedy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters address for Clearstream Banking S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking S.A. headquarters address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingLegalAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Luxembourg"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Luxembourg"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "L-1855"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "42, Avenue J.F. Kennedy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal address for Clearstream Banking S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking S.A. legal address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingLegalEntityIdentifierRegistryEntry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier Global LEI Index registry entry for Clearstream Banking S.A."
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-06-06T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2015-01-09T22:33:24.097000",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-549300OL514RA0SXJJ44-LEI"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2025-04-09T04:03:40-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking S.A. legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingSA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/StockCorporation" ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/hasSubsidiary" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSD"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "Clearstream Banking S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.euroclear.com/about/en/ourgovernancestructure.html"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingLegalAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Societe Anonyme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Euroclear legal entity that provides post-trade infrastructure and securities services in Europe and internationally"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The company offers asset services, cash and banking services, connectivity, global securities financing, investment fund services, issuance, IT solutions, settlement, and market coverage services. It also provides post-trade infrastructure services for the German securities industry; and manages, safe keeps, and administers the securities that it holds on behalf of its customers. Clearstream Banking S.A was formerly known as Cedel Bank S.A. and changed its name to Clearstream Banking S.A. in March 2002. The company was founded in 1970 and is based in Luxembourg."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasPriorLegalName" : [ {
+    "@value" : "Cedel Bank S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clearstream Banking S.A."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/Euroclear",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CentralSecuritiesDepository", "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/Publisher", "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/ClearingBank", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CentralCounterpartyClearingHouse" ],
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearSANV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.euroclear.com/en.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Euroclear functional entity, which is a global clearing house, central securities depository, and custodian that specializes in the settlement of securities transactions as well as the safekeeping and asset servicing of these securities"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearHeadquartersAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Brussels"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine2" : [ {
+    "@value" : "Saint-Josse-ten-Noode"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters address for Euroclear SA/NV"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Belgium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear SA/NV headquarters address"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "1210"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Boulevard du Roi Albert II 1"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearLegalAddress",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Boulevard du Roi Albert II 1"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Belgium"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear SA/NV legal address"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Brussels"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine2" : [ {
+    "@value" : "Saint-Josse-ten-Noode"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "1210"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal address for Euroclear SA/NV"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearLegalEntityIdentifierRegistryEntry",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-04-27T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier Global LEI Index registry entry for Euroclear SA/NV"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2025-03-14T07:09:41-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2014-01-06T19:04:00-08:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear SA/NV legal entity identifier registry entry"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-549300CBNW05DILT6870-LEI"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuroclearSANV",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Societe Anonyme/Naamloze Vennootschap"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "Euroclear SA/NV"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingLegalAddress"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Euroclear legal entity that is the parent company of the international and national central securities depositories ((I)CSDs) of the Euroclear group of companies; it owns the group's shared securities processing platforms and delivers a range of services to the group's depositories"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/StockCorporation", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.euroclear.com/en/about/our-structure.html"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Euroclear SA/NV"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuropeanBankingFederation",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "http://www.ebf.eu/about-us/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "EBF"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "international non-profit association founded in 1960 that is the voice of the European banking sector, uniting 32 national banking associations in Europe that together represent some 4,500 banks - large and small, wholesale and retail, local and international - employing about 2.1 million people"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Banking Federation"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuropeanMoneyMarketsInstitute",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Its members are national banking associations in the Member States of the European Union which are involved in the Eurozone."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "http://www.emmi-benchmarks.eu/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "EMMI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "international non-profit association under Belgian law founded in 1999 with the launch of the Euro and based in Brussels (56, Ave des Arts, 1000 Brussels)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Money Markets Institute"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/NotForProfitOrganization", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmann",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmannGmbHAndCoKG-DE"
+  } ],
+  "https://www.omg.org/spec/Commons/Organizations/manages" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMDatenserviceEntityIdentifierRegistry"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "subdivision of Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann that operates the WM Datenservice, Europe's largest registry for the Legal Entity Identifier (LEI)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.wm-leiportal.org/?lang=en"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/HerausgebergemeinschaftWertpapier-MitteilungenKepplerLehmannGmbHAndCoKG-DE",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasTradingOrOperationalName" : [ {
+    "@value" : "WM Gruppe"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG legal entity that is a privately held company in Germany"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/PrivatelyHeldCompany", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Gesellschaft mit beschränkter Haftung & Compagnie Kommanditgesellschaft"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMGruppeHeadquartersAndLegalAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMGruppeHeadquartersAndLegalAddress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.wmgruppe.de/index.php"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchange",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/Publisher", "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider", "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.londonstockexchange.com/home/homepage.htm"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "LSE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangePlc"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "London Stock Exchange functional entity, which is a global business and financial information services and news provider, a securities exchange, and the SEDOL code issuer and registration authority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeAsLocalOperatingUnit",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangePlc"
+  } ],
+  "https://www.omg.org/spec/Commons/Organizations/manages" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeUnaVistaRegistry"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "London Stock Exchange functional entity that is an LEI Local Operating Unit (LOU) registrar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.londonstockexchange.com/home/homepage.htm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange as local operating unit"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeHeadquartersAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/London"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/UnitedKingdomOfGreatBritainAndNorthernIreland"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "EC4M 7LS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "10 Paternoster Square"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters address for London Stock Exchange plc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange plc. headquarters address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeLegalAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/London"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/UnitedKingdomOfGreatBritainAndNorthernIreland"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "EC4M 7LS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "10 Paternoster Square"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal address for London Stock Exchange plc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange plc. legal address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeLegalEntityIdentifierRegistryEntry",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2013-09-12T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2025-07-22T02:51:53-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange plc. legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-09-17T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-213800D1EI4B9WTWWD28-LEI"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier Global LEI Index registry entry for London Stock Exchange plc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangePlc",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Public Limited Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "London Stock Exchange plc."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation" ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeLegalAddress"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "London Stock Exchange plc. legal entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange plc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.londonstockexchange.com/home/homepage.htm"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LondonStockExchangeUnaVistaRegistry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "UnaVista registry service provided by the London Stock Exchange supporting LEI registration"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.lseg.com/LEI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "London Stock Exchange UnaVista Registry"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSD",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDSA"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Lux CSD functional entity, which provides Luxembourg's financial community with issuing and central bank settlement as well as custody services for a wide range of securities including investment funds"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.luxcsd.com/luxcsd-en/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lux CSD"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/CentralSecuritiesDepository", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDAsLocalOperatingUnit",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDSA"
+  } ],
+  "https://www.omg.org/spec/Commons/Organizations/manages" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDLEIRegistry"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Lux CSD functional entity that is an LEI Local Operating Unit (LOU) registrar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.luxcsd.com/luxcsd-en/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lux CSD"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDLEIRegistry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "LuxCDS LEI registry; LuxCSD has been issuing ISO 17442:2012 compliant LEIs with the prefix 2221 since September 2014"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.luxcsd.com/luxcsd-en/products-and-services/luxembourg-lei-service"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Lux CSD LEI Registry"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDLegalEntityIdentifierRegistryEntry",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2022-03-13T00:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2014-06-03T01:45:01.523000",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier Global LEI Index registry entry for LuxCSD S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2021-03-09T13:03:09.110000",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-222100T6ICDIY8V4VX70-LEI"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LuxCSD S.A. legal entity identifier registry entry"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/LuxCSDSA",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/ClearstreamBankingLegalAddress"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Lux CSD legal entity"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/StockCorporation" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The European Central Bank (ECB) approved LuxCSD for its Securities Settlement System (SSS)."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "LuxCSD S.A."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Societe Anonyme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LuxCSD S.A."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.luxcsd.com/luxcsd-en/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/NasdaqOMXGroup",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "corporation that is a subsidiary of Nasdaq, Inc. that manages Nasdaq exchanges in Helsinki, Copenhagen, Stockholm, Iceland, Riga, Tallinn and Vilnius"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Nasdaq OMX Group"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformation",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "SIX Financial Information functional entity, which provides market data gathered from the world's major trading venues directly and in real-time, and is the Valoren issuer and registration authority as well as the national numbering agency (NNA) for Switzerland, Belgium, and Liechtenstein, and the former TELEKURS ID financial instrument identifier issuer and registration authority"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Financial Information"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegistrationAuthorities/RegistrationAuthority", "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider", "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/Publisher", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAG",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/hasGlobalUltimateParent" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Financial Information AG"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasPriorLegalName" : [ {
+    "@value" : "Telekurs Ltd"
+  }, {
+    "@value" : "Telekurs SA"
+  }, {
+    "@value" : "Telekurs AG"
+  }, {
+    "@value" : "Telekurs Holding AG"
+  }, {
+    "@value" : "Telekurs Holding SA"
+  }, {
+    "@value" : "Telekurs Holding Ltd."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAGHeadquartersAddress"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasTradingOrOperationalName" : [ {
+    "@value" : "SIX SIX Financial Information SA"
+  }, {
+    "@value" : "SIX Financial Information Ltd"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "SIX Financial Information AG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "SIX Financial Information AG legal entity"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The company name SIX is an abbreviation and stands for Swiss Infrastructure and Exchange."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Public Limited Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.six-group.com/en/home.html"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAGLegalEntityIdentifierRegistryEntry",
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-506700D369548LQDC335-LEI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier registry entry for SIX Financial Information AG"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2025-06-12T08:09:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Financial Information AG legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-07-14T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2019-06-16T17:00:00-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAsLocalOperatingUnit",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformationAG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "SIX Financial Information functional entity that is an LEI Local Operating Unit (LOU) registrar"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Financial Information"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LocalOperatingUnit", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroup",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAG"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "SIX"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "SIX Group functional entity, which offers exchange services, financial information and banking services with the aim of increasing efficiency, quality and innovative capacity along the entire Swiss banking value chain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Group"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAG",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasTradingOrOperationalName" : [ {
+    "@value" : "SIX Group Ltd"
+  }, {
+    "@value" : "SIX Group SA"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/hasSubsidiary" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXFinancialInformation"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/Corporation" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Group AG"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "The company name SIX is an abbreviation and stands for Swiss Infrastructure and Exchange."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/hasLegalFormAbbreviation" : [ {
+    "@value" : "Public Limited Company"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "SIX Group AG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "SIX Group AG legal entity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.six-group.com/en/home.html"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAGHeadquartersAddress"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAGHeadquartersAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Zurich"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Switzerland"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "8005"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Hardturmstrasse 201"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters address for SIX Group AG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Group AG headquarters address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SIXGroupAGLegalEntityIdentifierRegistryEntry",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-02-06T15:00:00-08:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2013-12-09T00:40:03-08:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier registry entry for SIX Group AG"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "SIX Group AG legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-529900ZMNQFCPP762W05-LEI"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2024-12-19T04:22:23-08:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/SwedishBankersAssociation",
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuropeanBankingFederation"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "https://www.swedishbankers.se/en-us/about/about-us/about-us/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "association that represents banks and financial institutions established in Sweden that contributes to a sound and efficient regulatory framework that facilitates for banks to help create economic wealth for customers and society"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Swedish Bankers' Association"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/Organizations/FormalOrganization", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMDatenserviceEntityIdentifierRegistry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "WM Datenservice LEI registry"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "WM Datenservice Registry"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistry", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMGruppeHeadquartersAndLegalAddress",
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/Frankfurt"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Germany"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "60329"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "Duesseldorfer Strasse 16"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "headquarters and legal address for Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann (WM Gruppe)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann (WM Gruppe) headquarters address"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/WMGruppeLegalEntityIdentifierRegistryEntry",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2013-04-03T04:47:18-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier registry entry for Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2026-04-14T01:44:35-07:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2025-02-27T07:07:45-08:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Herausgebergemeinschaft Wertpapier-Mitteilungen Keppler, Lehmann GmbH & Co. KG legal entity identifier registry entry"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-5299000J2N45DDNE4Y28-LEI"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/DTCC-US-DE",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/OwnershipAndControl/CorporateControl/hasSubsidiary" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/BusinessEntityData"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

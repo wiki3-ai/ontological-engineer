@@ -1,0 +1,67 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives/",
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This is the metadata ontology used to describe the Foundations Goals and Objectives Module."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata for the EDMC-FIBO Foundations (FND) Goals and Objectives Module"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives/"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-12-28T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-01-20T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2017-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2017-2023 EDM Council, Inc."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives/GoalsAndObjectivesModule",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/MetadataFNDGoalsAndObjectives/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2017-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2017-2023 Object Management Group, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "goals and objectives module"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/GoalsAndObjectives/Objectives/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Foundations (FND) Goals and Objectives Module"
+  }, {
+    "@value" : "FIBO FND Goals and Objectives Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies for goals and objectives which may be pursued by people or organizations. Goals form the basis for the definition of an organization, and objectives and related concepts are required for describing business plans."
+  } ]
+} ]

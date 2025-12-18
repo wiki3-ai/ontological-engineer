@@ -1,0 +1,134 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/MetadataSEC/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Funds/MetadataSECFunds/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/MetadataSECDebt/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/MetadataSECSecurities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Equities/MetadataSECEquities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/MetadataSEC/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Securities (SEC) Domain"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The Securities (SEC) Domain covers many of the concepts that are common to a wide variety of securities as well as those specific to equities and various debt instruments, including but not limited to bonds and a wide range of asset-backed securities. This ontology provides metadata about the Securities Domain and its contents."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2024-11-15T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/MetadataSEC/SECDomain",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "Dassault Systemes / No Magic"
+  }, {
+    "@value" : "Quarule"
+  }, {
+    "@value" : "Goldman Sachs"
+  }, {
+    "@value" : "ProBanker Simulations, LLC"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Mizuho"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Credit Suisse"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Wells Fargo Bank, N.A."
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "BIAN"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "agnos.ai U.K. Ltd"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Securities (SEC) Domain"
+  }, {
+    "@value" : "FIBO SEC Domain"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/MetadataSECEquities/EquitiesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Funds/MetadataSECFunds/FundsModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/MetadataSECDebt/DebtModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/MetadataSECSecurities/SecuritiesModule"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The FIBO Securities (SEC) domain provides a model of concepts that are common to financial instruments that are also securities, including but not limited to exchange-traded securities and funds. High-level concepts relevant to securities classification, identification, issuance, and registration of securities generally are covered, as well as additional detail for equities, debt instruments, and funds. More details defining derivatives in particular are covered in a separate derivatives domain area."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2024 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2024 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "securities domain"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/MetadataSEC/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "https://wiki.edmcouncil.org/pages/viewpage.action?pageId=786661",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+} ]

@@ -1,0 +1,407 @@
+[ {
+  "@id" : "https://rdf.gleif.org/L1/L-TF1LXM1YNB81WKUH5G19-LEI",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersInc-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "TF1LXM1YNB81WKUH5G19"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier for BGC Partners, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. legal entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/LEIEntities/LegalEntityIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies/EuropeanBankingRegulatoryAgencyAndCentralBank",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/InterestRateAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/CanadianBankingRegulatoryAgencyAndCentralBank",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/InterestRateAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/BloombergLP",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/ThomsonReuters",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Note that in 2018, the market data subsidiary of Thomson Reuters became Refinitiv, which then sold a 55% stake to Blackstone Group LP in August 2018. In October 2019, Blackstone and Thomson Reuters announced the sale of the company to London Stock Exchange Group. LSEG completed the US$27 billion purchase from the two previous owners in late January 2021, and Refinitiv is now a subsidiary of LSEG. The well-known financial instrument identifier called a 'RIC code' has been a Refinitiv branded code since its founding."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/BoardOfGovernorsOfTheFederalReserveSystem",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/InterestRateAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/FunctionalEntities/Publishers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/FormalBusinessOrganizations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/CARegulatoryAgencies/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/FinancialProductsAndServices/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/LEIEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/FinancialServicesEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Places/Addresses/"
+  }, {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/InterestRates/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/Corporations/Corporations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/BusinessRegistries/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Debt/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Locations/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/DatesAndTimes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/BusinessCentersIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/EuropeanEntities/EURegulatoryAgencies/"
+  }, {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/Regions/ISO3166-2-SubdivisionCodes-US/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/DatesAndTimes/BusinessDates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/CorporateBodies/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was revised to replace references to the legacy LCC UnitedStates country representation with UnitedStatesOfAmerica."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was revised to clean up the LEI data."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was revised to reflect the move of market data provider from interest rates in IND to publishers in BE."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was revised to replace uses of hasTag in Relations with hasTag from LCC, as the more complex union of datatypes in the Relations concept is not needed here."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC) and to eliminate redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was modified to clarify the definition of ticker symbol and revise the role of Thomson Reuters' market data division to reflect it's history as (1) a subsidiary called Refinitiv, and (2) its acquisition by the London Stock Exchange Group (SEC-196)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was revised to update the LEI URIs to the new form published by the GLEIF on data.world."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders.rdf version of this ontology was modified to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380)."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides reference data for a number of international market data providers, including, but not limited to, those that publish interest rate benchmarks referenced in the published FpML benchmark reference."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2020-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2020-2025 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Market Data Providers Ontology"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2020-2025 EDM Council, Inc.\nCopyright (c) 2020-2025 Object Management Group, Inc.\n\t\t\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersInc-US-DE",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/FinancialServicesEntities/hasDateEstablished" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncDateEstablished"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasPriorLegalName" : [ {
+    "@value" : "Cantor Fitzgerald"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasLegalName" : [ {
+    "@value" : "BGC Partners, Inc. US-DE"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/FormalBusinessOrganizations/hasHeadquartersAddress" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncHeadquartersAddress"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/CorporateBodies/StockCorporation", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/hasLegalAgent" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/CorporationServiceCompany"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity that is a Delaware Corporation"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncBusinessEntityIdentifier",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/DelawareBusinessEntitiesRegistry"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersInc-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "3051512"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Delaware Division of Corporations business entity identifier for BGC Partners, Inc. b"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. business entity identifier"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/Corporations/Corporations/RegistrationIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncDateEstablished",
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasDateValue" : [ {
+    "@value" : "1999-06-03"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "date that BGC Partners, Inc. was incorporated with the Delaware Division of Corporations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. date established"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/DatesAndTimes/Date", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncHeadquartersAddress",
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasAddressLine1" : [ {
+    "@value" : "55 Water Street"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/hasPostalCode" : [ {
+    "@value" : "10041"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Places/Addresses/ConventionalStreetAddress" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasSubdivision" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/Regions/ISO3166-2-SubdivisionCodes-US/NewYork"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. headquarters address"
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasMunicipality" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/New_York"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "registered address identified as the headquarters address for BGC Partners, Inc."
+  } ],
+  "https://www.omg.org/spec/Commons/Locations/hasCountry" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/UnitedStatesOfAmerica"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersIncLegalEntityIdentifierRegistryEntry",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "legal entity identifier registry entry for BGC Partners, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/LegalEntityIdentifierRegistryEntry" ],
+  "https://www.omg.org/spec/Commons/Collections/comprises" : [ {
+    "@id" : "https://rdf.gleif.org/L1/L-TF1LXM1YNB81WKUH5G19-LEI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BGC Partners, Inc. legal entity identifier registry entry"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasInitialRegistrationDate" : [ {
+    "@value" : "2012-06-06T15:55:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationRevisionDate" : [ {
+    "@value" : "2021-05-17T15:24:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRegistrationStatus" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/IssuedStatus"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasRenewalDate" : [ {
+    "@value" : "2022-05-17T15:31:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/hasValidationLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessRegistries/EntityValidationLevelFullyCorroborated"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/EuropeanMoneyMarketsInstituteBenchmarkPublisher",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/EuropeanEntities/EuropeanFinancialServicesEntitiesIndividuals/EuropeanMoneyMarketsInstitute"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "http://www.emmi-benchmarks.eu/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "individual representing the European Money Markets Institute (EMMI) functional entity that is an international financial information publisher, responsible for the publication of euro-based benchmarks, including Euribor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "European Money Markets Institute (EMMI) benchmark publisher"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/InterestRateAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/FederalReserveBoardH.15RateResetTimeOfDay",
+  "https://www.omg.org/spec/Commons/Locations/hasBusinessCenter" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/New_York"
+  } ],
+  "https://www.omg.org/spec/Commons/DatesAndTimes/hasTimeValue" : [ {
+    "@value" : "T16:15:00"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "https://www.federalreserve.gov/releases/h15/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/DatesAndTimes/BusinessDates/hasBusinessDayConvention" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/BusinessCentersIndividuals/NewYorkFederalReserveBusinessDay"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the time of day that the Federal Reserve Board publishes Selected Interest Rates (Daily) in Schedule H.15"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Federal Reserve Board H.15 rate reset time of day"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/RateResetTimeOfDay", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/FenicsMarketData",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/BGCPartnersInc-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/wasFormerlyKnownAs" : [ {
+    "@value" : "BGCantor Market Data, L.P."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Fenics Market Data functional entity that is a financial service and market data provider and division of BGC Partners"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fenics Market Data"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/ICEBenchmarkPublisher",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USFinancialServicesEntitiesIndividuals/ICEBenchmarkAdministration"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "https://www.theice.com/index",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the ICE Benchmark Administration functional entity that is an international financial information publisher, responsible for the publication of ICE LIBOR, ICE Swap Rate, LBMA Gold Price and ISDA SIMM benchmarks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ICE benchmark publisher"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/InterestRates/InterestRateAuthority", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/LSEGFinancialSolutionsAsMarketDataProvider",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Note that LSEG Financial Group was formerly known as Refinitiv, and before that, the market data division of Thomson Reuters."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "financial market data provider role of the London Stock Exchange Group (LSEG)'s subsidiary, LSEG Financial Solutions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "LSEG Financial Solutions as market data provider"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/ReferenceBanks",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "With respect to LIBOR, for example, the Bank of England will request the principal London office of each of the Reference Banks to provide a quotation of its rate. If at least two such quotations are provided, the rate for such date will be the arithmetic mean of the quotations. If fewer than two quotations are provided as requested, the rate for such date will be the arithmetic mean of the rates quoted by major banks in New York City selected by the Bank, at approximately 11:00 a.m. New York City time for loans in U.S. Dollars to leading European banks for such Interest Period and in an amount approximately equal to the amount requested LIBOR-Reference Banks Loan."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "market data provider of interest rate benchmarks representing a group of one or more banks that either individually, or in aggregate, provide quoted rates that contribute to the benchmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reference banks"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/Collections/Collection", "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/ReferenceDealers",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "market data provider of interest rate benchmarks representing a group of one or more swap dealers that either individually, or in aggregate, provide quoted rates that contribute to the benchmark"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "reference dealers"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/Collections/Collection", "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/SwapMarker",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "market data provider of interest rate benchmarks"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Swap Marker"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/Tradition",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Tradition functional entity that is a financial service and market data provider and division of Compagnie Financiere Tradition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MarketDataProviders/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Tradition"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/FinancialProductsAndServices/FinancialServiceProvider", "https://spec.edmcouncil.org/fibo/ontology/BE/FunctionalEntities/Publishers/MarketDataProvider", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

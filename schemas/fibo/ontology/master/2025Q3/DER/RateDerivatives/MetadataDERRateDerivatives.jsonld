@@ -1,0 +1,113 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/MetadataDERRateDerivatives/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Derivatives (DER) Rate Derivatives Module"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-03T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/RateDerivatives/MetadataDERRateDerivatives/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The rate derivatives module defines derivatives that are based on numerical rates such as interest rates, indices and the like."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/MetadataDERRateDerivatives/RateDerivativesModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "agnos.ai"
+  }, {
+    "@value" : "Quarule"
+  }, {
+    "@value" : "Mizuho Financial Group, Inc."
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Wells Fargo Bank, N.A."
+  }, {
+    "@value" : "Working Ontologist"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Commodities Futures Trading Commission (CFTC)"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Credit Suisse"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/MetadataDERRateDerivatives/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO DER Rate Derivatives Module"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Derivatives (DER) Rate Derivatives Module"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/RateDerivatives/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwapExampleIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "rate derivatives module"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module defines derivatives that are based on numerical rates such as interest rates, indices and the like."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://spec.edmcouncil.org/fibo/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+} ]

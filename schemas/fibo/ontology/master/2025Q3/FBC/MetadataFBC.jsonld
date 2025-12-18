@@ -1,0 +1,126 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/MetadataFBC/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/MetadataFBCFunctionalEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/MetadataFBCFinancialInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/MetadataFBCProductsAndServices/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/MetadataFBCDebtAndEquities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-01-30T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/MetadataFBC/"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2015-08-13T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Financial Business and Commerce (FBC) Domain"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides metadata about the FIBO Financial Business and Commerce (FBC) Domain, which covers business concepts that are common to common to a number of finance domain areas, such as loans, securities, and corporate actions, including products and services, financial intermediaries, registrars and regulators, and financial instruments and products."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/MetadataFBC/FBCDomain",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "Quarule"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Credit Suisse"
+  }, {
+    "@value" : "agnos.ai UK Ltd."
+  }, {
+    "@value" : "Dassault Systemes / No Magic"
+  }, {
+    "@value" : "Wells Fargo"
+  }, {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Capacity Post, Inc."
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The financial business and commerce domain covers business concepts that are common to common to a number of finance areas, such as loans, securities, and corporate actions, including products and services, financial intermediaries, registrars and regulators, and financial instruments and products."
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MetadataFBCFunctionalEntities/FunctionalEntitiesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/MetadataFBCDebtAndEquities/DebtAndEquitiesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/MetadataFBCFinancialInstruments/FinancialInstrumentsModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/MetadataFBCProductsAndServices/FBCProductsAndServicesModule"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/MetadataFBC/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "EDMC Financial Industry Business Ontology (FIBO) Financial Business and Commerce (FBC) Domain"
+  }, {
+    "@value" : "FIBO FBC Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "financial business and commerce domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "https://wiki.edmcouncil.org/pages/viewpage.action?pageId=786677",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+} ]

@@ -1,0 +1,897 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/",
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2020-2025 EDM Council, Inc.\nCopyright (c) 2020-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/GovernmentEntities/GovernmentEntities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegulatoryAgencies/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Caribbean Government Entities and Jurisdictions Ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC) and to eliminate redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The http://www.omg.org/spec/EDMC-FIBO/BE/20210201/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf version of this ontology was modified to correct spelling issues."
+  }, {
+    "@value" : "The http://www.omg.org/spec/EDMC-FIBO/BE/20200701/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf version of this ontology was modified to correct the ontology prefix and address language-specific diacritical marks."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@value" : "The initial version of this ontology reflects the highest national or regional level (for British Commonwealth members) only."
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2020-2025 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2020-2025 Object Management Group, Inc."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides the set of basic government-level entities and jurisdictions for independent countries and British Commonwealth regional sovereignties identified as part of the Caribbean in the U.N. M49 classification."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/AntiguaAndBarbudaEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfAntiguaAndBarbuda"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/AntiguaAndBarbuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sovereign state and polity that consists of two major islands, Antigua and Barbuda (separated by 39 miles), and a number of smaller islands in the middle of the Leeward Islands, that is part of the Lesser Antilles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Antigua and Barbuda entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/BahamianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfTheBahamas"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bahamas"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sovereign state and polity that is The Bahamas"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bahamian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/BarbadianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBarbados"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Barbados"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sovereign state and polity that is Barbados"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Barbadian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/BermudanEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBermuda"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bermuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "regional sovereignty and polity that is Bermuda"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Bermudan entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/RegionalSovereignty", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/CaymanIslandsEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCaymanIslands"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/CaymanIslands"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "regional sovereignty and polity that is the Cayman Islands"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cayman Islands entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/RegionalSovereignty", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/CubanEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfCuba"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasFullSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Cuba"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "sovereign state and polity that is Cuba"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Cuban entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/DominicaEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfDominica"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasFullSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Dominica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Dominica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dominica entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/DominicanRepublicEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheDominicanRepublic"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasFullSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/DominicanRepublic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is the Dominican Republic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Dominican Republic entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfAntiguaAndBarbuda",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfAntiguaAndBarbuda"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/AntiguaAndBarbuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary constitutional monarchy, with the queen (Elizabeth II) as head of state represented locally by a governor-general"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Antigua and Barbuda",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBarbados",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfBarbados"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Barbados"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary constitutional monarchy, modeled on the British Westminster system, with the Queen of Barbados (Elizabeth II) as head of state, represented locally by a governor-general"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Barbados",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBermuda",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfBermuda"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bermuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "parliamentary representative democratic dependency and a British island territory in the North Atlantic Ocean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.gov.bm/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Bermuda",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/RegionalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfGrenada",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfGrenada"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Grenada"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary two-party parliamentary constitutional monarchy that is a Commonwealth realm with Queen Elizabeth II as head of state, represented locally by a governor-general, located in the West Indies in the Caribbean Sea at the southern end of the Grenadines island chain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Grenada",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfJamaica",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfJamaica"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Jamaica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "parliamentary constitutional monarchy with legislative power vested in the bicameral Parliament of Jamaica, consisting of an appointed Senate and a directly elected House of Representatives, and an independent member of the British Commonwealth, situated in the Caribbean Sea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Jamaica",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintLucia",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfSaintLucia"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintLucia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary constitutional monarchy that is a Commonwealth realm with Queen Elizabeth II as head of state, represented locally by a governor-general, located in the West Indies in the eastern Caribbean Sea on the boundary with the Atlantic Ocean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Saint Lucia",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintVincentAndTheGrenadines",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfSaintVincentAndTheGrenadines"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintVincentAndTheGrenadines"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary constitutional monarchy, with the Queen of Saint Vincent and the Grenadines (Elizabeth II) as head of state represented locally by a governor-general, an Anglo-Caribbean country of several islands in the Lesser Antilles island arc, in the southeast Windward Islands, which lies in the West Indies at the southern end of the eastern border of the Caribbean Sea where the latter meets the Atlantic Ocean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of Saint Vincent and the Grenadines",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCaymanIslands",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheCaymanIslands"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/CaymanIslands"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "parliamentary democracy with judicial, executive and legislative branches, and a British Overseas Territory, encompassing 3 islands in the western Caribbean Sea"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://www.gov.ky/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Cayman Islands",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/RegionalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfDominica",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfDominica"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Dominica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary democracy that is an independent republic and member of the Commonwealth of Nations, one of few republics in the Caribbean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Commonwealth of Dominica",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfTheBahamas",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheCommonwealthOfTheBahamas"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bahamas"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "parliamentary constitutional monarchy, with the queen of the Bahamas (Elizabeth II) as head of state represented locally by a governor-general"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Commonwealth of the Bahamas",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheDominicanRepublic",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheDominicanRepublic"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/DominicanRepublic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary presidential republic that occupies the eastern five-eighths of the island of Hispaniola in the Greater Antilles archipelago, which it shares with Haiti"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the the Dominican Republic",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheFederationOfSaintChristopherAndNevis",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheFederationOfSaintChristopherAndNevis"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintKittsAndNevis"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "federal parliamentary constitutional monarchy that is a Commonwealth realm with the Queen of Saint Christopher and Nevis (Queen Elizabeth II) as head of state, represented locally by a governor-general, located in the Leeward Islands chain of the Lesser Antilles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Federation of Saint Christopher and Nevis",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfCuba",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfCuba"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Cuba"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary Marxist-Leninist, one party socialist republic that includes the island of Cuba as well as Isla de la Juventud and several minor archipelagos"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.presidencia.gob.cu/en/government/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Republic of Cuba",
+    "@language" : "en"
+  }, {
+    "@value" : "Gobierno de la República de Cuba",
+    "@language" : "es"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfHaiti",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfHaiti"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Haiti"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary semi-presidential republic located on the island of Hispaniola in the Greater Antilles archipelago"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Republic of Haiti",
+    "@language" : "en"
+  }, {
+    "@value" : "Gouvernement de la République d'Haïti",
+    "@language" : "fr"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfTrinidadAndTobago",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasJurisdiction" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheRepublicOfTrinidadAndTobago"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/governs" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/TrinidadAndTobago"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "unitary parliamentary constitutional republic with a two-party system and a bicameral parliamentary system based on the Westminster System, that is the southernmost island country in the Caribbean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Government of the Republic of Trinidad and Tobago",
+    "@language" : "en"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/NationalGovernment", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GrenadianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfGrenada"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Grenada"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Grenada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Grenadian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/HaitianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfHaiti"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasFullSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Haiti"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Haiti"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Haitian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JamaicanEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfJamaica"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Jamaica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Jamaica"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Jamaican entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfAntiguaAndBarbuda",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfAntiguaAndBarbuda"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/AntiguaAndBarbuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the Eastern Caribbean Supreme Court (based in Saint Lucia; one judge of the Supreme Court is a resident of the islands and presides over the High Court of Justice, including the Judicial Committee of the Privy Council (JCPC), which is the highest court of appeal for certain British territories, some Commonwealth countries and a few UK bodies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Antigua and Barbuda"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfBarbados",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBarbados"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Barbados"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Barbados, an independent branch of the Barbadian government, subject only to the Barbadian Constitution, including the Magistrates' Court, Supreme Court, and Caribbean Court of Justice"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Barbados"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfBermuda",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfBermuda"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bermuda"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Bermuda, including the Magistrates' Court, Supreme Court, Court of Appeal, and Judicial Committee of the Privy Council (JCPC), which is the highest court of appeal for certain British territories, some Commonwealth countries and a few UK bodies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Bermuda"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfCuba",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfCuba"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Cuba"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of the Republic of Cuba, including the system of courts that interprets and applies the law in Cuba"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Cuba",
+    "@language" : "en"
+  }, {
+    "@value" : "jurisdicción de la República de Cuba",
+    "@language" : "es"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfDominica",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfDominica"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Dominica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of the Commonwealth of Dominica, which is a member of the International Criminal Court, with a Bilateral Immunity Agreement of protection with the US military, as covered under Article 98"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Dominica"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfGrenada",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfGrenada"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Grenada"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Grenada, which is part of the Eastern Caribbean States Supreme Court with an associate judge residing in Grenada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Grenada"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfHaiti",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfHaiti"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Haiti"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Haiti, whose highest court is the Cour de Cassation, assisted by local and civil courts at a communal level"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Haiti",
+    "@language" : "en"
+  }, {
+    "@value" : "juridiction de la République d'Haïti",
+    "@language" : "fr"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfJamaica",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfJamaica"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Jamaica"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "the jurisdiction of the judiciary of Jamaica, a system based on English common law and local statutes, including the Judicial Committee of the Privy Council (JCPC), which is the highest court of appeal for certain British territories, some Commonwealth countries and a few UK bodies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of Jamaica"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfSaintLucia",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintLucia"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintLucia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Saint Lucia, a mixed judicial system based on on both the civil law and English common law"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Saint Lucia"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfSaintVincentAndTheGrenadines",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintVincentAndTheGrenadines"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintVincentAndTheGrenadines"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Saint Vincent and the Grenadines, which is divided into district courts, the Eastern Caribbean Supreme Court and the Privy Council in London being the court of last resort"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Federation of Saint Vincent and the Grenadines"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheCaymanIslands",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCaymanIslands"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/CaymanIslands"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of the Cayman Islands, a four-tiered judicial system is based on English common law, colonial and local statutes, including the Judicial Committee of the Privy Council (JCPC), which is the highest court of appeal for certain British territories, some Commonwealth countries and a few UK bodies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Cayman Islands"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheCommonwealthOfTheBahamas",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheCommonwealthOfTheBahamas"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/Bahamas"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of the Bahamas, a judicial system based on English common law and local statutes, including the Judicial Committee of the Privy Council (JCPC), which is the highest court of appeal for certain British territories, some Commonwealth countries and a few UK bodies, and which considered a safe jurisdiction as an International Financial Center (IFC), with a legal framework that is in compliance with the standards set by Organization for Economic Cooperation and Development (OECD)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Commonwealth of the Bahamas"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheDominicanRepublic",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheDominicanRepublic"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/DominicanRepublic"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of the Dominican Republic, whose highest court is the Supreme Court of Justice, composed of 16 judges appointed by the National Council of Magistrates, an entity created by the constitutional reform of 1994 to ensure the independence of the Judicial Branch"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Dominican Republic"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheFederationOfSaintChristopherAndNevis",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheFederationOfSaintChristopherAndNevis"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintKittsAndNevis"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Saint Kitts and Nevis, a mixed judicial system based on on both the civil law and English common law"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Federation of Saint Christopher and Nevis"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/JurisdictionOfTheRepublicOfTrinidadAndTobago",
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/isJurisdictionOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfTrinidadAndTobago"
+  } ],
+  "https://www.omg.org/spec/Commons/RegulatoryAgencies/hasReach" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/TrinidadAndTobago"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "jurisdiction of the judiciary of Trinidad and Tobago, a hierarchical system comprising a Supreme Court of Judicature, a Magistracy and a Family Court, with final appeal on some matters decided by the Judicial Committee of the Privy Council (JCPC)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "jurisdiction of the Republic of Trinidad and Tobago"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/RegulatoryAgencies/Jurisdiction", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/SaintKittsAndNevisEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheFederationOfSaintChristopherAndNevis"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintKittsAndNevis"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is the Federation of Saint Christopher and Nevis"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Saint Kitts and Nevis entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/SaintLucianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintLucia"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintLucia"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Saint Lucia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Saint Lucian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/SaintVincentianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfSaintVincentAndTheGrenadines"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/SaintVincentAndTheGrenadines"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is Saint Vincent and the Grenadines (or simply Saint Vincent)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Saint Vincentian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/TrinidadianAndTobagonianEntity",
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/isRepresentedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/GovernmentOfTheRepublicOfTrinidadAndTobago"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/hasSharedSovereigntyOver" : [ {
+    "@id" : "https://www.omg.org/spec/LCC/Countries/ISO3166-1-CountryCodes/TrinidadAndTobago"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "soverign state and polity that is the Republic of Trinidad and Tobago"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/CaribbeanGovernmentEntitiesAndJurisdictions/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Trinidadian and Tobagonian entity"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/GovernmentEntities/SovereignState", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

@@ -1,0 +1,134 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/MetadataDER/",
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/RateDerivatives/MetadataDERRateDerivatives/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/CreditDerivatives/MetadataDERCreditDerivatives/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/DerivativesContracts/MetadataDERDerivativesContracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-03T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Derivatives (DER) Domain"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/MetadataDER/"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The Derivatives (DER) Domain covers many of the concepts that are common to derivative instruments, including but not limited to options, futures, forwards, swaps, and a wide range of other derivatives. This ontology provides metadata about the Derivatives Domain and its contents."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/MetadataDER/DERDomain",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Mizuho Financial Group, Inc."
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Credit Suisse"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Wells Fargo Bank, N.A."
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Working Ontologist"
+  }, {
+    "@value" : "Commodities Futures Trading Commission (CFTC)"
+  }, {
+    "@value" : "agnos.ai"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Quarule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "https://wiki.edmcouncil.org/display/DER/FIBO+-+FCT+-+Derivatives+Home",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO DER Domain"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Derivatives (DER) Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/MetadataDER/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The Derivatives (DER) Domain covers many of the concepts that are common to derivative instruments, including but not limited to options, futures, forwards, swaps, and a wide range of other derivatives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "derivatives domain"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/MetadataDERRateDerivatives/RateDerivativesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/MetadataDERCreditDerivatives/CreditDerivativesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/MetadataDERDerivativesContracts/DerivativesContractsModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/SecurityBasedDerivativesModule"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-03T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+} ]

@@ -1,0 +1,2216 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/",
+  "http://www.w3.org/2004/02/skos/core#changeNote" : [ {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was revised to replace uses of hasTag in Relations with hasTag from LCC, as the more complex union of datatypes in the Relations concept is not needed here."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of the ontology was modified to replace additional content that is now available in the OMG Commons Ontology Library (Commons) v1.2 (FND-389)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of the ontology was modified to use the Commons Ontology Library (Commons) Annotation Vocabulary rather than the OMG's Specification Metadata vocabulary."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was revised to add the share class to some of the examples, replace registered form with book entry (registered) form, and add detail to the common share and listing individuals."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was modified to add CFI codes to the example equity instruments."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was revised to replace equity issuer with share issuer."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was modified to replace content that is now available in the OMG Commons Ontology Library (Commons) v1.1 (FND-380)."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was modified to use the Commons Ontology Library (Commons) rather than the OMG's Languages, Countries and Codes (LCC) and to eliminate redundancies in FIBO as appropriate."
+  }, {
+    "@value" : "The https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals.rdf version of this ontology was revised to address changes to the markets individuals ontology."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesIssuance/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesIdentification/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RolesAndCompositions/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Contracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesListings/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CurrencyAmount/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/RegistrationAuthorities/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Securities/SecuritiesIdentificationIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/FinancialInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FunctionalEntities/MarketsIndividuals/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/ISO4217-CurrencyCodes/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Relations/Relations/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Equities/EquityInstruments/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Identifiers/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Release"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2019-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2019-2025 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides examples of how to represent simple equities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Equities Example Individuals Ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2019-2025 EDM Council, Inc.\nCopyright (c) 2019-2025 Object Management Group, Inc.\n\t\t\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\n\t\tSee https://opensource.org/licenses/MIT."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class that represents class A series shares in Alphabet Inc."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare" ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasShareClass" : [ {
+    "@value" : "A"
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassACommonStock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "2015-10-02"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabet Inc. class A common stock"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassAFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "ALPHABET INC"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH CL A"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "ALPHABET INC/SH CL A"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class A common share financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabet Inc. class A financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncEquityIssuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonNonVotingUnrestrictedFullyPaidRegisteredShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassCCapitalStock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabet Inc. class C capital stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncEquityIssuer"
+  } ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "2015-10-02"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/hasShareClass" : [ {
+    "@value" : "C"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESNUFR"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class that represents class C series shares in Alphabet Inc."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "ALPHABET INC"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH CAP SH NV"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "ALPHABET INC/SH CAP SH NV"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class C capital stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabet Inc. class C financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/AlphabetInc-US-CA"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "ALPHABET INC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. functional entity that is an issuer of stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Alphabet Inc. equity issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare" ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncEquityIssuer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Apple Inc. common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XLOMListedAppleIncCommonStock"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in Apple Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfCaliforniaJurisdiction"
+  } ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "1980-12-01"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "APPLE INC"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "APPLE INC/SH SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Apple Inc. common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/AppleInc-US-CA"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "APPLE INC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Apple Inc. common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000B9Y5X2",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000B9Y5X2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Apple Inc. common shares listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000B9Y5X2"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000BKZDM1",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000BKZDM1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Home Depot common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000BKZDM1"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000BLNQ16",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedInternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000BLNQ16"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for IBM common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000BLNQ16"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000BMX4N8",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000BMX4N8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Coca-Cola Company common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000BMX4N8"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000BR2WS4",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000BR2WS4"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Proctor & Gamble Company common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000BR2WS4"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000BWQFY7",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedWellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000BWQFY7"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Wells Fargo & Company common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000BWQFY7"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000DMBZW1",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedJPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000DMBZW1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for JPMorgan Chase & Co. common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000DMBZW1"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG000FY4VG8",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedCitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG000FY4VG8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Citigroup Inc. common shares listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG000FY4VG8"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5MQ8",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5MQ8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Coca-Cola Company common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5MQ8"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5N8V8",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5N8V8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Apple Inc. common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5N8V8"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5RTW7",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5RTW7"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Home Depot, Inc. common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5RTW7"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5S399",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5S399"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for IBM common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5S399"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5V4L9",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5V4L9"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for The Proctor & Gamble Company common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5V4L9"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S5XF23",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/WellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S5XF23"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Wells Fargo & Company common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S5XF23"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S72ZG4",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S72ZG4"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Citigroup Inc. common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S72ZG4"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG001S8CRC3",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG001S8CRC3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for JPMorgan Chase & Co. common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG001S8CRC3"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG009S39JY5",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG009S39JY5"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Alphabet Inc. class A common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG009S39JY5"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG009S3NB21",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG009S3NB21"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Alphabet Inc. class C common shares"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG009S3NB21"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG009S4MT03",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG009S4MT03"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Alphabet Inc. class A common shares listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG009S4MT03"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG009S4MVF2",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG009S4MVF2"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Alphabet Inc. class C common shares listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG009S4MVF2"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/BBG00JPR0LX8",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XLOMListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "BBG00JPR0LX8"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Financial Instrument Global Identifier (FIGI) for Apple Inc. common shares listed in the London Stock Exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "BBG00JPR0LX8"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/FinancialInstrumentGlobalIdentifier", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-02079K107",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "02079K107"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class C common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "02079K107"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-02079K305",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "02079K305"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class A common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "02079K305"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-037833100",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "037833100"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "037833100"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-172967424",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "172967424"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Citigroup Inc. common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "172967424"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-191216100",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "191216100"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Coca-Cola Company common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "191216100"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-437076102",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "437076102"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Home Depot, Inc. common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "437076102"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-459200101",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "459200101"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "IBM common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "459200101"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-46625H100",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "46625H100"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "JPMorgan Chase & Co. common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "46625H100"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-742718109",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "742718109"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Proctor & Gamble Company common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "742718109"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CUSIP-949746101",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/WellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "949746101"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Wells Fargo & Company common share CUSIP"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "949746101"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/CommitteeOnUniformSecuritiesIdentificationProceduresNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare" ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "1998-09-29"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedCitigroupIncCommonStock"
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Citigroup Inc. common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in Citigroup Inc."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "CITIGROUP INC"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "CITIGROUP INC/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Citigroup Inc. common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Citigroup Inc. common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/CitigroupInc-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "CITIGROUP INC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Citigroup Inc. functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Citigroup Inc. common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US02079K1079",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US02079K1079"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class C common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US02079K1079"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US02079K3059",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US02079K3059"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class A common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US02079K3059"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US0378331005",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US0378331005"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US0378331005"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US1729674242",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US1729674242"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Citigroup Inc. common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US1729674242"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US1912161007",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US1912161007"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Coca-Cola Company common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US1912161007"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US4370761029",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US4370761029"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Home Depot, Inc. common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US4370761029"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US4592001014",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US4592001014"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "IBM common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US4592001014"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US46625H1005",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US46625H1005"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "JPMorgan Chase & Co. common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US46625H1005"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US7427181091",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US7427181091"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Proctor & Gamble Company common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US7427181091"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/ISIN-US9497461015",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/WellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "US9497461015"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Wells Fargo & Company common share ISIN"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "US9497461015"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/InternationalSecuritiesIdentificationNumber", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in International Business Machines Corporation"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedInternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationEquityIssuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "International Business Machines Corporation common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfNewYorkJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationEquityIssuer"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "INTL BUS MACHIN"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "INTL BUS MACHIN/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "IBM common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "International Business Machines Corporation common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/InternationalBusinessMachinesCorporation-US-NY"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "INTL BUS MACHIN"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "IBM functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "International Business Machines Corporation common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "2000-12-28"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedJPMorganChaseAndCoCommonStock"
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "JPMorgan Chase & Co. common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in J.P. Morgan Chase & Co."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "JPMORGAN CHASE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "JPMORGAN CHASE/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "J.P. Morgan Chase & Co. common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "J.P. Morgan Chase & Co. common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/JPMorganChaseAndCo-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "JPMORGAN CHASE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "J.P. Morgan Chase & Co. functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "J.P. Morgan Chase & Co. common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/SEDOL-B0YQ5W0",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XLOMListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "B0YQ5W0"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common share SEDOL listed in the London Stock Exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "B0YQ5W0"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentificationIndividuals/StockExchangeDailyOfficialListCode", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock",
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in The Coca-Cola Company"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Coca-Cola Company common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "COCA COLA CO"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "COCA COLA CO/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Coca-Cola Company common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Coca-Cola Company common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/TheCoca-ColaCompany-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "COCA COLA CO"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Coca-Cola Company functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Coca-Cola Company common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "1981-09-22"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheHomeDepotIncCommonStock"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in The Home Depot, Inc."
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncEquityIssuer"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Home Depot, Inc. common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "HOME DEPOT INC"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "HOME DEPOT INC/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Home Depot, Inc. common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Home Depot, Inc. common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/TheHomeDepotInc-US-DE"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "HOME DEPOT INC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Home Depot, Inc. functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Home Depot, Inc. common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock",
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyEquityIssuer"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheProctorAndGambleCompanyCommonStock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Proctor & Gamble Company common stock"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "common share class representing shares in The Proctor & Gamble Company"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfOhioJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStockFinancialInstrumentShortName",
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "PROCTER & GAMBL"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasInstrumentDescription" : [ {
+    "@value" : "SH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "PROCTER & GAMBL/SH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Proctor & Gamble Company common stock financial instrument short name (FISN)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Proctor & Gamble Company common stock financial instrument short name"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/FinancialInstrumentShortName", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyEquityIssuer",
+  "https://www.omg.org/spec/Commons/RolesAndCompositions/isPlayedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/LegalEntities/NorthAmericanEntities/USExampleEntities/TheProctorAndGambleCompany-US-OH"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/hasIssuerShortName" : [ {
+    "@value" : "PROCTOR & GAMBL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Proctor & Gamble Company functional entity that is an issuer of common stock"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "The Proctor & Gamble Company common stock issuer"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ShareIssuer", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XLOM-0R2V",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XLOM"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XLOMListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "0R2V"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Apple Inc. common stock listed in the London Stock Exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XLOM - 0R2V"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNAS-AAPL",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "AAPL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Apple Inc. common stock listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS - AAPL"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNAS-GOOG",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "GOOG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Alphabet Inc. class C capital stock listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS - GOOG"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNAS-GOOGL",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "GOOGL"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Alphabet Inc. class A common stock listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS - GOOGL"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-C",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedCitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "C"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Citigroup Inc. common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - C"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-HD",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "HD"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for The Home Depot, Inc. common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - HD"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-IBM",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedInternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "IBM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Wells Fargo & Company common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - IBM"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-JPM",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedJPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "JPM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for JPMorgan Chase & Co. common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - JPM"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-KO",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "KO"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for The Coca-Cola Company common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - KO"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-PG",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "PG"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for The Proctor & Gamble Company common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - PG"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TickerSymbol-XNYS-WFC",
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/isRegisteredBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://www.omg.org/spec/Commons/Identifiers/identifies" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedWellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/hasTag" : [ {
+    "@value" : "WFC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "ticker symbol for Wells Fargo & Company common stock listed on the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS - WFC"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIdentification/TickerSymbol", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/WellsFargoCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isRegisteredWith" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USRegulatoryAgencies/SecuritiesAndExchangeRegulator"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasHomeExchange" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/isIssuedInForm" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BearerAndRegisteredForm"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesIssuance/BookEntryForm"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasOriginalPlaceOfListing" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNYS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isListedVia" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedWellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/hasPrincipalParty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/WellsFargoAndCompany"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityInstruments/ListedShare", "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/CommonVotingUnrestrictedFullyPaidRegisteredShare" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Wells Fargo & Company common share"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Relations/Relations/isIssuedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USExampleIndividuals/WellsFargoAndCompany"
+  } ],
+  "https://www.omg.org/spec/Commons/RegistrationAuthorities/hasRegistrationDate" : [ {
+    "@value" : "1998-09-11"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isNegotiable" : [ {
+    "@value" : true
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Wells Fargo common stock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isLegallyRecordedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/BE/GovernmentEntities/NorthAmericanJurisdiction/USGovernmentEntitiesAndJurisdictions/StateOfDelawareJurisdiction"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/isDenominatedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/isAssignable" : [ {
+    "@value" : false
+  } ],
+  "https://www.omg.org/spec/Commons/Classifiers/isClassifiedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquityCFIClassificationIndividuals/ESVUFR"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XLOMListedAppleIncCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XLOM"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common share listed in the London Stock Exchange"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XLOM-listed Apple Inc. common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassACommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassACommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "2004-08-01"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class A common share listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS-listed Alphabet Inc. class A common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAlphabetIncClassCCapitalStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AlphabetIncClassCCapitalStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "2004-08-01"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Alphabet Inc. class C capital stock listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS-listed Alphabet Inc. class C capital stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNASListedAppleIncCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/AppleIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/MarketsIndividuals/Facility-XNAS"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1980-12-12"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Apple Inc. common share listed in the Nasdaq (NASDAQ-NGS)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNAS-listed Apple Inc. common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedCitigroupIncCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/CitigroupIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1988-10-08"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Citigroup Inc. common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed Citigroup Inc. common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedInternationalBusinessMachinesCorporationCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/InternationalBusinessMachinesCorporationCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1924-02-14"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "IBM common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed IBM common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedJPMorganChaseAndCoCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/JPMorganChaseAndCoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1978-10-06"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "JPMorgan Chase & Co. common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed JPMorgan Chase & Co. common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheCoca-ColaCompanyCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheCoca-ColaCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1919-09-05"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Coca-Cola Company common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed The Coca-Cola Company common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheHomeDepotIncCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheHomeDepotIncCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1984-04-19"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Home Depot, Inc. common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed The Home Depot, Inc. common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedTheProctorAndGambleCompanyCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/TheProctorAndGambleCompanyCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/hasListingDate" : [ {
+    "@value" : "1978-01-13"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "The Proctor & Gamble Company common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed The Proctor & Gamble Company common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/XNYSListedWellsFargoCommonStock",
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/lists" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/WellsFargoCommonStock"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/isTradedOn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FunctionalEntities/NorthAmericanEntities/USMarketsAndExchangesIndividuals/NewYorkStockExchange"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CurrencyAmount/hasCurrency" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/ISO4217-CurrencyCodes/USDollar"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "Wells Fargo & Company common share listed in the New York Stock Exchange (NYSE)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Equities/EquitiesExampleIndividuals/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "XNYS-listed Wells Fargo common stock"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/SEC/Securities/SecuritiesListings/Listing", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]

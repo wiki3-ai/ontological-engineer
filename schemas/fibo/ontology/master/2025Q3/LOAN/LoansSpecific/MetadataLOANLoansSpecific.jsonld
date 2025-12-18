@@ -1,0 +1,102 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/MetadataLOANLoansSpecific/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2024 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2024 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/LOAN/LoansSpecific/MetadataLOANLoansSpecific/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata for the EDMC-FIBO Loans (LOAN) Loans - Specific Module"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module contains ontologies of concepts descriptive of a range of loans, excluding real estate, including commercial and consumer, loans differentiated by purpose, and their differentiating characteristics."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2024-11-08T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/MetadataLOANLoansSpecific/LoansSpecificModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "agnos.ai U.K. Ltd"
+  }, {
+    "@value" : "Hypercube Ltd."
+  }, {
+    "@value" : "FIÙTUR"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "Wells Fargo"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Semantic Arts, Inc."
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CommercialLoans/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/LoanProducts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CardAccounts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/ConsumerLoans/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/MarineFinance/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/GreenLoans/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/StudentLoans/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2024 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2024 Object Management Group, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/MetadataLOANLoansSpecific/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module contains ontologies of concepts descriptive of a range of loans, excluding real estate, including commercial and consumer loans differentiated by purpose."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Loans (LOAN) Loans Specific Module"
+  }, {
+    "@value" : "FIBO LOAN Loans Specific Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "loans specific module"
+  } ]
+} ]

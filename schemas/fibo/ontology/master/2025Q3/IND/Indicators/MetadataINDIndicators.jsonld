@@ -1,0 +1,114 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/MetadataINDIndicators/",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Indices and Indicators (IND) Indicators Module"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies for concepts common to all market indices and market indicators, including economic measures."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/Indicators/MetadataINDIndicators/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-06T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-08-27T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/MetadataINDIndicators/IndicatorsModule",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "indicators module"
+  } ],
+  "@type" : [ "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Census Bureau (US Department of Commerce)"
+  }, {
+    "@value" : "Dassault Systemes/No Magic"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Bureau of Labor Statistics (BLS, US Department of Commerce)"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  }, {
+    "@value" : "88 Solutions"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Bank of New York Mellon"
+  }, {
+    "@value" : "agnos.ai UK Ltd"
+  }, {
+    "@value" : "Wells Fargo Bank, N. A."
+  }, {
+    "@value" : "Federal Reserve Bank of Kansas City"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Office of Financial Research (OFR), U.S. Department of the Treasury"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "Bureau of Economic Analysis (BEA, US Department of Commerce)"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/Indicators/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Indices and Indicators (IND) Indicators Module"
+  }, {
+    "@value" : "FIBO IND Indicators Module"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies for concepts common to all market indices and market indicators, including economic measures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/MetadataINDIndicators/"
+  } ]
+} ]

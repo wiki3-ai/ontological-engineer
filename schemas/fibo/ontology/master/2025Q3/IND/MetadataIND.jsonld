@@ -1,0 +1,136 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/MetadataIND/",
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides metadata about the FIBO Indices and Indicators (IND) Domain, which covers market indices and reference rates including economic indicators, foreign exchange, interest rates, and other benchmarks."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/EconomicIndicators/MetadataINDEconomicIndicators/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/Indicators/MetadataINDIndicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/ForeignExchange/MetadataINDForeignExchange/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/InterestRates/MetadataINDInterestRates/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/MarketIndices/MetadataINDMarketIndices/"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-08-27T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/MetadataIND/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2014-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2014-2023 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Indices and Indicators (IND) Domain"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/MetadataIND/INDDomain",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Bureau of Economic Analysis (BEA, US Department of Commerce)"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "agnos.ai UK Ltd"
+  }, {
+    "@value" : "Dassault Systemes/No Magic"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "88 Solutions"
+  }, {
+    "@value" : "Bureau of Labor Statistics (BLS, US Department of Commerce)"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "Office of Financial Research (OFR), U.S. Department of the Treasury"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Federal Reserve Bank of Kansas City"
+  }, {
+    "@value" : "Wells Fargo Bank, N. A."
+  }, {
+    "@value" : "Bank of New York Mellon"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Census Bureau (US Department of Commerce)"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2014-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2014-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO IND Domain"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Indices and Indicators (IND) Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/MetadataIND/"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/MetadataINDForeignExchange/ForeignExchangeModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/InterestRates/MetadataINDInterestRates/InterestRatesModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/Indicators/MetadataINDIndicators/IndicatorsModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators/EconomicIndicatorsModule"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/MarketIndices/MetadataINDMarketIndices/MarketIndicesModule"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The FIBO Indices and Indicators (IND) Domain covers market indices and reference rates including economic indicators, foreign exchange, interest rates, and other benchmarks. The ontologies cover quoted interest rates, economic measures such as employment rates, and quoted indices required to support baskets of securities, including specific kinds of securities in share indices or bond indices, as well as credit indices."
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "https://wiki.edmcouncil.org/display/IND/FIBO+-+FCT+-+Indices+and+Indicators+Home",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "indices and indicators module"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ]
+} ]

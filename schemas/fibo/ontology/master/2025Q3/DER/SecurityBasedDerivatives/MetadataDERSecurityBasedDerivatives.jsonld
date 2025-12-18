@@ -1,0 +1,111 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The security-based derivatives module covers derivatives that have underlying securities, including those based on market indices or baskets securities."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Derivatives (DER) Security-Based Derivatives Module"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-03T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/SecurityBasedDerivativesModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "agnos.ai"
+  }, {
+    "@value" : "Working Ontologist"
+  }, {
+    "@value" : "Exprentis"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Quarule"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Commodities Futures Trading Commission (CFTC)"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "Mizuho Financial Group, Inc."
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Credit Suisse"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Office of Financial Research (US Dept of the Treasury)"
+  }, {
+    "@value" : "Wells Fargo Bank, N.A."
+  }, {
+    "@value" : "Bloomberg LP"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The security-based derivatives module covers derivatives that have underlying securities, including those based on market indices or baskets securities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://spec.edmcouncil.org/fibo/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/SecurityBasedDerivatives/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/EquitySwaps/"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO DER Security-based Derivatives Module"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Derivatives (DER) Security-based Derivatives Module"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/SecurityBasedDerivatives/MetadataDERSecurityBasedDerivatives/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "security-based derivatives module"
+  } ]
+} ]

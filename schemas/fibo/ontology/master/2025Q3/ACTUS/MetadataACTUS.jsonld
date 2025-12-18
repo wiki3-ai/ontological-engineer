@@ -1,0 +1,85 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/MetadataACTUS/",
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2025-01-03T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology provides metadata about the FIBO Algorithmic Contract Types Unified Standards (ACTUS) Domain, which includes the ACTUS controlled vocabulary and maps it to FIBO, providing the corresponding semantics and enabling integration of knowledge graphs based on FIBO with the ACTUS system."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/ACTUS/MetadataACTUS/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation\nCopyright (c) 2024-2025 EDM Council, Inc.\nCopyright (c) 2024-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\nSee https://opensource.org/licenses/MIT."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2024-2025 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2024-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2024-12-27T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the FIBO Algorithmic Contract Types Unified Standards (ACTUS) Domain"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/MetadataACTUS/ACTUSDomain",
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The FIBO Algorithmic Contract Types Unified Standards (ACTUS) Domain includes the ACTUS controlled vocabulary and maps it to FIBO, providing the corresponding semantics and enabling integration of knowledge graphs based on FIBO with the ACTUS system."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/MetadataACTUS/"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Federated Knowledge LLC"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "ProBanker Simulations, LLC"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@value" : "https://spec.edmcouncil.org/fibo/",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation\nCopyright (c) 2024-2025 EDM Council, Inc.\nCopyright (c) 2024-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\nSee https://opensource.org/licenses/MIT."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO ACTUS Domain"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Algorithmic Contract Types Unified Standards (ACTUS) Domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS domain"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2024-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2024-2025 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation"
+  } ]
+} ]

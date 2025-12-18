@@ -1,0 +1,114 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/MetadataINDForeignExchange/",
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies defining concepts to do with foreign exchange."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-06T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/ForeignExchange/MetadataINDForeignExchange/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-08-27T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Indices and Indicators (IND) Foreign Exchange Module"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/MetadataINDForeignExchange/ForeignExchangeModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "Bureau of Labor Statistics (BLS, US Department of Commerce)"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Office of Financial Research (OFR), U.S. Department of the Treasury"
+  }, {
+    "@value" : "agnos.ai UK Ltd"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Dassault Systemes/No Magic"
+  }, {
+    "@value" : "88 Solutions"
+  }, {
+    "@value" : "Federal Reserve Bank of Kansas City"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Census Bureau (US Department of Commerce)"
+  }, {
+    "@value" : "Bureau of Economic Analysis (BEA, US Department of Commerce)"
+  }, {
+    "@value" : "Wells Fargo Bank, N. A."
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Bank of New York Mellon"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Deutsche Bank"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/MetadataINDForeignExchange/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "foreign exchange module"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Financial Industry Business Ontology (FIBO) Indices and Indicators (IND) Foreign Exchange Module"
+  }, {
+    "@value" : "FIBO IND Foreign Exchange Module"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This module includes ontologies defining concepts to do with foreign exchange."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://www.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/ForeignExchange/ForeignExchange/"
+  } ]
+} ]

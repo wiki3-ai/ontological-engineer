@@ -1,0 +1,114 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/CAE/MetadataCAE/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/CAE/CorporateEvents/MetadataCAECorporateEvents/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/CAE/MetadataCAE/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The Corporate Actions and Events (CAE) domain covers events and actions that may occur during the life of a security, ranging from announcements regarding stock offerings, splits, dividends and so forth, as well as more general business events that are relevant to investors and regulators alike."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-03-31T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Corporate Actions and Events (CAE) Domain"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/CAE/MetadataCAE/CAEDomain",
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO CAE Domain"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Corporate Actions and Events (CAE) Domain"
+  } ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Census Bureau (US Department of Commerce)"
+  }, {
+    "@value" : "Office of Financial Research (OFR), U.S. Department of the Treasury"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "Wells Fargo Bank, N. A."
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "Dassault Systemes/No Magic"
+  }, {
+    "@value" : "Bureau of Labor Statistics (BLS, US Department of Commerce)"
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Bank of New York Mellon"
+  }, {
+    "@value" : "Bureau of Economic Analysis (BEA, US Department of Commerce)"
+  }, {
+    "@value" : "Federal Reserve Bank of Kansas City"
+  }, {
+    "@value" : "agnos.ai UK Ltd"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "corporate actions and events domain"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/CAE/MetadataCAE/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2018-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2018-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/CAE/CorporateEvents/MetadataCAECorporateEvents/CorporateEventsModule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The Corporate Actions and Events (CAE) domain covers events and actions that may occur during the life of a security, ranging from announcements regarding stock offerings, splits, dividends and so forth, as well as more general business events that are relevant to investors and regulators alike."
+  } ]
+} ]

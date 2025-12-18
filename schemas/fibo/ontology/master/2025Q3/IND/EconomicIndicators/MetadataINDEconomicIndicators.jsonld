@@ -1,0 +1,118 @@
+[ {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2018-08-27T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The economic indicators module includes ontologies defining concepts to do with published economic indicators. These give some indication of the state of some economy. Indicators of this type are usually published by governments or government agencies, or by international agencies or agencies of countries other than the ones reported on. Examples include Gross Domestic Product (GDP) and unemployment rates."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Metadata about the EDMC-FIBO Indices and Indicators (IND) Economic Indicators Module"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "https://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2023-02-06T18:00:00",
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/IND/EconomicIndicators/MetadataINDEconomicIndicators/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators/EconomicIndicatorsModule",
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Deutsche Bank"
+  }, {
+    "@value" : "Wells Fargo Bank, N. A."
+  }, {
+    "@value" : "Bureau of Labor Statistics (BLS, US Department of Commerce)"
+  }, {
+    "@value" : "John F. Tierney"
+  }, {
+    "@value" : "HP Enterprise / Mphasis"
+  }, {
+    "@value" : "Adaptive, Inc."
+  }, {
+    "@value" : "Nordea Bank AB"
+  }, {
+    "@value" : "State Street Bank and Trust"
+  }, {
+    "@value" : "Dassault Systemes/No Magic"
+  }, {
+    "@value" : "Bureau of Economic Analysis (BEA, US Department of Commerce)"
+  }, {
+    "@value" : "88 Solutions"
+  }, {
+    "@value" : "Bloomberg LP"
+  }, {
+    "@value" : "John F. Gemski"
+  }, {
+    "@value" : "Statistics Canada"
+  }, {
+    "@value" : "Tahoe Blue Ltd"
+  }, {
+    "@value" : "Thematix Partners LLC"
+  }, {
+    "@value" : "Federal Reserve Bank of Kansas City"
+  }, {
+    "@value" : "Census Bureau (US Department of Commerce)"
+  }, {
+    "@value" : "agnos.ai UK Ltd"
+  }, {
+    "@value" : "Citigroup"
+  }, {
+    "@value" : "Office of Financial Research (OFR), U.S. Department of the Treasury"
+  }, {
+    "@value" : "Bank of New York Mellon"
+  }, {
+    "@value" : "Pinnacle Bank (Morgan Hill, California)"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Module" ],
+  "http://purl.org/dc/terms/hasPart" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/NorthAmericanIndicators/CAEconomicIndicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/NorthAmericanIndicators/USEconomicIndicators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/EconomicIndicators/"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://opensource.org/licenses/MIT",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2015-2023 EDM Council, Inc."
+  }, {
+    "@value" : "Copyright (c) 2015-2023 Object Management Group, Inc."
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "FIBO IND Economic Indicators Module"
+  }, {
+    "@value" : "Financial Industry Business Ontology (FIBO) Indices and Indicators (IND) Economic Indicators Module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "economic indicators module"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/IND/EconomicIndicators/MetadataINDEconomicIndicators/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "The economic indicators module includes ontologies defining concepts to do with published economic indicators. These give some indication of the state of some economy. Indicators of this type are usually published by governments or goernment agencies, or by international agencies or agencies of countries other than the ones reported on. Examples include Gross Domestic Product (GDP) and unemployment rates."
+  } ]
+} ]

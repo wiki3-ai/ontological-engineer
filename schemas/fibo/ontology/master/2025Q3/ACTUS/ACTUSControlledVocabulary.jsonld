@@ -1,0 +1,2091 @@
+[ {
+  "@id" : "_:b1",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b10",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b16"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b11",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlowStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/classifies"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b12",
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/isDefinedIn"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b13",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/EquityInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b14",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasCallFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b15",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditEnhancementAgreement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b16",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/WrittenContract"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b17",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CommodityInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b18",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b19",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/ExoticOption"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b2",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/CashInstrument"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b20",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b38"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b21",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlowStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/classifies"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b22",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Option"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b23",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Accounting/CashFlows/CashFlowStructure"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/classifies"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b26",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/defines"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b27",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b29",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b30"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b3",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidAtMaturity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b30",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:b14"
+    }, {
+      "@id" : "_:b58"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b31",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/TotalReturnSwap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b32",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b33",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b35",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/CallFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasCallFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b36",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/PoolBackedSecurity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b37",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/PoolBackedSecurities/PoolBackedSecurity"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b38",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/WrittenContract"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b39",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b40"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b4",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/CreditDerivatives/CreditDefaultSwaps/CreditDefaultSwap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b40",
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/WrittenContract"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/ProductsAndServices/ClientsAndAccounts/InvestmentOrDepositAccount"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b41",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/BondWithWarrant"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b42",
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/isDefinedIn"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b43",
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b45",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Agreements/Contracts/CollateralAgreement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b46",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Options/InterestRateOption"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b50",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/Bonds/PerpetualBond"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b51",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "_:b53"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b52",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b53",
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:b35"
+    }, {
+      "@id" : "https://spec.edmcouncil.org/fibo/ontology/LOAN/LoansSpecific/CommercialLoans/CommercialLoan"
+    } ]
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "_:b54",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/RateDerivatives/IRSwaps/PlainVanillaInterestRateSwap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b55",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/DerivativeInstrument"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b57",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/TradedShortTermDebt/RepurchaseAgreement"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b58",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/PutFeature"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/SEC/Debt/DebtInstruments/hasPutFeature"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b59",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/DER/DerivativesContracts/Swaps/Swap"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b6",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/FinancialInstruments/FinancialInstruments/Future"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b7",
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FBC/DebtAndEquities/Debt/CreditAgreementRepaidPeriodically"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/refersTo"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "_:b9",
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/isDefinedIn"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/copyright" : [ {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation"
+  }, {
+    "@value" : "Copyright (c) 2024-2025 Object Management Group, Inc."
+  }, {
+    "@value" : "Copyright (c) 2024-2025 EDM Council, Inc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS Controlled Vocabulary"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Utilities/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/LOAN/LoansSpecific/CommercialLoans/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/PoolBackedSecurities/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/ProductsAndServices/ClientsAndAccounts/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Documents/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Collections/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/CreditDerivatives/CreditDefaultSwaps/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/DebtAndEquities/Debt/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/CodesAndCodeSets/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/DebtInstruments/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/DerivativesContracts/Swaps/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/AnnotationVocabulary/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/Bonds/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/RateDerivatives/IRSwaps/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/TextDatatype/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Agreements/Contracts/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/SEC/Debt/TradedShortTermDebt/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/DER/DerivativesContracts/Options/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FND/Accounting/CashFlows/"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/FBC/FinancialInstruments/FinancialInstruments/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/hasMaturityLevel" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/FND/Utilities/AnnotationVocabulary/Provisional"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/master/2025Q3/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology represents the ACTUS taxonomy as a controlled vocabulary and maps it to FIBO, providing the corresponding semantics and enabling integration of knowledge graphs based on FIBO with the ACTUS system."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "Copyright (c) 2024-2025 ACTUS Financial Research Foundation\nCopyright (c) 2024-2025 EDM Council, Inc.\nCopyright (c) 2024-2025 Object Management Group, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\n\t\t\nSee https://opensource.org/licenses/MIT."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "classifier for the cashflows generated by a group of credit agreements, financial instruments, or related contracts based on their common characteristics from an ACTUS perspective"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow family"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b20"
+  }, {
+    "@id" : "_:b21"
+  }, {
+    "@id" : "_:b9"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/Classifier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic",
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow family classifier that applies to single (simple) contracts"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow family - basic"
+  } ],
+  "http://www.w3.org/2002/07/owl#differentFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Basic"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Basic, or atomic contracts include those individual contracts that have schedules associated with them, i.e., that have traditional maturity dates and future cash flows, or that represent demand deposits, i.e., accounts that have no structured maturity term, whose cash flows or amounts depend on counterparty behavior, as well as other assets such as stocks. Such contracts and related assets are typically bilateral."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow family classifier that applies to combined (complex, derived) contracts, such as derivatives"
+  } ],
+  "http://www.w3.org/2002/07/owl#differentFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Combined"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow family - combined"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow family - credit enhancement"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow family classifier that applies to agreements that are related to other agreements or accounts, and provide credit support to existing contracts"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Credit Enhancement"
+  } ],
+  "http://www.w3.org/2002/07/owl#differentFrom" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "classifier for the cashflows generated by a group of credit agreements, financial instruments, or related contracts, within an ACTUS cashflow family, based on their more specific, common characteristics"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:b10"
+  }, {
+    "@id" : "_:b11"
+  }, {
+    "@id" : "_:b12"
+  }, {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/Classifier"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Asymmetric"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to combined contracts processed as members of the asymmetric class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - asymmetric"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-CreditEnhancement",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Credit Enhancement"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to basic contracts processed as members of the credit enhancement class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - credit enhancement"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Fixed Income"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to basic contracts processed as members of the fixed-income class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - fixed income"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Ownership",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Ownership"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to basic contracts processed as members of the ownership class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - ownership"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Securitization",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Securitization"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to combined contracts processed as members of the securitization class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - securitization"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Symmetric",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "Symmetric"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow category that applies to combined contracts processed as members of the symmetric class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS cashflow category - symmetric"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType",
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Classifiers/Classifier"
+  }, {
+    "@id" : "_:b23"
+  }, {
+    "@id" : "_:b42"
+  }, {
+    "@id" : "_:b43"
+  }, {
+    "@id" : "_:b39"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/explanatoryNote" : [ {
+    "@value" : "Cashflows in ACTUS are classified as basic, combined / derivatives, or credit enhancement, and then each of these areas breaks down into a number of subclassifications."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "classifier for an algorithmic capability, i.e., the rules, from which the cashflows for a credit agreement, financial instrument or related contract, based on their characteristics, can be analyzed"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CT"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Annuity",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is paid fully at the initial exchange date and principal plus interest is repaid periodically in constant amounts until maturity"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b32"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - annuity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "classic level payment mortgages, leasing contracts, etc."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "If the contract has a variable rate, the total amount of principal and interest is recalculated to be fully matured at the maturity date."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "ANN"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-BondWithWarrant",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "BNDWR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - bond with warrant"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b41"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to bonds with attached warrants"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Warrants."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-BoundaryControlledSwitch",
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to derivative contracts with subcontract legs which can be activated (knocked in) or extinguished (knocked out) when the underlying asset price reaches a specified value"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b55"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Need to figure out what restrictions are needed on derivative instrument to limit the coverage to the right set of agreements, and then map to those."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - boundary controlled switch"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Knock-in and Knock-out barrier options with a single boundary. Bonus contracts with payout when underlying asset price remains above or below a specified level for specified period."
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "BCS"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "The underlying asset may be a stock, index, or exchange-traded fund. Boundary controlled switch contracts with a single boundary are currently defined."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-CallMoney",
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Need to figure out whether this only applies to commercial loans and whether additional restrictions are needed to limit coverage to loans whose borrowers and lenders are financial institutions, possibly other things (short term?, interbank only?)."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - call money"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Once called, they must be repaid after the stipulated notice period."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b51"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Interbank loans with call features."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to loans that are rolled over as long as they are not called"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CLM"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-CapFloorOption",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - cap floor option"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Cap and floor options."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Need to figure out what restrictions are needed on derivative instrument to limit the coverage to the right set of agreements, and then map to those."
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CAPFL"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b46"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to interest rate options expressed with a maximum or minimum interest rate"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Cash",
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CSH"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Rather than classifying the account, should this classify the value of the funds held in that account or something similar?"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Cash, deposits at a central or other institution"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to cash or cash equivalent positions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Ownership"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - cash"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b1"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Collateral",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to relationships between collateral, an obligee and a debtor, covering the exposure from the debtor with the collateral"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b45"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-CreditEnhancement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CEC"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Rather than classifying the collateral agreement, should this classify any debt instrument that is collateralized?"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Mortgages include a collateral contract. Any coverage with financial or physical collateral."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - collateral"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Commodity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CEC"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to movements of commodities such as oil, gas or even houses that can serve as underlyings of commodity futures, guarantees or simply asset positions"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Ownership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - commodity"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Oil, gas, electricity, houses etc."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b17"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ConvertibleNote",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b29"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - convertible note"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Should this also only classify contracts that are convertible? Does this mean an additional restriction? Does it really apply to any sort of loan?"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "If the option is exercised, the underlying bond ceases to exist."
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Callable and puttable bonds or loans."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to bonds with a call or put option"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "BNDCP"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-CreditDefaultSwap",
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "All sorts of credit default swaps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - credit default swap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b4"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts for which a payment is triggered if one or more of the underlying counterparties defaults"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#editorialNote" : [ {
+    "@value" : "Is this really limited to CDS, or should it apply to anything (or maybe any derivative) where one of the parties to an underlying contract that triggers payment defaults?"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CDSWP"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-CreditLinkedNote",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - credit linked note"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CLNTE"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to securities with an embedded credit default swap, linking the credit risk of a reference entity to the note's performance"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ExoticAnnuity",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b33"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is paid fully at the initial exchange date and principal plus interest payments may include step ups in principal and/or interest until maturity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - exotic annuity"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "A special version of this kind are teaser rate loans and mortgages with annuity features."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "ANX"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Highly flexible to match totally irregular principal payments. Principal can also be paid out in steps."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ExoticLinearAmortizer",
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "A special version of this kind are teaser rate loans and mortgages."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Loans with highly flexible schedules to match totally irregular principal payments are possible. In such cases, the principal can also be paid out in steps."
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - exotic linear amortizer"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "LAX"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b18"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is typically, but not always, paid fully at the initial exchange date and where the principal is typically repaid in equal amounts until a step change or maturity, with interest payments decreasing accordingly until a step change in the interest amount"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ExoticNegativeAmortizer",
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "NAX"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Highly flexible to match totally irregular principal payments. Principal can also be paid out in steps."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to negative amortizing contracts but allowing step ups in principal and interest"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - exotic negative amortizer"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b27"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "A special version of this kind are teaser rate loans and mortgages with a variable maturity date."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ExoticOption",
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b19"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - exotic option"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "As of current, most of the exotic options which were popular before 2008 are out of favor and factually irrelevant. Which of the exotic options will be implemented will depend on the real relevance in the future."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to exotic options"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "EXOTi"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Knock-in and Knock-out, Barrier, Ladder, Rainbow options etc."
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-ForeignExchangeOutright",
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Standard interest rate, FX, stock and commodity futures."
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "FXOUT"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to agreements where two parties agree to exchange fixed cash flows in different currencies at a specified future date"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Symmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - foreign exchange outright"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Future",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Symmetric"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Standard interest rate, FX, stock and commodity futures."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Keeps track of value changes for any basic contract as underlying (PAM, ANN etc. but also FXOUT, STK, COM). Handles margining calls."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to futures"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "FUTUR"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b6"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - future"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Guarantee",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to credit enhancements that create a relationship between a guarantor, an obligee and a debtor, moving the exposure from the debtor to the guarantor"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b15"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-CreditEnhancement"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "CEG"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Personal guarantee. Government guarantee. Underlyings of CDO's."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - guarantee"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-LinearAmortizer",
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Standard amortizing loans with fixed principal repayments."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b7"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "LAM"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Interest payments decrease over time as the outstanding principal reduces."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is paid fully at the initial exchange date and where the principal is repaid in equal amounts until maturity, with interest payments decreasing accordingly"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - linear amortizer"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Margining",
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-CreditEnhancement"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "MAR"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - margining"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to margin contracts that traces the value changes and the different margin categories like inital and variation margin"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Margin contracts as applied in central depositories for any underlying or portfolio of underlying instruments."
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-NegativeAmortizer",
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "For loans where scheduled payments are insufficient to cover interest due to an increase in the rate, the principal increases with deferred interest payments leading to growing principal balances, and extending the maturity date."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b52"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "NAM"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Special class of ARMs (adjustable rate mortgages), certain other loans, with payment caps."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - negative amortizer"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is paid fully at the initial exchange date and principal plus interest is repaid periodically in constant amounts until maturity, however, when resetting the rate, the total payment (principal plus interest remains constant) thus the maturity changes"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Option",
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Single, periodic and continuous strike is supported."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - option"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that calculates straight option pay-off for any basic contract as underlying (PAM, ANN etc.) but also SWAPS, FXOUT, STK and COM"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b22"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "European, American and Bermudan options with Interest rate, FX and stock futures as underlying instruments."
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "OPTNS"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-PerpetualBond",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b50"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "PBN"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - perpetual bond"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Interest is paid into eternity if is not terminated."
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Consoles, war loans."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to bonds without any maturity date"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-PlainVanillaSwap",
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Symmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b54"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "More than 90% of all interest rate swaps follow this simple pattern."
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "SWPPV"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to swaps where the underlyings are always two identical PAM's however with one leg fixed and the other variable"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - plain vanilla swap"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-PrincipalAtMaturity",
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "all kinds of bonds, term deposits, bullet loans, and so forth"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "PAM"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b3"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - principal at maturity"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal is paid fully at the initial exchange date and repaid at maturity"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-RepurchaseAgreement",
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b57"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts that control and manage the sale and repurchase of assets on the books"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Classical repo and reverse repo agreements."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-CreditEnhancement"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-CreditEnhancement"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - repurchase agreement"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "REP"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-SecuritizationCreditRisk",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - securitization credit risk"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Securitization"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to securitization contracts ranked according to credit default"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b36"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "CDOs"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "SCRCR"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-SecuritizationMarketRisk",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - securitization market risk"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to securitization contracts where all underlying contracts are treated equally"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "SCRMR"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "ABS's, MBS's of all sorts. Could be a simple tranche or more complex tranch like interest only and principal only."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Securitization"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "The buyer of a tranche gets a part of the cash-flows."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b37"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Stock",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "All straight stocks."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - stock"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b13"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "STK"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Ownership"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to equity instruments representing ownership in a company, that is bought at a certain amount (normally market price), that then follows an index"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-Swap",
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Normally one leg is fixed, the other variable. However all variants possible including different currencies for cross currency swaps, basic swaps or even different principal exchange programs."
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  }, {
+    "@id" : "_:b59"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Symmetric"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "All kind of swaps. The variety is defined by the underlying CT's which often are PAM and ANN in all its flavors. With each new basic CT the variety rises."
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - swap"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "SWAPS"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to derivative contracts where two parties exchange contracts"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-TotalReturnSwap",
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-Asymmetric"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Combined"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to swaps in which one party makes payments based on a set rate, either fixed or variable, while the other party makes payments based on the return of an underlying asset, which includes both the income it generates and any capital gains"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "TRSWP"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b31"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - total return swap"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType-UndefinedMaturityProfile",
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "cashflow classifier that applies to contracts whose principal may be paid in and out at any point in time without prefixed schedule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ACTUS contract type - undefined maturity profile"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#note" : [ {
+    "@value" : "Interest calculated on outstanding and capitalized periodically. Needs link to a behavioral function describing expected flows."
+  } ],
+  "http://purl.org/dc/terms/source" : [ {
+    "@value" : "https://www.actusfrf.org/taxonomy"
+  } ],
+  "https://www.omg.org/spec/Commons/Collections/isMemberOf" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "https://www.omg.org/spec/Commons/TextDatatype/hasTextValue" : [ {
+    "@value" : "UMP"
+  } ],
+  "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription" : [ {
+    "@value" : "Saving products of all kind, current accounts. In some countries even variable rate mortgages can be represented with this contract type."
+  } ],
+  "http://www.w3.org/2004/02/skos/core#isNarrowerThan" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashflowCategory-FixedIncome"
+  }, {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSCashFlowFamily-Basic"
+  } ],
+  "https://www.omg.org/spec/Commons/Designators/isDefinedIn" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/ACTUSContractType"
+  } ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/AlgorithmicContractTypesClassificationScheme",
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/adaptedFrom" : [ {
+    "@value" : "https://www.actusfrf.org/methodology",
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI"
+  } ],
+  "https://www.omg.org/spec/Commons/AnnotationVocabulary/abbreviation" : [ {
+    "@value" : "ACTUS classification scheme"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "classification scheme behind the ACTUS modeling paradigm, in which standardized Contract Types (CTs) are the granular building blocks of the financial world"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Algorithmic Contract Types classification scheme"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "_:b26"
+  } ],
+  "@type" : [ "https://www.omg.org/spec/Commons/CodesAndCodeSets/CodeSet", "https://www.omg.org/spec/Commons/Classifiers/ClassificationScheme", "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/hasCoverageDescription",
+  "http://www.w3.org/2004/02/skos/core#definition" : [ {
+    "@value" : "describes the contracts that the classifier applies to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "https://spec.edmcouncil.org/fibo/ontology/ACTUS/ACTUSControlledVocabulary/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has coverage description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://www.omg.org/spec/Commons/Designators/hasDescription"
+  } ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+} ]
