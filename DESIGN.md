@@ -27,30 +27,30 @@ Wikipedia Article
          │
          ▼
 ┌─────────────────────────────────────────────┐
-│ data/{article_slug}/                        │
-│   chunks_{timestamp}.ipynb                  │  Markdown cells with source text
+│ data/{article_slug}/{timestamp}/            │
+│   chunks.ipynb                              │  Markdown cells with source text
 │                                             │  + context breadcrumbs + CID sigs
 └────────┬────────────────────────────────────┘
          │ LLM extraction
          ▼
 ┌─────────────────────────────────────────────┐
-│ data/{article_slug}/                        │
-│   facts_{timestamp}.ipynb                   │  Markdown cells with factual statements
+│ data/{article_slug}/{timestamp}/            │
+│   facts.ipynb                               │  Markdown cells with factual statements
 │                                             │  + CID signatures
 └────────┬────────────────────────────────────┘
          │ LLM conversion (with tool-based triple output)
          ▼
 ┌─────────────────────────────────────────────┐
-│ data/{article_slug}/                        │
-│   rdf_{timestamp}.ipynb                     │  Raw cells with Turtle RDF
+│ data/{article_slug}/{timestamp}/            │
+│   rdf.ipynb                                 │  Raw cells with Turtle RDF
 │                                             │  (triples emitted via tools)
 └────────┬────────────────────────────────────┘
          │ Export
          ▼
 ┌─────────────────────────────────────────────┐
-│ data/{article_slug}/                        │
-│   triples_{timestamp}.ttl                   │  Combined Turtle file
-│   registry_{timestamp}.json                 │  Entity registry snapshot
+│ data/{article_slug}/{timestamp}/            │
+│   triples.ttl                               │  Combined Turtle file
+│   registry.json                             │  Entity registry snapshot
 └─────────────────────────────────────────────┘
 
 Schema Vocabulary Support:
@@ -74,22 +74,31 @@ Schema Vocabulary Support:
 
 ### Output Directory Structure
 
-Each article gets its own subdirectory under `data/` based on the article slug:
+Each article gets its own subdirectory under `data/`, with a timestamp subdirectory for each run. This allows files within a run to reference each other with simple relative paths:
 
 ```
 data/
-├── vocab_cache/           # Shared schema.org embeddings
+├── vocab_cache/                  # Shared schema.org embeddings
 │   ├── schema.json
 │   └── schema.npy
-└── albert_einstein/       # Per-article output
-    ├── chunks_20241218_143022.ipynb
-    ├── facts_20241218_143022.ipynb
-    ├── rdf_20241218_143022.ipynb
-    ├── triples_20241218_143022.ttl
-    └── registry_20241218_143022.json
+└── albert_einstein/              # Per-article output
+    ├── 20241218_143022/          # Run timestamp directory
+    │   ├── chunks.ipynb          # Source text chunks
+    │   ├── facts.ipynb           # Extracted facts  
+    │   ├── rdf.ipynb             # RDF triples
+    │   ├── triples.ttl           # Combined Turtle export
+    │   └── registry.json         # Entity registry snapshot
+    └── 20241219_091500/          # Another run (preserved)
+        ├── chunks.ipynb
+        ├── facts.ipynb
+        └── ...
 ```
 
-Timestamped filenames allow multiple runs to be preserved for comparison.
+**Benefits of timestamp-as-subdirectory:**
+- Simple filenames (`chunks.ipynb` instead of `chunks_20241218_143022.ipynb`)
+- Files can reference each other with relative paths (e.g., `source_notebook: facts.ipynb`)
+- Multiple runs are preserved for comparison
+- Clean directory listing per run
 
 ## Content ID (CID) System
 
@@ -127,7 +136,7 @@ This ensures:
 
 ## Intermediate Notebook Structure
 
-### Chunks Notebook (`{article}_chunks.ipynb`)
+### Chunks Notebook (`chunks.ipynb`)
 
 | Cell # | Type | Content |
 |--------|------|---------|
@@ -149,7 +158,7 @@ This ensures:
 <source text content>
 ```
 
-### Facts Notebook (`{article}_facts.ipynb`)
+### Facts Notebook (`facts.ipynb`)
 
 | Cell # | Type | Content |
 |--------|------|---------|
@@ -171,7 +180,7 @@ This ensures:
 - ...
 ```
 
-### RDF Notebook (`{article}_rdf.ipynb`)
+### RDF Notebook (`rdf.ipynb`)
 
 | Cell # | Type | Content |
 |--------|------|---------|
