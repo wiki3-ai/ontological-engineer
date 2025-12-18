@@ -1,5 +1,5 @@
 {
-  "name": "Wiki3 KG Project",
+  "name": "Deno: Wiki3 KG",
   "image": "jupyter/minimal-notebook:latest",
   "containerUser": "jovyan",
   "remoteUser": "jovyan",

@@ -1,0 +1,37 @@
+{
+  "name": "Python: Wiki3 KG",
+  "image": "jupyter/minimal-notebook:latest",
+  "containerUser": "jovyan",
+  "remoteUser": "jovyan",
+  // "customizations": {
+  //   "vscode": {
+  //     "extensions": [
+  //       "ms-toolsai.jupyter",
+  //       "ms-python.python",
+  //       "ms-python.vscode-pylance",
+  //       "denoland.vscode-deno"
+  //     ]
+  //   }
+  // },
+  "forwardPorts": [
+    8888
+  ],
+  "portsAttributes": {
+    "8888": {
+      "label": "JupyterLab: Python",
+      "requireLocalPort": true
+    }
+  },
+  // "postCreateCommand": "bash .devcontainer/post-create.sh",
+  // "postStartCommand": "jupyter lab --IdentityProvider.token=''",
+  // "workspaceFolder": "/home/jovyan/work",
+  // "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind",
+  // Enable access to LM Studio running on the host machine
+  "runArgs": [
+    "--add-host=host.docker.internal:host-gateway"
+  ],
+  // Environment variables for LM Studio
+  "containerEnv": {
+    "LM_STUDIO_BASE_URL": "http://host.docker.internal:1234/v1"
+  }
+}
