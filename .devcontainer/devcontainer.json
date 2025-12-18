@@ -1,0 +1,22 @@
+{
+  "name": "Wiki3 KG Project",
+  "image": "jupyter/minimal-notebook:latest",
+  "containerUser": "jovyan",
+  "remoteUser": "jovyan",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "denoland.vscode-deno"
+      ]
+    }
+  },
+
+  "forwardPorts": [8888],
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "workspaceFolder": "/home/jovyan/work",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind"
+}

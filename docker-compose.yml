@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  jupyterlab:
+    build: .
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebooks:/home/jovyan/notebooks
+      - ./data:/home/jovyan/data
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    container_name: wiki3-kg-jupyter
+    command: >
+      jupyter lab
+      --ip=0.0.0.0
+      --allow-root
+      --NotebookApp.token=''
+      --NotebookApp.password=''
