@@ -1,0 +1,21 @@
+{
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "entities": {
+    "albert_einstein": {
+      "id": "person_albert_einstein",
+      "uri": "https://en.wikipedia.org/wiki/Albert_Einstein#person_albert_einstein",
+      "label": "Albert Einstein",
+      "type": "Person",
+      "descriptions": [
+        "Subject of Wikipedia article: Albert Einstein"
+      ],
+      "source_chunks": [],
+      "aliases": [
+        "Einstein"
+      ]
+    }
+  },
+  "aliases": {
+    "einstein": "albert_einstein"
+  }
+}
