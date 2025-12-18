@@ -1,0 +1,6 @@
+{
+  "embed_model": "s3dev-ai/text-embedding-nomic-embed-text-v1.5",
+  "vocabularies": [
+    "schema"
+  ]
+}

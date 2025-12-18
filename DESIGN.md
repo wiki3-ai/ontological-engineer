@@ -290,6 +290,46 @@ To force regeneration of a specific cell:
 - Provenance metadata includes license, attribution, and source URL
 - Generated RDF includes provenance comments
 
+## Schema Vocabulary Matching
+
+The pipeline includes an embedding-based vocabulary matcher (`schema_matcher.py`) to help the LLM select appropriate schema.org terms instead of inventing custom `wiki3:` predicates.
+
+### Components
+
+- **`VocabTerm`**: Represents a class or property from an RDF vocabulary
+- **`SchemaVocabulary`**: Manages a vocabulary with embedding-based search
+- **`SchemaMatcher`**: Multi-vocabulary matcher with LLM-callable interface
+
+### Embedding Model
+
+Recommended embedding models for LM Studio:
+- `nomic-ai/nomic-embed-text-v1.5` - 768 dimensions, good quality
+- `BAAI/bge-small-en-v1.5` - 384 dimensions, faster
+
+### API Functions
+
+```python
+# Find matching RDF classes
+matcher.find_class("a famous scientist") -> [{"uri": "...", "prefix": "schema:Person", ...}]
+
+# Find matching RDF properties  
+matcher.find_property("the date someone was born", subject_type="Person")
+
+# Find all components of a triple
+matcher.find_triple_components(
+    subject_desc="Albert Einstein, a physicist",
+    predicate_desc="was born in",
+    object_desc="the city of Ulm"
+)
+```
+
+### Setup
+
+Run `schema_setup.ipynb` to:
+1. Fetch schema.org vocabulary from web
+2. Build embedding index for all terms
+3. Save index to `data/vocab_cache/` for reuse
+
 ## Future Considerations
 
 - Entity extraction during facts stage (currently seeded manually)
@@ -297,3 +337,4 @@ To force regeneration of a specific cell:
 - Validation of generated RDF syntax
 - SHACL shape validation
 - Multi-article batch processing
+- Additional vocabularies (Dublin Core, FOAF, etc.)
