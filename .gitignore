@@ -1,6 +1,5 @@
 node_modules/
 .env
-data/
-notebooks/*.ipynb
+.ipynb_checkpoints
 *.parquet
 *.pyc
