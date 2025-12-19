@@ -26,24 +26,57 @@ def create_rdf_tools(schema_matcher):
         """Find the best schema.org class/type for an entity based on a natural language description.
         
         Use this when you need to determine the rdf:type of an entity.
-        Example: find_rdf_class("a person who does scientific research")
+        
+        TIPS FOR BETTER QUERIES:
+        - Include the nature of the thing: "a quote someone said" not just "quote"
+        - Include context: "a written work that is a quotation attributed to a person"
+        - For events: "an event where something happened"
+        - For creative works: "a creative work such as a book, article, or quote"
+        
+        Example queries:
+        - "a person who does scientific research" → schema:Person, schema:Researcher
+        - "a spoken or written quotation attributed to someone" → schema:Quotation
+        - "an organization that employs people" → schema:Organization
+        - "an award or honor given to someone" → schema:Award
         
         Args:
             description: Natural language description of the entity type
         
         Returns:
-            Top matching schema.org classes with URIs and descriptions
+            Top matching schema.org classes with URIs, descriptions, and usage hints.
+            Scores range 0-1. Only use matches with score >= 0.5.
+            If no good match (all scores < 0.5), use schema:Thing or skip the type assertion.
         """
         results = schema_matcher.find_class(description, top_k=5)
         if not results:
-            return "No matches found. Use a generic type like schema:Thing"
+            return "No matches found. Use schema:Thing as a fallback or skip the type assertion."
         
-        lines = ["Top matching classes:"]
-        for r in results:
-            lines.append(f"  {r['prefix']} ({r['score']:.2f})")
-            lines.append(f"    URI: {r['uri']}")
-            if r['description']:
-                lines.append(f"    Description: {r['description'][:100]}")
+        # Filter to decent matches
+        good_matches = [r for r in results if r['score'] >= 0.5]
+        weak_matches = [r for r in results if r['score'] < 0.5]
+        
+        lines = []
+        if good_matches:
+            lines.append("Good matches (score >= 0.5):")
+            for r in good_matches:
+                lines.append(f"\n  {r['prefix']} ({r['score']:.2f})")
+                lines.append(f"    URI: {r['uri']}")
+                if r['description']:
+                    # Show more of the description - it contains usage guidance
+                    lines.append(f"    Description: {r['description'][:200]}")
+                if r.get('usage_hint'):
+                    lines.append(f"    HOW TO USE: {r['usage_hint']}")
+                if r.get('parent'):
+                    lines.append(f"    Parent class: schema:{r['parent']}")
+        else:
+            lines.append("WARNING: No good matches found (all scores < 0.5).")
+            lines.append("Consider using schema:Thing or skipping this type assertion.")
+        
+        if weak_matches and not good_matches:
+            lines.append("\nWeak matches (not recommended):")
+            for r in weak_matches[:2]:
+                lines.append(f"  {r['prefix']} ({r['score']:.2f}) - LOW CONFIDENCE")
+        
         return "\n".join(lines)
 
     @tool
@@ -51,15 +84,28 @@ def create_rdf_tools(schema_matcher):
         """Find the best schema.org property/predicate for a relationship.
         
         Use this when you need to find the right predicate for a triple.
-        Example: find_rdf_property("the date when someone was born", subject_type="Person")
+        
+        TIPS FOR BETTER QUERIES:
+        - Describe the relationship, not just a word: "a quote that someone said" not "said"
+        - Include what's being related: "the text content of a quotation"
+        - For attribution: "who authored or spoke something"
+        - Always include subject_type if known for better matches
+        
+        Example queries:
+        - "the text content of a quotation or creative work" → schema:text
+        - "the person who created or authored something" → schema:author, schema:creator
+        - "the person who said a quote" → schema:spokenByCharacter
+        - "the date when someone was born" (subject_type="Person") → schema:birthDate
         
         Args:
             description: Natural language description of the relationship
-            subject_type: Optional - the type of the subject (e.g., "Person", "Organization")  
-            object_type: Optional - the type of the object/value (e.g., "Date", "Place")
+            subject_type: Optional - the type of the subject (e.g., "Person", "Organization", "Quotation")  
+            object_type: Optional - the type of the object/value (e.g., "Date", "Place", "Text")
         
         Returns:
-            Top matching schema.org properties with URIs, domains, and ranges
+            Top matching schema.org properties with URIs, domains, ranges, and usage hints.
+            Scores range 0-1. Only use matches with score >= 0.5.
+            If no good match, DO NOT emit a triple - skip the statement or use rdfs:comment.
         """
         results = schema_matcher.find_property(
             description, 
@@ -68,39 +114,56 @@ def create_rdf_tools(schema_matcher):
             top_k=5
         )
         if not results:
-            return "No matches found. Consider using rdfs:label or a descriptive URI fragment."
+            return "No matches found. DO NOT emit a made-up triple. Skip this statement or use rdfs:comment to preserve the information as text."
         
-        lines = ["Top matching properties:"]
-        for r in results:
-            lines.append(f"  {r['prefix']} ({r['score']:.2f})")
-            lines.append(f"    URI: {r['uri']}")
-            if r['domain']:
-                lines.append(f"    Domain: {r['domain']}")
-            if r['range']:
-                lines.append(f"    Range: {r['range']}")
-            if r['description']:
-                lines.append(f"    Description: {r['description'][:80]}")
+        # Filter to decent matches
+        good_matches = [r for r in results if r['score'] >= 0.5]
+        weak_matches = [r for r in results if r['score'] < 0.5]
+        
+        lines = []
+        if good_matches:
+            lines.append("Good matches (score >= 0.5):")
+            for r in good_matches:
+                lines.append(f"\n  {r['prefix']} ({r['score']:.2f})")
+                lines.append(f"    URI: {r['uri']}")
+                if r['domain']:
+                    lines.append(f"    Domain (subject type): {r['domain']}")
+                if r['range']:
+                    lines.append(f"    Range (object type): {r['range']}")
+                if r['description']:
+                    # Show more description - it contains important usage guidance
+                    lines.append(f"    Description: {r['description'][:150]}")
+                if r.get('usage_hint'):
+                    lines.append(f"    HOW TO USE: {r['usage_hint']}")
+        else:
+            lines.append("WARNING: No good matches found (all scores < 0.5).")
+            lines.append("DO NOT emit a random/unrelated triple.")
+            lines.append("Options: 1) Skip this statement, 2) Use rdfs:comment to store as text")
+        
+        if weak_matches and not good_matches:
+            lines.append("\nWeak matches (DO NOT USE):")
+            for r in weak_matches[:2]:
+                lines.append(f"  {r['prefix']} ({r['score']:.2f}) - TOO LOW, DO NOT USE")
+        
         return "\n".join(lines)
 
     def normalize_statement_id(sid) -> str:
-        """Normalize statement ID - extract just the number, be permissive."""
+        """Normalize statement ID - extract the full ID, be permissive with types."""
         if sid is None:
             return "unknown"
+        # Convert to string first (handles float like 3.4 -> "3.4")
         sid_str = str(sid).strip()
         # Remove common wrappers: brackets, quotes, whitespace
         sid_str = sid_str.strip('[]()"\' ')
-        # Extract leading digits if present
-        match = re.match(r'^(\d+)', sid_str)
-        if match:
-            return match.group(1)
+        # Keep the full ID including dots (e.g., "3.1", "3.4")
         return sid_str if sid_str else "unknown"
     
     @tool
-    def emit_triple(statement_id: str, subject: str, predicate: str, object_value: str) -> str:
+    def emit_triple(statement_id, subject: str, predicate: str, object_value: str) -> str:
         """Emit a single RDF triple. Use this to output each triple you generate.
         
         Args:
-            statement_id: The ID of the statement this triple comes from (e.g., "1", "2", "3")
+            statement_id: The ID of the statement this triple comes from (e.g., "3.1", "3.2"). Can be string or number.
             subject: The subject URI (e.g., "<https://example.org#entity>") or prefixed (e.g., "schema:Person")
             predicate: The predicate URI or prefixed term (e.g., "schema:birthDate", "rdf:type")
             object_value: The object - a URI, prefixed term, or literal with datatype 

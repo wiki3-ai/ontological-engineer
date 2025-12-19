@@ -31,6 +31,8 @@ class VocabTerm:
     domain: Optional[str] = None  # For properties: what class it applies to
     range: Optional[str] = None   # For properties: what type of value
     parent: Optional[str] = None  # Parent class/property
+    usage_hint: Optional[str] = None  # How to use this term in RDF
+    example_keywords: Optional[str] = None  # Keywords that should match this term
     
     def to_search_text(self) -> str:
         """Generate text for embedding search."""
@@ -41,6 +43,8 @@ class VocabTerm:
             parts.append(f"applies to {self.domain}")
         if self.range:
             parts.append(f"value is {self.range}")
+        if self.example_keywords:
+            parts.append(self.example_keywords)
         return " | ".join(parts)
 
 
@@ -131,6 +135,8 @@ class SchemaVocabulary:
                 "domain": t.domain,
                 "range": t.range,
                 "parent": t.parent,
+                "usage_hint": t.usage_hint,
+                "example_keywords": t.example_keywords,
             } for uri, t in self.terms.items()},
             "term_ids": self.term_ids,
         }
@@ -214,6 +220,8 @@ class SchemaMatcher:
                     "prefix": f"{vocab.prefix}:{term.label}",
                     "label": term.label,
                     "description": term.description,
+                    "parent": term.parent,
+                    "usage_hint": term.usage_hint,
                     "score": score,
                     "vocabulary": vocab.name,
                 })
@@ -248,6 +256,7 @@ class SchemaMatcher:
                     "description": term.description,
                     "domain": term.domain,
                     "range": term.range,
+                    "usage_hint": term.usage_hint,
                     "score": score,
                     "vocabulary": vocab.name,
                 })
@@ -301,6 +310,123 @@ class SchemaMatcher:
         return matcher
 
 
+# Curated usage hints and keywords for important schema.org terms
+# These help the LLM understand HOW to use each term, not just WHAT it means
+SCHEMA_USAGE_HINTS = {
+    # === CLASSES ===
+    "Quotation": {
+        "usage_hint": "Create a Quotation instance with schema:text for the quote text. Use schema:creator or schema:author for who said/wrote it. Use schema:spokenByCharacter if attributing within a creative work.",
+        "example_keywords": "quote, quotation, said, stated, remarked, exclaimed, objected, famous saying, attributed words",
+    },
+    "Role": {
+        "usage_hint": "Use as an intermediate node to add qualifiers (dates, role name) to a relationship. Pattern: subject -> property -> Role -> property -> object, with dates on the Role.",
+        "example_keywords": "role, position, capacity, function, qualified relationship, temporal relationship",
+    },
+    "OrganizationRole": {
+        "usage_hint": "Use for employment, membership, or affiliation with dates. Pattern: Person -> worksFor/memberOf -> OrganizationRole -> worksFor/memberOf -> Organization, add startDate/endDate to the role.",
+        "example_keywords": "employment, job, position, membership, affiliation, worked at, employed by",
+    },
+    "EducationalOrganization": {
+        "usage_hint": "Type for schools, universities, colleges. Use with schema:alumniOf (person was student) or schema:employee (person worked there).",
+        "example_keywords": "school, university, college, institute, academy, educational institution",
+    },
+    "Award": {
+        "usage_hint": "Type for awards, honors, prizes. Person receives award via schema:award property.",
+        "example_keywords": "award, prize, honor, medal, recognition, Nobel, trophy",
+    },
+    "Event": {
+        "usage_hint": "Type for events with dates/locations. Use schema:startDate, schema:endDate, schema:location.",
+        "example_keywords": "event, conference, ceremony, meeting, occurrence, happened",
+    },
+    "CreativeWork": {
+        "usage_hint": "Base type for books, articles, papers, etc. Use schema:author, schema:datePublished, schema:about.",
+        "example_keywords": "work, publication, article, book, paper, writing, creative work",
+    },
+    
+    # === PROPERTIES ===
+    "text": {
+        "usage_hint": "The textual content of a CreativeWork (including Quotation). Use this for the actual quote text in a Quotation.",
+        "example_keywords": "text content, quote text, body, content, words, the actual text",
+    },
+    "spokenByCharacter": {
+        "usage_hint": "The person/character who spoke the quotation. Domain is Quotation. For real people quoted, use this or schema:creator.",
+        "example_keywords": "said by, spoken by, quoted, attributed to, who said",
+    },
+    "author": {
+        "usage_hint": "The author/creator of content. Use for who wrote/said something. Works for CreativeWork, Quotation, etc.",
+        "example_keywords": "author, writer, creator, who wrote, who said, by",
+    },
+    "creator": {
+        "usage_hint": "The creator of a CreativeWork. Similar to author but more general.",
+        "example_keywords": "creator, made by, created by, author",
+    },
+    "alumniOf": {
+        "usage_hint": "Schools/organizations someone attended as a student. Use OrganizationRole pattern if dates are needed.",
+        "example_keywords": "attended, studied at, graduated from, alumnus, student of, went to school",
+    },
+    "worksFor": {
+        "usage_hint": "Organization someone works/worked for. Use OrganizationRole pattern for employment with dates.",
+        "example_keywords": "works for, employed by, job at, position at, worked at",
+    },
+    "memberOf": {
+        "usage_hint": "Organization someone is a member of. Use Role pattern if membership has dates.",
+        "example_keywords": "member of, belongs to, part of, affiliated with",
+    },
+    "award": {
+        "usage_hint": "An award someone received. Use Role pattern if the award has a date: Person -> award -> Role -> award -> Award, with startDate on Role.",
+        "example_keywords": "received award, won, awarded, honored with, prize",
+    },
+    "birthDate": {
+        "usage_hint": "Date of birth. Use xsd:date format. Only for actual birth, not other events.",
+        "example_keywords": "born, birth date, date of birth, birthday",
+    },
+    "deathDate": {
+        "usage_hint": "Date of death. Use xsd:date format.",
+        "example_keywords": "died, death date, date of death, passed away",
+    },
+    "birthPlace": {
+        "usage_hint": "Place where someone was born. Value should be a Place.",
+        "example_keywords": "born in, birthplace, place of birth, native of",
+    },
+    "nationality": {
+        "usage_hint": "Nationality of a person. Use for current/primary nationality. For historical citizenships with dates, consider Role pattern.",
+        "example_keywords": "nationality, citizen of, national of",
+    },
+    "citizenship": {
+        "usage_hint": "Country of citizenship. For citizenship that changed over time, use Role pattern with dates.",
+        "example_keywords": "citizenship, citizen, naturalized, renounced citizenship",
+    },
+    "spouse": {
+        "usage_hint": "Spouse of a person. For marriage dates, use Role pattern.",
+        "example_keywords": "married to, spouse, husband, wife, partner",
+    },
+    "children": {
+        "usage_hint": "Children of a person.",
+        "example_keywords": "children, son, daughter, child, kids",
+    },
+    "parent": {
+        "usage_hint": "Parent of a person.",
+        "example_keywords": "parent, father, mother, parents",
+    },
+    "knows": {
+        "usage_hint": "Person that this person knows. Use for general acquaintance relationships.",
+        "example_keywords": "knows, friend, acquaintance, colleague",
+    },
+    "description": {
+        "usage_hint": "A description of the item - what the entity IS. NOT for quotes, events, or narrative facts about the entity.",
+        "example_keywords": "is described as, is a, definition, what it is",
+    },
+    "sameAs": {
+        "usage_hint": "URL of a reference page that identifies the item (Wikipedia, Wikidata, official site).",
+        "example_keywords": "same as, equivalent, identical to, also known as URL",
+    },
+    "about": {
+        "usage_hint": "The subject matter of a CreativeWork.",
+        "example_keywords": "about, concerning, regarding, subject matter, topic",
+    },
+}
+
+
 def load_schema_org_vocabulary() -> SchemaVocabulary:
     """Load schema.org vocabulary from their JSON-LD definition."""
     import urllib.request
@@ -338,6 +464,11 @@ def load_schema_org_vocabulary() -> SchemaVocabulary:
         elif isinstance(comment, str):
             description = comment
         
+        # Get curated usage hints if available
+        hints = SCHEMA_USAGE_HINTS.get(label, {})
+        usage_hint = hints.get("usage_hint")
+        example_keywords = hints.get("example_keywords")
+        
         # Determine type
         item_types = item.get("@type", [])
         if isinstance(item_types, str):
@@ -358,6 +489,8 @@ def load_schema_org_vocabulary() -> SchemaVocabulary:
                 description=description[:500],  # Truncate long descriptions
                 term_type=term_type,
                 parent=parent,
+                usage_hint=usage_hint,
+                example_keywords=example_keywords,
             ))
         
         elif "rdf:Property" in item_types:
@@ -388,6 +521,8 @@ def load_schema_org_vocabulary() -> SchemaVocabulary:
                 term_type=term_type,
                 domain=domain,
                 range=range_type,
+                usage_hint=usage_hint,
+                example_keywords=example_keywords,
             ))
     
     print(f"Loaded {len(vocab.get_classes())} classes and {len(vocab.get_properties())} properties")

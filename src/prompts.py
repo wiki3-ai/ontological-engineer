@@ -85,9 +85,27 @@ OUTPUT TOOLS (use to emit your triples - MUST include statement_id):
 - emit_triples: Output multiple triples at once (more efficient)
 
 WORKFLOW:
-1. For each statement, extract entities from markdown links: [Label](/wiki/Path) → <https://en.wikipedia.org/wiki/Path>
-2. Use find_rdf_class and find_rdf_property to look up appropriate schema.org terms
-3. Use emit_triple or emit_triples to output RDF triples, INCLUDING the statement_id
+1. For each statement, identify what kind of fact it is (quote, employment, education, award, relationship, etc.)
+2. Use find_rdf_class and find_rdf_property with DESCRIPTIVE queries to find appropriate schema.org terms
+3. ONLY use schema matches with score >= 0.5. If no good match, skip or use rdfs:comment.
+4. Use emit_triple or emit_triples to output RDF triples, INCLUDING the statement_id
+
+QUERYING THE SCHEMA TOOLS:
+Use descriptive natural language, not just keywords. Include:
+- What the thing IS (for classes) or what relationship it represents (for properties)
+- Context about domain/range when known
+
+GOOD QUERIES:
+- find_rdf_class("a spoken or written quotation attributed to someone") → Quotation
+- find_rdf_class("an organization that educates students like a university") → EducationalOrganization
+- find_rdf_property("the text content of a quote", subject_type="Quotation") → text
+- find_rdf_property("who said or authored a quotation", subject_type="Quotation") → creator, spokenByCharacter
+- find_rdf_property("schools someone attended as a student", subject_type="Person") → alumniOf
+
+BAD QUERIES (too vague):
+- find_rdf_class("quote") - missing context
+- find_rdf_property("said") - doesn't explain the relationship
+- find_rdf_property("school") - is it attended? works at? type of?
 
 URI RULES:
 - For entities with Wikipedia links like [Albert Einstein](/wiki/Albert_Einstein):
@@ -96,41 +114,72 @@ URI RULES:
 - For new entities not in either: Use fragment URIs like <#entity_name>
 - NEVER invent Wikidata URIs (wd:Q...) unless explicitly provided
 
-TEMPORAL/QUALIFIED RELATIONSHIPS (schema.org Role pattern):
-When a relationship has temporal bounds (dates) or qualifiers (role name, context), use an intermediate Role node.
-This is the standard schema.org pattern - see https://schema.org/Role
+BLANK NODE NAMING:
+Use the statement ID in blank node names to ensure uniqueness across chunks:
+  - For statement [3.5], use: _:s3_5_role1, _:s3_5_role2, etc.
+  - NOT just _:pos1, _:pos2 (these collide across statements)
 
-Example: "Einstein worked at University of Zurich from 1909 to 1911"
-Instead of a simple triple that loses the dates:
-  <wiki:Albert_Einstein> schema:worksFor <wiki:University_of_Zurich> .  # WRONG - loses dates!
+MODELING PATTERNS:
 
-Use the Role pattern with a blank node:
-  <wiki:Albert_Einstein> schema:worksFor _:pos1 .
-  _:pos1 a schema:OrganizationRole .
-  _:pos1 schema:worksFor <wiki:University_of_Zurich> .
-  _:pos1 schema:startDate "1909"^^xsd:gYear .
-  _:pos1 schema:endDate "1911"^^xsd:gYear .
+1. QUOTATIONS (when someone said/stated/objected something):
+   Create a Quotation instance with text and attribution:
+   _:s1_quote1 a schema:Quotation .
+   _:s1_quote1 schema:text "The actual quote text" .
+   _:s1_quote1 schema:creator <wiki:Person_Who_Said_It> .
+   
+2. TEMPORAL/QUALIFIED RELATIONSHIPS (dates on relationships):
+   Use an intermediate Role node (schema.org Role pattern):
+   
+   Example - Employment: "Einstein worked at University of Zurich from 1909 to 1911"
+     <wiki:Albert_Einstein> schema:worksFor _:s1_role1 .
+     _:s1_role1 a schema:OrganizationRole .
+     _:s1_role1 schema:worksFor <wiki:University_of_Zurich> .
+     _:s1_role1 schema:startDate "1909"^^xsd:gYear .
+     _:s1_role1 schema:endDate "1911"^^xsd:gYear .
 
-Role types to use:
-- schema:OrganizationRole - for employment, membership, affiliation with organizations
-- schema:Role - general purpose for other qualified relationships (citizenship, etc.)
+   Example - Awards: "Einstein received the Nobel Prize in 1921"
+     <wiki:Albert_Einstein> schema:award _:s2_award1 .
+     _:s2_award1 a schema:Role .
+     _:s2_award1 schema:award <wiki:Nobel_Prize_in_Physics> .
+     _:s2_award1 schema:startDate "1921"^^xsd:gYear .
 
-Role properties:
-- schema:startDate, schema:endDate - temporal bounds (use xsd:date, xsd:gYear, or xsd:gYearMonth)
-- schema:roleName - the position/title (e.g., "Professor", "Quarterback")
-- schema:description - additional context (e.g., "during the Weimar Republic")
+   Example - Education: "Einstein attended University of Zurich from 1896 to 1900"
+     <wiki:Albert_Einstein> schema:alumniOf _:s3_edu1 .
+     _:s3_edu1 a schema:OrganizationRole .
+     _:s3_edu1 schema:alumniOf <wiki:University_of_Zurich> .
+     _:s3_edu1 schema:startDate "1896"^^xsd:gYear .
+     _:s3_edu1 schema:endDate "1900"^^xsd:gYear .
 
-The property is REPEATED inside the Role (e.g., worksFor → Role → worksFor → Organization).
+3. SIMPLE FACTS (no dates/qualifiers needed):
+   Direct triples without Role:
+   <wiki:Einstein> schema:birthDate "1879-03-14"^^xsd:date .
+   <wiki:Einstein> schema:birthPlace <wiki:Ulm> .
+
+WHAT NOT TO DO:
+1. DO NOT use schema:description for quotes, opinions, or narrative facts. 
+   schema:description is ONLY for describing what an entity IS, not what happened to it.
+   WRONG: <Einstein> schema:description "God does not play dice" .
+   RIGHT: Create a schema:Quotation with schema:text for the quote.
+   
+2. DO NOT emit unrelated triples when no good schema match exists.
+   If a statement is about "being sick in bed", don't emit schema:birthDate.
+   If no good match (score >= 0.5), either:
+   - Skip the statement entirely
+   - Use rdfs:comment to preserve the text: <Einstein> rdfs:comment "Statement text here" .
+
+3. DO NOT conflate past and present states.
+   "Einstein renounced his German citizenship in 1896" means he LOST it.
+   Use endDate on a citizenship Role, not startDate.
+
+4. DO NOT extract facts not stated in the statement.
+   Only model what the specific statement says, not general knowledge about the subject.
 
 IMPORTANT:
 - Do NOT write Turtle syntax in your response - use the emit tools instead
-- ALWAYS include the statement_id when emitting triples (e.g., "1", "2", "3")
-- Use schema.org terms you looked up (e.g., schema:Person, schema:birthDate)
-- For URIs, use angle brackets: <https://...> or fragment references: <#entity_id>
-- For literals, use quotes with optional datatype: "value"^^xsd:date or "text"@en
-- For prefixed terms as objects, just use the prefix: schema:Person
-- Each statement is self-contained - extract all facts from each one
-- Use the Role pattern whenever temporal bounds or qualifiers would otherwise be lost"""
+- ALWAYS include the statement_id when emitting triples
+- Include statement_id in blank node names: _:s{id}_role1
+- Only emit triples for facts that CAN be properly modeled in schema.org
+- It is better to skip a statement than emit incorrect triples"""
 
 RDF_STATEMENT_HUMAN_PROMPT = """Convert these factual statements to RDF triples.
 
@@ -140,32 +189,30 @@ Section context: {breadcrumb}
 Entity Registry (use these URIs for known entities):
 {entity_registry}
 
-Statements to convert (each has a unique ID you must include when emitting triples):
+Statements to convert (each has a unique ID like [3.5] - include this in blank node names):
 {statements}
 
-IMPORTANT RULES:
+CRITICAL RULES:
 
-1. URI EXTRACTION: Statements contain markdown links like [Entity](/wiki/Path). Convert these to Wikipedia URIs:
+1. URI EXTRACTION: Convert markdown links to Wikipedia URIs:
    [Albert Einstein](/wiki/Albert_Einstein) → <https://en.wikipedia.org/wiki/Albert_Einstein>
 
-2. TEMPORAL RELATIONSHIPS: When a statement includes dates or time periods for a relationship,
-   use the schema.org Role pattern to preserve the temporal information:
-   
-   Example: "Einstein worked at University of Zurich from 1909 to 1911"
-   Emit these triples:
-   - subject: wiki:Albert_Einstein, predicate: schema:worksFor, object: _:pos1
-   - subject: _:pos1, predicate: rdf:type, object: schema:OrganizationRole
-   - subject: _:pos1, predicate: schema:worksFor, object: wiki:University_of_Zurich
-   - subject: _:pos1, predicate: schema:startDate, object: "1909"^^xsd:gYear
-   - subject: _:pos1, predicate: schema:endDate, object: "1911"^^xsd:gYear
+2. BLANK NODE NAMING: Include statement ID to avoid collisions:
+   For statement [3.5], use: _:s3_5_role1 (NOT just _:role1)
 
-3. WORKFLOW for each statement:
-   a. Extract entity URIs from markdown links
-   b. Look up appropriate schema.org classes and properties
-   c. If temporal bounds exist, use Role pattern with blank nodes (_:pos1, _:pos2, etc.)
-   d. Emit triples using emit_triple or emit_triples, ALWAYS including the statement_id
+3. SCHEMA MATCHING: Only use matches with score >= 0.5.
+   If no good match exists, either skip the statement or use rdfs:comment.
 
-Process all statements, then provide a brief summary."""
+4. TEMPORAL RELATIONSHIPS: Use Role pattern for dated relationships:
+   - Employment, education, awards, membership, citizenship with dates → Role pattern
+   - Simple facts without dates → direct triple
+
+5. DO NOT:
+   - Use schema:description for quotes or narrative (only for entity descriptions)
+   - Emit unrelated triples when no good match exists
+   - Extract facts not stated in the statement
+
+Process each statement. If you cannot properly model it, skip it or use rdfs:comment."""
 
 RDF_PREFIXES = """@prefix schema: <https://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
