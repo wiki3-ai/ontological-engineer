@@ -29,11 +29,23 @@ class EntityRegistry:
         return f"{entity_type.lower()}_{key}"
     
     def register(self, label: str, entity_type: str, description: str = "",
-                 aliases: list = None, source_chunk: int = None) -> str:
-        """Register or update an entity, return canonical ID."""
+                 aliases: list = None, source_chunk: int = None,
+                 uri: str = None, wikidata_id: str = None) -> str:
+        """Register or update an entity, return canonical ID.
+        
+        Args:
+            label: Human-readable entity name
+            entity_type: Type like Person, Place, Organization, etc.
+            description: Optional description
+            aliases: Alternative names for this entity
+            source_chunk: Chunk number where entity was found
+            uri: Optional explicit URI (e.g., Wikipedia URL)
+            wikidata_id: Optional Wikidata Q-ID
+        """
         key = self.normalize_key(label)
         entity_id = self.generate_id(entity_type, label)
-        entity_uri = self.generate_uri(entity_type, label)
+        # Use provided URI or generate one
+        entity_uri = uri if uri else self.generate_uri(entity_type, label)
         
         if key not in self.entities:
             self.entities[key] = {
@@ -45,6 +57,8 @@ class EntityRegistry:
                 "source_chunks": [source_chunk] if source_chunk is not None else [],
                 "aliases": list(aliases or []),
             }
+            if wikidata_id:
+                self.entities[key]["wikidata_id"] = wikidata_id
         else:
             existing = self.entities[key]
             if description and description not in existing["descriptions"]:
@@ -53,6 +67,11 @@ class EntityRegistry:
                 existing["source_chunks"].append(source_chunk)
             if aliases:
                 existing["aliases"] = list(set(existing["aliases"]) | set(aliases))
+            # Update URI if a more authoritative one is provided
+            if uri and not existing["uri"].startswith("https://en.wikipedia.org"):
+                existing["uri"] = uri
+            if wikidata_id and "wikidata_id" not in existing:
+                existing["wikidata_id"] = wikidata_id
         
         # Register aliases
         for alias in (aliases or []):
@@ -87,12 +106,21 @@ class EntityRegistry:
         """Format registry for inclusion in LLM prompts."""
         lines = []
         for entity in self.entities.values():
-            lines.append(f"<{entity['uri']}> # {entity['label']} ({entity['type']})")
+            wikidata = f" (Wikidata: {entity['wikidata_id']})" if entity.get('wikidata_id') else ""
+            lines.append(f"<{entity['uri']}> # {entity['label']} ({entity['type']}){wikidata}")
         return "\n".join(lines) if lines else "# No entities registered yet"
     
     def get_known_entities_text(self) -> str:
-        """Format known entities for facts extraction prompt."""
+        """Format known entities for facts extraction prompt with markdown links."""
         lines = []
         for entity in self.entities.values():
-            lines.append(f"- {entity['label']} ({entity['type']})")
+            uri = entity['uri']
+            label = entity['label']
+            etype = entity['type']
+            # Convert Wikipedia URL to relative path for markdown
+            if uri.startswith("https://en.wikipedia.org/wiki/"):
+                path = uri.replace("https://en.wikipedia.org", "")
+                lines.append(f"- [{label}]({path}) ({etype})")
+            else:
+                lines.append(f"- {label} ({etype}) - URI: {uri}")
         return "\n".join(lines) if lines else "None yet"
