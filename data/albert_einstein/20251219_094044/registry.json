@@ -1,0 +1,572 @@
+{
+  "source_url": "https://en.wikipedia.org/wiki/Albert_Einstein",
+  "entities": {
+    "albert_einstein": {
+      "id": "person_albert_einstein",
+      "uri": "https://en.wikipedia.org/wiki/Albert_Einstein",
+      "label": "Albert Einstein",
+      "type": "Person",
+      "descriptions": [
+        "Subject of Wikipedia article: Albert Einstein"
+      ],
+      "source_chunks": [],
+      "aliases": [
+        "Einstein"
+      ],
+      "wikidata_id": "Q937"
+    },
+    "ulm": {
+      "id": "thing_ulm",
+      "uri": "https://en.wikipedia.org/wiki/Ulm",
+      "label": "Ulm",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Ulm"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "kingdom_of_w_rttemberg": {
+      "id": "thing_kingdom_of_w_rttemberg",
+      "uri": "https://en.wikipedia.org/wiki/Kingdom_of_W%C3%BCrttemberg",
+      "label": "Kingdom of W\u00fcrttemberg",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Kingdom of W\u00fcrttemberg"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "german_empire": {
+      "id": "thing_german_empire",
+      "uri": "https://en.wikipedia.org/wiki/German_Empire",
+      "label": "German Empire",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: German Empire"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "princeton_new_jersey": {
+      "id": "thing_princeton_new_jersey",
+      "uri": "https://en.wikipedia.org/wiki/Princeton%2C_New_Jersey",
+      "label": "Princeton, New Jersey",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Princeton, New Jersey"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "lieserl": {
+      "id": "thing_lieserl",
+      "uri": "https://en.wikipedia.org/wiki/Lieserl_Einstein",
+      "label": "Lieserl",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Lieserl"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "hans_albert": {
+      "id": "thing_hans_albert",
+      "uri": "https://en.wikipedia.org/wiki/Hans_Albert_Einstein",
+      "label": "Hans Albert",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Hans Albert"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "eduard_tete": {
+      "id": "thing_eduard_tete",
+      "uri": "https://en.wikipedia.org/wiki/Einstein_family",
+      "label": "Eduard \"Tete\"",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Eduard \"Tete\""
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "einstein": {
+      "id": "thing_einstein",
+      "uri": "https://en.wikipedia.org/wiki/Einstein_family",
+      "label": "Einstein",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Einstein"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "mileva_mari": {
+      "id": "thing_mileva_mari",
+      "uri": "https://en.wikipedia.org/wiki/Mileva_Mari%C4%87",
+      "label": "Mileva Mari\u0107",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Mileva Mari\u0107"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "elsa_l_wenthal": {
+      "id": "thing_elsa_l_wenthal",
+      "uri": "https://en.wikipedia.org/wiki/Elsa_L%C3%B6wenthal",
+      "label": "Elsa L\u00f6wenthal",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Elsa L\u00f6wenthal"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "stateless": {
+      "id": "thing_stateless",
+      "uri": "https://en.wikipedia.org/wiki/Statelessness",
+      "label": "Stateless",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Stateless"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "switzerland": {
+      "id": "thing_switzerland",
+      "uri": "https://en.wikipedia.org/wiki/Switzerland",
+      "label": "Switzerland",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Switzerland"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "kingdom_of_prussia": {
+      "id": "thing_kingdom_of_prussia",
+      "uri": "https://en.wikipedia.org/wiki/Kingdom_of_Prussia",
+      "label": "Kingdom of Prussia",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Kingdom of Prussia"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "free_state_of_prussia": {
+      "id": "thing_free_state_of_prussia",
+      "uri": "https://en.wikipedia.org/wiki/Free_State_of_Prussia",
+      "label": "Free State of Prussia",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Free State of Prussia"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "weimar_republic": {
+      "id": "thing_weimar_republic",
+      "uri": "https://en.wikipedia.org/wiki/Weimar_Republic",
+      "label": "Weimar Republic",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Weimar Republic"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "united_states": {
+      "id": "thing_united_states",
+      "uri": "https://en.wikipedia.org/wiki/Citizenship_of_the_United_States",
+      "label": "United States",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: United States"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "physics": {
+      "id": "thing_physics",
+      "uri": "https://en.wikipedia.org/wiki/Physics",
+      "label": "Physics",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Physics"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "university_of_bern": {
+      "id": "thing_university_of_bern",
+      "uri": "https://en.wikipedia.org/wiki/University_of_Bern",
+      "label": "University of Bern",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: University of Bern"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "university_of_zurich": {
+      "id": "thing_university_of_zurich",
+      "uri": "https://en.wikipedia.org/wiki/University_of_Zurich",
+      "label": "University of Zurich",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: University of Zurich"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "charles_university_in_prague": {
+      "id": "thing_charles_university_in_prague",
+      "uri": "https://en.wikipedia.org/wiki/Charles_University_in_Prague",
+      "label": "Charles University in Prague",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Charles University in Prague"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "eth_zurich": {
+      "id": "thing_eth_zurich",
+      "uri": "https://en.wikipedia.org/wiki/ETH_Zurich",
+      "label": "ETH Zurich",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: ETH Zurich"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "prussian_academy_of_sciences": {
+      "id": "thing_prussian_academy_of_sciences",
+      "uri": "https://en.wikipedia.org/wiki/Prussian_Academy_of_Sciences",
+      "label": "Prussian Academy of Sciences",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Prussian Academy of Sciences"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "humboldt_university_of_berlin": {
+      "id": "thing_humboldt_university_of_berlin",
+      "uri": "https://en.wikipedia.org/wiki/Humboldt_University_of_Berlin",
+      "label": "Humboldt University of Berlin",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Humboldt University of Berlin"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "kaiser_wilhelm_institute": {
+      "id": "thing_kaiser_wilhelm_institute",
+      "uri": "https://en.wikipedia.org/wiki/Kaiser_Wilhelm_Institute",
+      "label": "Kaiser Wilhelm Institute",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Kaiser Wilhelm Institute"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "german_physical_society": {
+      "id": "thing_german_physical_society",
+      "uri": "https://en.wikipedia.org/wiki/German_Physical_Society",
+      "label": "German Physical Society",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: German Physical Society"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "institute_for_advanced_study": {
+      "id": "thing_institute_for_advanced_study",
+      "uri": "https://en.wikipedia.org/wiki/Institute_for_Advanced_Study",
+      "label": "Institute for Advanced Study",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Institute for Advanced Study"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "swiss_federal_polytechnic_school": {
+      "id": "thing_swiss_federal_polytechnic_school",
+      "uri": "https://en.wikipedia.org/wiki/ETH_Zurich",
+      "label": "Swiss Federal Polytechnic School",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Swiss Federal Polytechnic School"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "phd": {
+      "id": "thing_phd",
+      "uri": "https://en.wikipedia.org/wiki/PhD",
+      "label": "PhD",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: PhD"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "alfred_kleiner": {
+      "id": "thing_alfred_kleiner",
+      "uri": "https://en.wikipedia.org/wiki/Alfred_Kleiner",
+      "label": "Alfred Kleiner",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Alfred Kleiner"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "heinrich_friedrich_weber": {
+      "id": "thing_heinrich_friedrich_weber",
+      "uri": "https://en.wikipedia.org/wiki/Heinrich_Friedrich_Weber",
+      "label": "Heinrich Friedrich Weber",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Heinrich Friedrich Weber"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "general_relativity": {
+      "id": "thing_general_relativity",
+      "uri": "https://en.wikipedia.org/wiki/General_relativity",
+      "label": "General relativity",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: General relativity"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "special_relativity": {
+      "id": "thing_special_relativity",
+      "uri": "https://en.wikipedia.org/wiki/Special_relativity",
+      "label": "Special relativity",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Special relativity"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "photoelectric_effect": {
+      "id": "thing_photoelectric_effect",
+      "uri": "https://en.wikipedia.org/wiki/Photoelectric_effect",
+      "label": "Photoelectric effect",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Photoelectric effect"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "e_mc_sup_2_sup_mass_energy_equivalence": {
+      "id": "thing_e_mc_sup_2_sup_mass_energy_equivalence",
+      "uri": "https://en.wikipedia.org/wiki/Mass%E2%80%93energy_equivalence",
+      "label": "''E''=''mc''<sup>2</sup> (mass\u2013energy equivalence)",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: ''E''=''mc''<sup>2</sup> (mass\u2013energy equivalence)"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "e_hf_planck_einstein_relation": {
+      "id": "thing_e_hf_planck_einstein_relation",
+      "uri": "https://en.wikipedia.org/wiki/Planck%E2%80%93Einstein_relation",
+      "label": "''E''=''hf'' (Planck\u2013Einstein relation)",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: ''E''=''hf'' (Planck\u2013Einstein relation)"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "theory_of_brownian_motion": {
+      "id": "thing_theory_of_brownian_motion",
+      "uri": "https://en.wikipedia.org/wiki/Brownian_motion",
+      "label": "Theory of Brownian motion",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Theory of Brownian motion"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "einstein_field_equations": {
+      "id": "thing_einstein_field_equations",
+      "uri": "https://en.wikipedia.org/wiki/Einstein_field_equations",
+      "label": "Einstein field equations",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Einstein field equations"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "bose_einstein_statistics": {
+      "id": "thing_bose_einstein_statistics",
+      "uri": "https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_statistics",
+      "label": "Bose\u2013Einstein statistics",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Bose\u2013Einstein statistics"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "bose_einstein_condensate": {
+      "id": "thing_bose_einstein_condensate",
+      "uri": "https://en.wikipedia.org/wiki/Bose%E2%80%93Einstein_condensate",
+      "label": "Bose\u2013Einstein condensate",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Bose\u2013Einstein condensate"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "gravitational_wave": {
+      "id": "thing_gravitational_wave",
+      "uri": "https://en.wikipedia.org/wiki/Gravitational_wave",
+      "label": "Gravitational wave",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Gravitational wave"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "cosmological_constant": {
+      "id": "thing_cosmological_constant",
+      "uri": "https://en.wikipedia.org/wiki/Cosmological_constant",
+      "label": "Cosmological constant",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Cosmological constant"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "unified_field_theory": {
+      "id": "thing_unified_field_theory",
+      "uri": "https://en.wikipedia.org/wiki/Unified_field_theory",
+      "label": "Unified field theory",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Unified field theory"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "epr_paradox": {
+      "id": "thing_epr_paradox",
+      "uri": "https://en.wikipedia.org/wiki/EPR_paradox",
+      "label": "EPR paradox",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: EPR paradox"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "ensemble_interpretation": {
+      "id": "thing_ensemble_interpretation",
+      "uri": "https://en.wikipedia.org/wiki/Ensemble_interpretation",
+      "label": "Ensemble interpretation",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Ensemble interpretation"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "list_of_other_concepts": {
+      "id": "thing_list_of_other_concepts",
+      "uri": "https://en.wikipedia.org/wiki/List_of_things_named_after_Albert_Einstein",
+      "label": "List of other concepts",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: List of other concepts"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "barnard_medal_for_meritorious_service_to_science": {
+      "id": "thing_barnard_medal_for_meritorious_service_to_science",
+      "uri": "https://en.wikipedia.org/wiki/Barnard_Medal_for_Meritorious_Service_to_Science",
+      "label": "Barnard Medal for Meritorious Service to Science",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Barnard Medal for Meritorious Service to Science"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "nobel_prize_in_physics": {
+      "id": "thing_nobel_prize_in_physics",
+      "uri": "https://en.wikipedia.org/wiki/Nobel_Prize_in_Physics",
+      "label": "Nobel Prize in Physics",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Nobel Prize in Physics"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "matteucci_medal": {
+      "id": "thing_matteucci_medal",
+      "uri": "https://en.wikipedia.org/wiki/Matteucci_Medal",
+      "label": "Matteucci Medal",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Matteucci Medal"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "formemrs": {
+      "id": "thing_formemrs",
+      "uri": "https://en.wikipedia.org/wiki/List_of_fellows_of_the_Royal_Society_elected_in_1921",
+      "label": "ForMemRS",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: ForMemRS"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    },
+    "copley_medal": {
+      "id": "thing_copley_medal",
+      "uri": "https://en.wikipedia.org/wiki/Copley_Medal",
+      "label": "Copley Medal",
+      "type": "Thing",
+      "descriptions": [
+        "Wikipedia entity: Copley Medal"
+      ],
+      "source_chunks": [],
+      "aliases": []
+    }
+  },
+  "aliases": {
+    "einstein": "albert_einstein"
+  }
+}

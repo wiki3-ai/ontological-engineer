@@ -177,7 +177,7 @@ WHAT NOT TO DO:
 IMPORTANT:
 - Do NOT write Turtle syntax in your response - use the emit tools instead
 - ALWAYS include the statement_id when emitting triples
-- Include statement_id in blank node names: _:s{id}_role1
+- Include statement_id in blank node names: _:s{{id}}_role1
 - Only emit triples for facts that CAN be properly modeled in schema.org
 - It is better to skip a statement than emit incorrect triples"""
 

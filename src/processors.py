@@ -138,7 +138,8 @@ def call_llm_with_tools(
     rdf_tools: list,
     get_triples_fn,
     reset_triples_fn,
-    max_iterations: int
+    max_iterations: int,
+    debug: bool = False
 ) -> tuple[str, List[dict], int, List[dict]]:
     """Call LLM with tool support. Returns (summary_response, collected_triples, iterations_used, tool_calls_log)."""
     reset_triples_fn()  # Reset collector
@@ -157,13 +158,38 @@ def call_llm_with_tools(
         
         # Check if there are tool calls
         if hasattr(response, 'tool_calls') and response.tool_calls:
+            # Debug: log raw tool_calls structure on first iteration
+            if debug and iteration == 0:
+                print(f"  DEBUG: response.tool_calls type: {type(response.tool_calls)}")
+                if response.tool_calls:
+                    tc0 = response.tool_calls[0]
+                    print(f"  DEBUG: tool_call[0] type: {type(tc0)}")
+                    print(f"  DEBUG: tool_call[0] repr: {repr(tc0)[:200]}")
+                    if hasattr(tc0, '__dict__'):
+                        print(f"  DEBUG: tool_call[0].__dict__: {tc0.__dict__}")
+                    if hasattr(tc0, 'keys'):
+                        print(f"  DEBUG: tool_call[0].keys(): {tc0.keys()}")
+            
             # Add assistant message with tool calls
             messages.append(response)
             
             # Execute each tool call
             for tool_call in response.tool_calls:
-                tool_name = tool_call['name']
-                tool_args = tool_call['args']
+                # Handle both dict-style and object-style tool calls
+                if isinstance(tool_call, dict):
+                    # Dict style (expected from LangChain)
+                    tool_name = tool_call['name']
+                    tool_args = tool_call['args']
+                    tool_id = tool_call['id']
+                elif hasattr(tool_call, 'name'):
+                    # Object style (e.g., ToolCall dataclass)
+                    tool_name = tool_call.name
+                    tool_args = tool_call.args if hasattr(tool_call, 'args') else {}
+                    tool_id = tool_call.id if hasattr(tool_call, 'id') else f'call_{iteration}_{id(tool_call)}'
+                else:
+                    # Unknown format - log and skip
+                    print(f"  WARNING: Unknown tool_call format: {type(tool_call)}: {repr(tool_call)[:100]}")
+                    continue
                 
                 # Log the tool call
                 tool_calls_log.append({
@@ -189,7 +215,7 @@ def call_llm_with_tools(
                 tool_calls_log[-1]["result"] = str(tool_result)[:200]
                 
                 # Add tool result message
-                messages.append(ToolMessage(content=str(tool_result), tool_call_id=tool_call['id']))
+                messages.append(ToolMessage(content=str(tool_result), tool_call_id=tool_id))
         else:
             # No tool calls, return the summary and collected triples
             summary = response.content if hasattr(response, 'content') else str(response)
@@ -292,6 +318,9 @@ def process_rdf_generation(
         
         start_time = time.time()
         
+        # Enable debug for first chunk to inspect tool_call structure
+        debug_this = (chunk_num == 1)
+        
         try:
             summary, triples, iterations_used, tool_calls_log = call_llm_with_tools(
                 prompt_vars=prompt_vars,
@@ -300,7 +329,8 @@ def process_rdf_generation(
                 rdf_tools=rdf_tools,
                 get_triples_fn=get_triples_fn,
                 reset_triples_fn=reset_triples_fn,
-                max_iterations=max_iterations
+                max_iterations=max_iterations,
+                debug=debug_this
             )
             elapsed = time.time() - start_time
             triple_count = len(triples)
