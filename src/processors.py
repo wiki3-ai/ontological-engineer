@@ -280,18 +280,21 @@ def process_rdf_generation(
         # Format statements for prompt
         statements_text = "\n".join([f"[{s['id']}] {s['statement']}" for s in stmt_items])
         
+        # Build the actual prompt vars for debugging
+        prompt_vars = {
+            "source_url": provenance["source_url"],
+            "breadcrumb": facts_item["breadcrumb"],
+            "entity_registry": registry.format_for_prompt(),
+            "statements": statements_text,
+        }
+        
         log_progress(f"  Chunk {chunk_num}: + Processing {len(statements)} statements...", end=" ")
         
         start_time = time.time()
         
         try:
             summary, triples, iterations_used, tool_calls_log = call_llm_with_tools(
-                prompt_vars={
-                    "source_url": provenance["source_url"],
-                    "breadcrumb": facts_item["breadcrumb"],
-                    "entity_registry": registry.format_for_prompt(),
-                    "statements": statements_text,
-                },
+                prompt_vars=prompt_vars,
                 rdf_prompt=rdf_prompt,
                 rdf_llm_with_tools=rdf_llm_with_tools,
                 rdf_tools=rdf_tools,
@@ -398,18 +401,37 @@ def process_rdf_generation(
         except Exception as e:
             elapsed = time.time() - start_time
             error_type = type(e).__name__
-            error_msg = str(e)[:200]
+            error_msg = str(e)
+            
+            # Log full error details (not truncated)
             log_progress(f"✗ {error_type} {elapsed:.1f}s")
             log_progress(f"    Error: {error_msg}")
-            log_progress(f"    Prompt: {statements_text[:300]}...")
+            log_progress(f"    Section: {facts_item['breadcrumb']}")
+            log_progress(f"    Statements ({len(stmt_items)}):")
+            for stmt_item in stmt_items:
+                log_progress(f"      [{stmt_item['id']}] {stmt_item['statement']}")
             
-            # Add error cell for the chunk with debug info
+            # Build full prompt for debugging
+            from .prompts import RDF_STATEMENT_SYSTEM_PROMPT, RDF_STATEMENT_HUMAN_PROMPT
+            full_human_prompt = RDF_STATEMENT_HUMAN_PROMPT.format(**prompt_vars)
+            
+            # Add error cell for the chunk with full debug info
             error_lines = [
                 f"# Chunk {chunk_num} Error: {error_type}: {error_msg}",
-                f"# Statements attempted:",
+                f"#",
+                f"# === FULL PROMPT SENT TO LLM ===",
+                f"#",
+                f"# SYSTEM PROMPT:",
             ]
-            for stmt_item in stmt_items:
-                error_lines.append(f"#   [{stmt_item['id']}] {stmt_item['statement'][:80]}...")
+            for line in RDF_STATEMENT_SYSTEM_PROMPT.split('\n'):
+                error_lines.append(f"# {line}")
+            error_lines.append(f"#")
+            error_lines.append(f"# HUMAN PROMPT:")
+            for line in full_human_prompt.split('\n'):
+                error_lines.append(f"# {line}")
+            error_lines.append(f"#")
+            error_lines.append(f"# === END PROMPT ===")
+            
             rdf_content = "\n".join(error_lines)
             rdf_nb.cells.append(new_raw_cell(rdf_content))
             
