@@ -320,12 +320,10 @@ def process_rdf_generation(
         
         # Update signatures dict
         rdf_signatures[stmt_key] = signature
-    
-    # Save the complete notebook
-    log_progress("\nSaving RDF notebook...", end=" ")
-    with open(rdf_path, 'w', encoding='utf-8') as f:
-        nbformat.write(rdf_nb, f)
-    log_progress("saved")
+        
+        # Save notebook after each statement
+        with open(rdf_path, 'w', encoding='utf-8') as f:
+            nbformat.write(rdf_nb, f)
     
     # Log iteration statistics
     if iteration_counts:
