@@ -48,22 +48,14 @@ The content below is the exact text fetched from the source URL.
 """
     nb.cells.append(new_markdown_cell(provenance_yaml))
     
-    # Cell 1: Entity registry (raw cell)
+    # Cell 1: Entity registry (raw cell - metadata)
     nb.cells.append(new_raw_cell(registry.to_json()))
     
-    # Cell 2: Raw source content as code cell (preserves formatting)
-    # Using triple-quoted string to preserve the content exactly
-    source_cell_content = f'''# Raw source content from Wikipedia
-# Source: {provenance['source_url']}
-# Fetched: {provenance['fetched_at']}
-# Length: {provenance['content_length']} characters
-
-SOURCE_CONTENT = """
-{raw_content}
-"""'''
-    nb.cells.append(new_code_cell(source_cell_content))
+    # Cell 2: Source content (code cell - natural language as code)
+    # This is the exact text fetched from the source URL, unmodified
+    nb.cells.append(new_code_cell(raw_content))
     
-    # Cell 3: Signature
+    # Cell 3: Signature (raw cell - metadata)
     source_cid = compute_cid(raw_content)
     signature = make_signature(
         cell_num=1,

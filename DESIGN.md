@@ -234,16 +234,21 @@ This ensures:
 
 ## Intermediate Notebook Structure
 
+**Note:** These notebooks use a **natural-language-as-code** paradigm:
+- **Code cells** contain the content being processed (source text, chunks, facts, RDF triples)
+- **Raw cells** contain metadata (entity registry, JSON-LD signatures)
+- **Markdown cells** contain human-readable documentation about the processing
+
 ### Source Notebook (`source.ipynb`)
 
 | Cell # | Type | Content |
 |--------|------|---------|
 | 0 | Markdown | Provenance metadata (YAML) |
 | 1 | Raw | Entity registry (JSON) |
-| 2 | Code | Raw Wikipedia content as Python string |
-| 3 | Raw | Source CID signature |
+| 2 | Code | Raw Wikipedia content (exact text from source) |
+| 3 | Raw | Source CID signature (JSON-LD) |
 
-The source notebook preserves the exact Wikipedia content as fetched, before any chunking or processing. The `from_cid` is the hash of the source URL. This provides the root of the provenance chain.
+The source notebook preserves the exact Wikipedia content as fetched, before any chunking or processing. The `prov:wasDerivedFrom` links to the source URL's CID. This provides the root of the provenance chain.
 
 ### Chunks Notebook (`chunks.ipynb`)
 
