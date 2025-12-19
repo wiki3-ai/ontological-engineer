@@ -158,6 +158,10 @@ def create_rdf_tools(schema_matcher):
         # Keep the full ID including dots (e.g., "3.1", "3.4")
         return sid_str if sid_str else "unknown"
     
+    def make_triple_key(t: dict) -> tuple:
+        """Create a hashable key for deduplication."""
+        return (t.get('statement_id', ''), t.get('subject', ''), t.get('predicate', ''), t.get('object', ''))
+    
     @tool
     def emit_triple(statement_id, subject: str, predicate: str, object_value: str) -> str:
         """Emit a single RDF triple. Use this to output each triple you generate.
@@ -170,7 +174,7 @@ def create_rdf_tools(schema_matcher):
                           (e.g., '"1879-03-14"^^xsd:date', '"Albert Einstein"@en', '<https://...>')
         
         Returns:
-            Confirmation message or error with guidance
+            The triple that was recorded in Turtle syntax, or error message.
         """
         # Validate and provide helpful feedback
         issues = []
@@ -184,16 +188,24 @@ def create_rdf_tools(schema_matcher):
             issues.append("object_value is required (e.g., '\"value\"' or '<#uri>')")
         
         if issues:
-            return f"INVALID - please fix and retry: {'; '.join(issues)}"
+            return f"ERROR: {'; '.join(issues)}"
         
         norm_id = normalize_statement_id(statement_id)
-        emitted_triples.append({
+        triple = {
             "statement_id": norm_id,
             "subject": subject,
             "predicate": predicate,
             "object": object_value,
-        })
-        return f"OK: recorded triple for statement {norm_id}"
+        }
+        
+        # Check for duplicate
+        key = make_triple_key(triple)
+        existing_keys = {make_triple_key(t) for t in emitted_triples}
+        if key in existing_keys:
+            return f"(duplicate, already recorded) {subject} {predicate} {object_value} ."
+        
+        emitted_triples.append(triple)
+        return f"{subject} {predicate} {object_value} ."
 
     @tool  
     def emit_triples(triples: List[dict]) -> str:
@@ -214,10 +226,13 @@ def create_rdf_tools(schema_matcher):
             ])
         
         Returns:
-            Confirmation with count of triples recorded
+            The triples that were recorded in Turtle syntax.
         """
-        count = 0
+        recorded_lines = []
+        skipped = 0
         issues = []
+        existing_keys = {make_triple_key(t) for t in emitted_triples}
+        
         for i, t in enumerate(triples):
             if not isinstance(t, dict):
                 issues.append(f"item {i}: expected dict, got {type(t).__name__}")
@@ -240,20 +255,31 @@ def create_rdf_tools(schema_matcher):
             if missing:
                 issues.append(f"item {i}: missing {missing}, got keys: {list(t.keys())}")
                 continue
-                
-            emitted_triples.append({
+            
+            triple = {
                 "statement_id": normalize_statement_id(stmt_id),
                 "subject": subject,
                 "predicate": predicate,
                 "object": obj,
-            })
-            count += 1
+            }
+            
+            # Check for duplicate
+            key = make_triple_key(triple)
+            if key in existing_keys:
+                skipped += 1
+                continue
+            
+            existing_keys.add(key)
+            emitted_triples.append(triple)
+            recorded_lines.append(f"{subject} {predicate} {obj} .")
         
-        if count == 0 and issues:
-            return f"ERROR: 0 triples recorded. Issues: {'; '.join(issues[:5])}. Required keys: statement_id, subject, predicate, object"
+        if not recorded_lines and skipped > 0:
+            return f"(all {skipped} triples were duplicates, already recorded)"
+        elif not recorded_lines and issues:
+            return f"ERROR: {'; '.join(issues[:5])}"
         elif issues:
-            return f"PARTIAL: recorded {count} triples, skipped {len(issues)}: {'; '.join(issues[:3])}{'...' if len(issues) > 3 else ''}"
-        return f"OK: recorded {count} triples"
+            return "\n".join(recorded_lines) + f"\n({len(issues)} errors skipped)"
+        return "\n".join(recorded_lines)
     
     tools = [find_rdf_class, find_rdf_property, emit_triple, emit_triples]
     

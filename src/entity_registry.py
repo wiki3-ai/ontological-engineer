@@ -30,7 +30,7 @@ class EntityRegistry:
     
     def register(self, label: str, entity_type: str, description: str = "",
                  aliases: list = None, source_chunk: int = None,
-                 uri: str = None, wikidata_id: str = None) -> str:
+                 uri: str = None, wikidata_id: Optional[str] = None) -> str:
         """Register or update an entity, return canonical ID.
         
         Args:

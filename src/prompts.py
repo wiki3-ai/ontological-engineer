@@ -174,12 +174,24 @@ WHAT NOT TO DO:
 4. DO NOT extract facts not stated in the statement.
    Only model what the specific statement says, not general knowledge about the subject.
 
+5. DATES REQUIRE ROLE PATTERN - CRITICAL!
+   If a statement mentions "from X to Y" or any year/date range, you MUST use the Role pattern.
+   Simple triples like <Einstein> schema:worksFor <ETH> lose the temporal information.
+   
+   Pattern: Subject → Role → Target + dates
+   <Subject> schema:property _:role .
+   _:role a schema:Role .           (or OrganizationRole for employment/membership)
+   _:role schema:property <Target> .
+   _:role schema:startDate "YYYY"^^xsd:gYear .
+   _:role schema:endDate "YYYY"^^xsd:gYear .
+
 IMPORTANT:
 - Do NOT write Turtle syntax in your response - use the emit tools instead
 - ALWAYS include the statement_id when emitting triples
 - Include statement_id in blank node names: _:s{{id}}_role1
 - Only emit triples for facts that CAN be properly modeled in schema.org
-- It is better to skip a statement than emit incorrect triples"""
+- It is better to skip a statement than emit incorrect triples
+- Statements with dates MUST use Role pattern (5+ triples, not 1)"""
 
 RDF_STATEMENT_HUMAN_PROMPT = """Convert these factual statements to RDF triples.
 
@@ -203,14 +215,33 @@ CRITICAL RULES:
 3. SCHEMA MATCHING: Only use matches with score >= 0.5.
    If no good match exists, either skip the statement or use rdfs:comment.
 
-4. TEMPORAL RELATIONSHIPS: Use Role pattern for dated relationships:
-   - Employment, education, awards, membership, citizenship with dates → Role pattern
-   - Simple facts without dates → direct triple
+4. TEMPORAL RELATIONSHIPS - MANDATORY ROLE PATTERN:
+   If a statement has dates like "from X to Y" or year ranges, you MUST use the Role pattern.
+   A simple triple loses the temporal information - DO NOT emit just:
+     <Einstein> schema:employee <ETH_Zurich> .  ← WRONG! Loses the dates!
+   
+   CORRECT Role Pattern (REQUIRED for dated relationships):
+   Statement: "Einstein worked at ETH Zurich from 1912 to 1914"
+     <https://en.wikipedia.org/wiki/Albert_Einstein> schema:worksFor _:s1_21_role1 .
+     _:s1_21_role1 a schema:OrganizationRole .
+     _:s1_21_role1 schema:worksFor <https://en.wikipedia.org/wiki/ETH_Zurich> .
+     _:s1_21_role1 schema:startDate "1912"^^xsd:gYear .
+     _:s1_21_role1 schema:endDate "1914"^^xsd:gYear .
+
+   Statement: "Einstein was a citizen of Switzerland from 1901 to 1955"
+     <https://en.wikipedia.org/wiki/Albert_Einstein> schema:nationality _:s1_14_role1 .
+     _:s1_14_role1 a schema:Role .
+     _:s1_14_role1 schema:nationality <https://en.wikipedia.org/wiki/Switzerland> .
+     _:s1_14_role1 schema:startDate "1901"^^xsd:gYear .
+     _:s1_14_role1 schema:endDate "1955"^^xsd:gYear .
+
+   Use OrganizationRole for employment/membership, Role for citizenship/other.
 
 5. DO NOT:
    - Use schema:description for quotes or narrative (only for entity descriptions)
    - Emit unrelated triples when no good match exists
    - Extract facts not stated in the statement
+   - Emit simple triples when there are dates (MUST use Role pattern)
 
 Process each statement. If you cannot properly model it, skip it or use rdfs:comment."""
 
