@@ -1,0 +1,14 @@
+# RDF Knowledge Graph: Albert Einstein
+# Source: https://en.wikipedia.org/wiki/Albert_Einstein
+# License: CC BY-SA 4.0
+# Generated: 2025-12-19T02:20:41.204496
+
+@prefix schema: <https://schema.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix wiki3: <https://wiki3.ai/vocab/> .
+@base <https://en.wikipedia.org/wiki/Albert_Einstein> .
+
+
+# === Triples ===
+

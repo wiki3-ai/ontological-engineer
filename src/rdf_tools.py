@@ -1,5 +1,6 @@
 """RDF generation tools for LLM tool calling."""
 
+import re
 from typing import List
 from langchain_core.tools import tool
 
@@ -81,25 +82,55 @@ def create_rdf_tools(schema_matcher):
                 lines.append(f"    Description: {r['description'][:80]}")
         return "\n".join(lines)
 
+    def normalize_statement_id(sid) -> str:
+        """Normalize statement ID - extract just the number, be permissive."""
+        if sid is None:
+            return "unknown"
+        sid_str = str(sid).strip()
+        # Remove common wrappers: brackets, quotes, whitespace
+        sid_str = sid_str.strip('[]()"\' ')
+        # Extract leading digits if present
+        match = re.match(r'^(\d+)', sid_str)
+        if match:
+            return match.group(1)
+        return sid_str if sid_str else "unknown"
+    
     @tool
-    def emit_triple(subject: str, predicate: str, object_value: str) -> str:
+    def emit_triple(statement_id: str, subject: str, predicate: str, object_value: str) -> str:
         """Emit a single RDF triple. Use this to output each triple you generate.
         
         Args:
+            statement_id: The ID of the statement this triple comes from (e.g., "1", "2", "3")
             subject: The subject URI (e.g., "<https://example.org#entity>") or prefixed (e.g., "schema:Person")
             predicate: The predicate URI or prefixed term (e.g., "schema:birthDate", "rdf:type")
             object_value: The object - a URI, prefixed term, or literal with datatype 
                           (e.g., '"1879-03-14"^^xsd:date', '"Albert Einstein"@en', '<https://...>')
         
         Returns:
-            Confirmation message
+            Confirmation message or error with guidance
         """
+        # Validate and provide helpful feedback
+        issues = []
+        if not statement_id:
+            issues.append("statement_id is required (e.g., '1', '2')")
+        if not subject:
+            issues.append("subject is required (e.g., '<#entity_id>' or 'schema:Person')")
+        if not predicate:
+            issues.append("predicate is required (e.g., 'schema:birthDate' or 'rdf:type')")
+        if not object_value:
+            issues.append("object_value is required (e.g., '\"value\"' or '<#uri>')")
+        
+        if issues:
+            return f"INVALID - please fix and retry: {'; '.join(issues)}"
+        
+        norm_id = normalize_statement_id(statement_id)
         emitted_triples.append({
+            "statement_id": norm_id,
             "subject": subject,
             "predicate": predicate,
             "object": object_value,
         })
-        return f"Triple recorded: {subject} {predicate} {object_value}"
+        return f"OK: recorded triple for statement {norm_id}"
 
     @tool  
     def emit_triples(triples: List[dict]) -> str:
@@ -107,30 +138,59 @@ def create_rdf_tools(schema_matcher):
         
         Args:
             triples: List of triple dictionaries, each with keys:
+                     - statement_id: The ID of the statement this triple comes from (e.g., "1", "2")
                      - subject: The subject URI or prefixed term
                      - predicate: The predicate URI or prefixed term  
                      - object: The object URI, prefixed term, or literal
                      
         Example:
             emit_triples([
-                {"subject": "<#person_einstein>", "predicate": "rdf:type", "object": "schema:Person"},
-                {"subject": "<#person_einstein>", "predicate": "schema:name", "object": '"Albert Einstein"'},
-                {"subject": "<#person_einstein>", "predicate": "schema:birthDate", "object": '"1879-03-14"^^xsd:date'}
+                {"statement_id": "1", "subject": "<#person_einstein>", "predicate": "rdf:type", "object": "schema:Person"},
+                {"statement_id": "1", "subject": "<#person_einstein>", "predicate": "schema:name", "object": '"Albert Einstein"'},
+                {"statement_id": "2", "subject": "<#person_einstein>", "predicate": "schema:birthDate", "object": '"1879-03-14"^^xsd:date'}
             ])
         
         Returns:
             Confirmation with count of triples recorded
         """
         count = 0
-        for t in triples:
-            if isinstance(t, dict) and all(k in t for k in ("subject", "predicate", "object")):
-                emitted_triples.append({
-                    "subject": t["subject"],
-                    "predicate": t["predicate"],
-                    "object": t["object"],
-                })
-                count += 1
-        return f"Recorded {count} triples"
+        issues = []
+        for i, t in enumerate(triples):
+            if not isinstance(t, dict):
+                issues.append(f"item {i}: expected dict, got {type(t).__name__}")
+                continue
+            
+            # Be flexible with key names
+            stmt_id = t.get("statement_id") or t.get("statementId") or t.get("id") or t.get("stmt_id")
+            subject = t.get("subject") or t.get("s")
+            predicate = t.get("predicate") or t.get("p") or t.get("property")
+            obj = t.get("object") or t.get("o") or t.get("value") or t.get("object_value")
+            
+            missing = []
+            if not subject:
+                missing.append("subject")
+            if not predicate:
+                missing.append("predicate")
+            if not obj:
+                missing.append("object")
+            
+            if missing:
+                issues.append(f"item {i}: missing {missing}, got keys: {list(t.keys())}")
+                continue
+                
+            emitted_triples.append({
+                "statement_id": normalize_statement_id(stmt_id),
+                "subject": subject,
+                "predicate": predicate,
+                "object": obj,
+            })
+            count += 1
+        
+        if count == 0 and issues:
+            return f"ERROR: 0 triples recorded. Issues: {'; '.join(issues[:5])}. Required keys: statement_id, subject, predicate, object"
+        elif issues:
+            return f"PARTIAL: recorded {count} triples, skipped {len(issues)}: {'; '.join(issues[:3])}{'...' if len(issues) > 3 else ''}"
+        return f"OK: recorded {count} triples"
     
     tools = [find_rdf_class, find_rdf_property, emit_triple, emit_triples]
     

@@ -31,19 +31,19 @@ Wikipedia Article
 │   chunks.ipynb                              │  Markdown cells with source text
 │                                             │  + context breadcrumbs + CID sigs
 └────────┬────────────────────────────────────┘
-         │ LLM extraction
+         │ LLM extraction (per-chunk)
          ▼
 ┌─────────────────────────────────────────────┐
 │ data/{article_slug}/{timestamp}/            │
 │   facts.ipynb                               │  Markdown cells with factual statements
 │                                             │  + CID signatures
 └────────┬────────────────────────────────────┘
-         │ LLM conversion (with tool-based triple output)
+         │ LLM conversion (per-chunk, with tool-based triple output)
          ▼
 ┌─────────────────────────────────────────────┐
 │ data/{article_slug}/{timestamp}/            │
 │   rdf.ipynb                                 │  Raw cells with Turtle RDF
-│                                             │  (triples emitted via tools)
+│                                             │  (triples emitted via tools, grouped by statement)
 └────────┬────────────────────────────────────┘
          │ Export
          ▼
@@ -70,6 +70,18 @@ Schema Vocabulary Support:
 │ schema_matcher. │  LLM tools for RDF generation
 │ py              │  
 └─────────────────┘
+
+Source Code Modules (src/):
+┌─────────────────┐
+│ cid.py          │  Content ID (CID) hashing & signatures
+│ entity_registry │  Entity tracking with stable URIs
+│ notebook_gen... │  Notebook file generation
+│ processors.py   │  Facts extraction & RDF generation loops
+│ prompts.py      │  LLM prompt templates
+│ rdf_tools.py    │  Tool definitions for vocabulary lookup & triple emission
+│ section_parser  │  Wikipedia section hierarchy parsing
+│ utils.py        │  Logging, chunking utilities
+└─────────────────┘
 ```
 
 ### Output Directory Structure
@@ -79,13 +91,14 @@ Each article gets its own subdirectory under `data/`, with a timestamp subdirect
 ```
 data/
 ├── vocab_cache/                  # Shared schema.org embeddings
-│   ├── schema.json
-│   └── schema.npy
+│   ├── config.json               # Embedding model configuration
+│   ├── schema.json               # Schema.org vocabulary terms
+│   └── schema.npy                # Embedding vectors
 └── albert_einstein/              # Per-article output
     ├── 20241218_143022/          # Run timestamp directory
     │   ├── chunks.ipynb          # Source text chunks
     │   ├── facts.ipynb           # Extracted facts  
-    │   ├── rdf.ipynb             # RDF triples
+    │   ├── rdf.ipynb             # RDF triples (per-statement)
     │   ├── triples.ttl           # Combined Turtle export
     │   └── registry.json         # Entity registry snapshot
     └── 20241219_091500/          # Another run (preserved)
@@ -113,12 +126,27 @@ Each generated cell includes a cryptographic signature for dependency tracking:
 }
 ```
 
-### CID Functions
+For RDF cells, signatures also include statement-level tracking:
+
+```json
+{
+  "cell": 5,
+  "stmt_key": "3_2",
+  "chunk_num": 3,
+  "stmt_idx": 2,
+  "type": "rdf",
+  "cid": "<SHA256 hash of RDF content>",
+  "from_cid": "<SHA256 hash of source statement>"
+}
+```
+
+### CID Functions (src/cid.py)
 
 - `compute_cid(content)` - SHA256 hash of string content
 - `make_signature(cell_num, type, cid, from_cid)` - Create signature dict
 - `parse_signature(raw_content)` - Parse JSON signature from raw cell
 - `extract_signatures(notebook)` - Extract all signatures keyed by cell number
+- `extract_statement_signatures(notebook)` - Extract RDF signatures keyed by `stmt_key`
 
 ### Incremental Processing Logic
 
@@ -129,10 +157,18 @@ For each source cell to process:
 3. **Signature exists, `from_cid` matches**: Skip (content is up-to-date)
 4. **Signature exists, `from_cid` differs**: Remove old cells, regenerate, append
 
+For RDF generation (per-chunk):
+1. Parse all statements from the facts chunk
+2. Compute combined CID for all statements in the chunk
+3. If chunk-level CID matches, skip entire chunk
+4. Otherwise, process all statements in one LLM call with statement IDs
+5. Group emitted triples by statement ID and write per-statement cells
+6. Save notebook after each chunk for incremental persistence
+
 This ensures:
 - Changed source content triggers regeneration
 - Unchanged content is preserved (including human edits)
-- No placeholder content needed to detect missing cells
+- Interrupted runs can resume from last saved chunk
 
 ## Intermediate Notebook Structure
 
@@ -186,18 +222,23 @@ This ensures:
 |--------|------|---------|
 | 0 | Markdown | Provenance + prefixes + prompt template |
 | 1 | Raw | Entity registry (JSON) |
-| 2 | Raw | RDF triples for facts 1 |
-| 3 | Raw | RDF 1 CID signature |
+| 2 | Raw | RDF triples for statement 1.1 |
+| 3 | Raw | Statement 1.1 CID signature |
+| 4 | Raw | RDF triples for statement 1.2 |
+| 5 | Raw | Statement 1.2 CID signature |
 | ... | ... | ... |
 
 **RDF cell format:**
 ```turtle
-# Context: Albert Einstein > Early life
-# Cell: 1 of 63
+# Statement [1.1]: Albert Einstein was born on March 14, 1879.
+<#person_albert_einstein> rdf:type schema:Person .
+<#person_albert_einstein> schema:birthDate "1879-03-14"^^xsd:date .
+```
 
-<https://en.wikipedia.org/wiki/Albert_Einstein#person_albert_einstein>
-    <https://schema.org/birthDate> "1879-03-14"^^<http://www.w3.org/2001/XMLSchema#date> ;
-    <https://schema.org/birthPlace> <https://en.wikipedia.org/wiki/Albert_Einstein#place_ulm> .
+Each statement gets its own cell with:
+- Comment showing chunk.statement index and original statement text
+- Triples emitted for that specific statement
+- If no triples emitted, includes debug info about tool calls made
 ```
 
 ## Entity Registry
@@ -297,7 +338,8 @@ ARTICLE_TITLE = "Albert Einstein"
 OUTPUT_DIR = "data"
 CHUNK_SIZE = 2000
 CHUNK_OVERLAP = 128
-CELL_TIMEOUT_SECONDS = 60  # HTTP timeout per LLM call
+CELL_TIMEOUT_SECONDS = 60   # HTTP timeout per LLM call
+MAX_ITERATIONS = 150        # Max tool-calling iterations per chunk
 
 LLM_CONFIG = {
     "provider": "lm_studio",
@@ -308,9 +350,8 @@ LLM_CONFIG = {
 
 VOCAB_CACHE_DIR = "data/vocab_cache"
 
-# Generated at runtime
-RUN_TIMESTAMP = "20241218_143022"  # YYYYMMDD_HHMMSS
-ARTICLE_OUTPUT_DIR = "data/albert_einstein"
+# Continue from a previous run (set to None for fresh run)
+CONTINUE_FROM_RUN = None  # e.g., "data/albert_einstein/20241218_143022"
 ```
 
 ## Output Files
@@ -319,11 +360,12 @@ Files are organized by article in timestamped subdirectories:
 
 | File Pattern | Description |
 |------|-------------|
-| `data/{article}/chunks_{timestamp}.ipynb` | Chunked source text with context |
-| `data/{article}/facts_{timestamp}.ipynb` | Extracted factual statements |
-| `data/{article}/rdf_{timestamp}.ipynb` | RDF triples via tool-based output |
-| `data/{article}/triples_{timestamp}.ttl` | Combined Turtle file for import |
-| `data/{article}/registry_{timestamp}.json` | Entity registry snapshot |
+| `data/{article}/{timestamp}/chunks.ipynb` | Chunked source text with context |
+| `data/{article}/{timestamp}/facts.ipynb` | Extracted factual statements |
+| `data/{article}/{timestamp}/rdf.ipynb` | RDF triples (per-statement cells) |
+| `data/{article}/{timestamp}/triples.ttl` | Combined Turtle file for import |
+| `data/{article}/{timestamp}/registry.json` | Entity registry snapshot |
+| `data/vocab_cache/config.json` | Embedding model configuration |
 | `data/vocab_cache/schema.json` | Cached schema.org vocabulary |
 | `data/vocab_cache/schema.npy` | Cached schema.org embeddings |
 
@@ -402,39 +444,69 @@ def find_rdf_property(description: str, subject_type: str = "", object_type: str
     # Returns top 5 matches with URIs, domains, ranges, descriptions
 ```
 
-**Output Tools** (emit structured triples):
+**Output Tools** (emit structured triples - must include statement_id):
 ```python
 @tool
-def emit_triple(subject: str, predicate: str, object_value: str) -> str:
-    """Emit a single RDF triple."""
-    # Collects triple for later conversion to Turtle
+def emit_triple(statement_id: str, subject: str, predicate: str, object_value: str) -> str:
+    """Emit a single RDF triple with statement provenance."""
+    # Validates inputs, returns OK/INVALID with guidance
+    # statement_id links triple back to source statement (e.g., "1", "2")
 
 @tool
 def emit_triples(triples: List[dict]) -> str:
     """Emit multiple RDF triples at once (more efficient)."""
-    # Each dict has: subject, predicate, object keys
+    # Each dict has: statement_id, subject, predicate, object keys
+    # Flexible key matching (accepts variations like 'id', 's', 'p', 'o')
+    # Returns OK/PARTIAL/ERROR with details on what was accepted/rejected
 ```
 
 ### Tool-Based Triple Output
 
 Instead of asking the LLM to generate Turtle syntax directly (which often includes markdown commentary), the pipeline uses output tools:
 
-1. LLM calls `find_rdf_class` and `find_rdf_property` to discover vocabulary terms
-2. LLM calls `emit_triple` or `emit_triples` to output each triple structurally
-3. LLM provides a brief summary with any quality/accuracy concerns
-4. Pipeline collects emitted triples and converts to Turtle format
+1. LLM receives all statements from a chunk with numbered IDs (e.g., `[1] Statement text...`)
+2. LLM calls `find_rdf_class` and `find_rdf_property` to discover vocabulary terms
+3. LLM calls `emit_triple` or `emit_triples` for each statement, including the statement_id
+4. Pipeline collects emitted triples and groups them by statement_id
+5. Each statement gets its own cell in the RDF notebook
 
 Benefits:
 - Clean Turtle output without markdown artifacts
 - Structured triple data for validation
-- LLM can report concerns separately from data
-- Easier to post-process or transform
+- Statement-level provenance tracking
+- Per-chunk LLM calls (faster than per-statement)
+- Tool validation with corrective feedback allows LLM to self-correct
+
+### Tool Validation & Self-Correction
+
+The emit tools validate inputs and return actionable feedback:
+
+```python
+# Valid call
+emit_triple("1", "<#einstein>", "schema:birthDate", '"1879-03-14"^^xsd:date')
+# Returns: "OK: recorded triple for statement 1"
+
+# Invalid call (missing required arg)
+emit_triple("", "<#einstein>", "schema:birthDate", '"1879-03-14"^^xsd:date')
+# Returns: "INVALID - please fix and retry: statement_id is required (e.g., '1', '2')"
+
+# Partial success with emit_triples
+emit_triples([{...valid...}, {...missing object...}])
+# Returns: "PARTIAL: recorded 1 triples, skipped 1: item 1: missing ['object'], got keys: ['statement_id', 'subject', 'predicate']"
+```
+
+This allows the LLM to correct mistakes in subsequent iterations.
 
 ### Tool-Calling Loop
 
+The RDF generation processes one chunk at a time, with all statements from that chunk:
+
 ```
 ┌─────────────────────────────────────────────────────┐
-│ LLM receives facts + prompt                          │
+│ LLM receives chunk's statements with IDs:           │
+│   [1] Statement one...                              │
+│   [2] Statement two...                              │
+│   [3] Statement three...                            │
 └──────────────────────┬──────────────────────────────┘
                        │
          ┌─────────────▼─────────────┐
@@ -448,11 +520,12 @@ Benefits:
 │           │  │           │  │emit_triples           │
 └─────┬─────┘  └─────┬─────┘  └─────┬─────┘           │
       │              │              │                  │
+      │              │     (includes statement_id)     │
       └──────────────┼──────────────┘                  │
                      │                                 │
          ┌───────────▼───────────┐                     │
          │ Tool result added to  │─────────────────────┘
-         │ conversation          │
+         │ conversation (OK/ERROR)│
          └───────────────────────┘
                        │
                        │ (no more tool calls)
@@ -460,7 +533,37 @@ Benefits:
          ┌───────────────────────┐
          │ Return summary +      │
          │ collected triples     │
+         │ (grouped by stmt_id)  │
          └───────────────────────┘
+```
+
+### Per-Chunk Processing Flow
+
+```python
+# In processors.py process_rdf_generation():
+for facts_chunk in facts_data:
+    # Parse statements: ["stmt1", "stmt2", ...]
+    statements = parse_statements(facts_chunk["facts_text"])
+    
+    # Format for prompt with IDs
+    statements_text = "\n".join([f"[{i+1}] {s}" for i, s in enumerate(statements)])
+    
+    # Single LLM call for entire chunk
+    summary, triples, iterations, tool_log = call_llm_with_tools(...)
+    
+    # Group triples by statement_id
+    triples_by_stmt = {}
+    for t in triples:
+        stmt_id = t["statement_id"]  # "1", "2", etc.
+        triples_by_stmt.setdefault(stmt_id, []).append(t)
+    
+    # Write one cell per statement
+    for stmt_id, stmt_triples in triples_by_stmt.items():
+        # Write Turtle with statement comment
+        # Write signature cell
+    
+    # Save notebook after each chunk (incremental)
+    nbformat.write(rdf_nb, rdf_path)
 ```
 
 ### Embedding Model
@@ -484,27 +587,41 @@ find_rdf_class("a famous scientist who won the Nobel Prize")
 find_rdf_property("the date someone was born", subject_type="Person")
 # Returns: schema:birthDate (0.91), schema:deathDate (0.72), ...
 
-# Output tools - emit triples
-emit_triple("<#person_einstein>", "rdf:type", "schema:Person")
-# Returns: "Triple recorded: <#person_einstein> rdf:type schema:Person"
+# Output tools - emit triples with statement_id
+emit_triple("1", "<#person_einstein>", "rdf:type", "schema:Person")
+# Returns: "OK: recorded triple for statement 1"
 
 emit_triples([
-    {"subject": "<#person_einstein>", "predicate": "schema:name", "object": '"Albert Einstein"'},
-    {"subject": "<#person_einstein>", "predicate": "schema:birthDate", "object": '"1879-03-14"^^xsd:date'}
+    {"statement_id": "1", "subject": "<#person_einstein>", "predicate": "schema:name", "object": '"Albert Einstein"'},
+    {"statement_id": "2", "subject": "<#person_einstein>", "predicate": "schema:birthDate", "object": '"1879-03-14"^^xsd:date'}
 ])
-# Returns: "Recorded 2 triples"
+# Returns: "OK: recorded 2 triples"
 ```
+
+## Source Code Modules
+
+| File | Description |
+|------|-------------|
+| `src/cid.py` | Content ID hashing, signature creation/parsing |
+| `src/entity_registry.py` | Entity tracking with stable URI generation |
+| `src/notebook_generators.py` | Generate chunks/facts/rdf notebook files |
+| `src/processors.py` | Main processing loops for facts extraction and RDF generation |
+| `src/prompts.py` | LLM prompt templates for facts and RDF stages |
+| `src/rdf_tools.py` | Tool definitions (find_rdf_class, emit_triple, etc.) |
+| `src/section_parser.py` | Wikipedia section hierarchy parsing |
+| `src/utils.py` | Logging utilities, contextual chunk creation |
 
 ## Future Considerations
 
 - Entity extraction during facts stage (currently seeded manually)
 - Cross-article entity linking
-- Validation of generated RDF syntax
+- Validation of generated RDF syntax (rdflib parsing)
 - SHACL shape validation
 - Multi-article batch processing
 - Additional vocabularies (Dublin Core, FOAF, etc.)
 - Parallel tool calls for faster vocabulary lookup
 - Caching of common term lookups
+- Human review workflow integration
 
 ## Files Overview
 
@@ -513,10 +630,11 @@ emit_triples([
 | `wiki_to_kg_pipeline.ipynb` | Main orchestrator notebook |
 | `schema_setup.ipynb` | One-time vocabulary index setup |
 | `schema_matcher.py` | Embedding-based vocabulary matcher |
+| `src/` | Python modules (see Source Code Modules above) |
 | `DESIGN.md` | This design document |
-| `data/{article}_chunks.ipynb` | Chunked source text with context |
-| `data/{article}_facts.ipynb` | Extracted factual statements |
-| `data/{article}_rdf.ipynb` | RDF triples in Turtle format |
-| `data/{article}.ttl` | Combined Turtle file for import |
-| `data/entity_registry.json` | Shared entity registry |
+| `data/{article}/{timestamp}/chunks.ipynb` | Chunked source text with context |
+| `data/{article}/{timestamp}/facts.ipynb` | Extracted factual statements |
+| `data/{article}/{timestamp}/rdf.ipynb` | RDF triples (per-statement) |
+| `data/{article}/{timestamp}/triples.ttl` | Combined Turtle file for import |
+| `data/{article}/{timestamp}/registry.json` | Entity registry snapshot |
 | `data/vocab_cache/` | Cached schema.org embeddings |

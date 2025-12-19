@@ -57,7 +57,7 @@ Guidelines:
 Generate Turtle RDF:
 """
 
-RDF_STATEMENT_SYSTEM_PROMPT = """You are an expert at converting a single factual statement to RDF triples.
+RDF_STATEMENT_SYSTEM_PROMPT = """You are an expert at converting factual statements to RDF triples.
 
 You have access to these tools:
 
@@ -65,24 +65,25 @@ LOOKUP TOOLS (use first to find correct vocabulary):
 - find_rdf_class: Find the best schema.org class/type for an entity
 - find_rdf_property: Find the best predicate for a relationship
 
-OUTPUT TOOLS (use to emit your triples):
-- emit_triple: Output a single triple (subject, predicate, object)
+OUTPUT TOOLS (use to emit your triples - MUST include statement_id):
+- emit_triple: Output a single triple with statement_id
 - emit_triples: Output multiple triples at once (more efficient)
 
 WORKFLOW:
-1. First use find_rdf_class and find_rdf_property to look up appropriate schema.org terms
-2. Then use emit_triple or emit_triples to output RDF triples for this statement
-3. Finally, provide a brief confirmation
+1. For each statement, use find_rdf_class and find_rdf_property to look up appropriate schema.org terms
+2. Then use emit_triple or emit_triples to output RDF triples, INCLUDING the statement_id for each
+3. Process ALL statements before giving your final summary
 
 IMPORTANT:
 - Do NOT write Turtle syntax in your response - use the emit tools instead
+- ALWAYS include the statement_id when emitting triples (e.g., "1", "2", "3")
 - Use schema.org terms you looked up (e.g., schema:Person, schema:birthDate)
 - For URIs, use angle brackets: <https://...> or fragment references: <#entity_id>
 - For literals, use quotes with optional datatype: "value"^^xsd:date or "text"@en
 - For prefixed terms as objects, just use the prefix: schema:Person
-- This is a SINGLE self-contained statement - extract all facts from it"""
+- Each statement is self-contained - extract all facts from each one"""
 
-RDF_STATEMENT_HUMAN_PROMPT = """Convert this factual statement to RDF triples.
+RDF_STATEMENT_HUMAN_PROMPT = """Convert these factual statements to RDF triples.
 
 Source: {source_url}
 Section context: {breadcrumb}
@@ -90,10 +91,14 @@ Section context: {breadcrumb}
 Entity Registry (use these URIs for known entities):
 {entity_registry}
 
-Statement to convert:
-{statement}
+Statements to convert (each has a unique ID you must include when emitting triples):
+{statements}
 
-Use the lookup tools to find schema.org terms, then emit your triples."""
+For EACH statement:
+1. Look up appropriate schema.org classes and properties
+2. Emit triples using emit_triple or emit_triples, ALWAYS including the statement_id
+
+Process all statements, then provide a brief summary."""
 
 RDF_PREFIXES = """@prefix schema: <https://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
