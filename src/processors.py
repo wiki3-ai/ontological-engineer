@@ -269,21 +269,20 @@ def process_rdf_generation(
         
         total_statements += len(statements)
         
-        # Build statement list with IDs and compute combined CID
+        # Build statement list with IDs and check which need processing
         stmt_items = []
-        stmt_cids = []
-        needs_processing = False
+        all_up_to_date = True
         
         for idx, stmt in enumerate(statements):
             stmt_id = str(idx + 1)
             stmt_key = f"{chunk_num}_{idx + 1}"
             stmt_cid = compute_cid(stmt)
-            stmt_cids.append(stmt_cid)
             
             # Check if we already have up-to-date RDF for this statement
             existing_sig = rdf_signatures.get(stmt_key)
-            if not existing_sig or existing_sig.get("from_cid") != stmt_cid:
-                needs_processing = True
+            is_current = existing_sig and existing_sig.get("from_cid") == stmt_cid
+            if not is_current:
+                all_up_to_date = False
             
             stmt_items.append({
                 "id": stmt_id,
@@ -292,13 +291,8 @@ def process_rdf_generation(
                 "cid": stmt_cid,
             })
         
-        # Compute combined CID for the chunk's statements
-        combined_cid = compute_cid("|".join(stmt_cids))
-        
-        # Check if entire chunk is up-to-date
-        chunk_key = f"chunk_{chunk_num}"
-        existing_chunk_sig = rdf_signatures.get(chunk_key)
-        if existing_chunk_sig and existing_chunk_sig.get("from_cid") == combined_cid:
+        # Skip if ALL statements already have up-to-date signatures
+        if all_up_to_date:
             log_progress(f"  Chunk {chunk_num}: ⊘ Up-to-date ({len(statements)} stmts)")
             skipped_count += len(statements)
             continue
@@ -421,11 +415,8 @@ def process_rdf_generation(
                 rdf_nb.cells.append(new_raw_cell(rdf_content))
                 rdf_nb.cells.append(new_raw_cell(json.dumps(signature, indent=2)))
                 
-                # Update signatures dict
+                # Update signatures dict for in-memory tracking
                 rdf_signatures[stmt_key] = signature
-            
-            # Add chunk-level signature for quick skip check
-            rdf_signatures[chunk_key] = {"from_cid": combined_cid}
             
             processed_count += len(statements)
         except Exception as e:
