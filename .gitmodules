@@ -1,0 +1,6 @@
+[submodule "dspy"]
+	path = dspy
+	url = https://github.com/wiki3-ai/dspy.git
+[submodule "arbor"]
+	path = arbor
+	url = https://github.com/wiki3-ai/arbor.git
