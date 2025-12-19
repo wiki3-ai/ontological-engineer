@@ -104,5 +104,9 @@ RDF_PREFIXES = """@prefix schema: <https://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wiki3: <https://wiki3.ai/vocab/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix repro: <https://w3id.org/reproduceme#> .
+@prefix pplan: <http://purl.org/net/p-plan#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <{source_url}> .
 """

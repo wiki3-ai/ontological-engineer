@@ -96,12 +96,14 @@ data/
 │   └── schema.npy                # Embedding vectors
 └── albert_einstein/              # Per-article output
     ├── 20241218_143022/          # Run timestamp directory
-    │   ├── chunks.ipynb          # Source text chunks
+    │   ├── source.ipynb          # Raw Wikipedia content (before chunking)
+    │   ├── chunks.ipynb          # Source text chunks with context
     │   ├── facts.ipynb           # Extracted facts  
     │   ├── rdf.ipynb             # RDF triples (per-statement)
     │   ├── triples.ttl           # Combined Turtle export
     │   └── registry.json         # Entity registry snapshot
     └── 20241219_091500/          # Another run (preserved)
+        ├── source.ipynb
         ├── chunks.ipynb
         ├── facts.ipynb
         └── ...
@@ -109,44 +111,104 @@ data/
 
 **Benefits of timestamp-as-subdirectory:**
 - Simple filenames (`chunks.ipynb` instead of `chunks_20241218_143022.ipynb`)
-- Files can reference each other with relative paths (e.g., `source_notebook: facts.ipynb`)
+- Files can reference each other with relative paths (e.g., `source_notebook: source.ipynb`)
 - Multiple runs are preserved for comparison
 - Clean directory listing per run
 
 ## Content ID (CID) System
 
-Each generated cell includes a cryptographic signature for dependency tracking:
+Each generated cell includes a cryptographic signature for dependency tracking, using **IPFS Content Identifiers (CIDs)** and **REPRODUCE-ME ontology** for provenance representation.
+
+### IPFS CIDs
+
+Content identifiers are computed using the IPFS CID format (CIDv1, 'raw' codec, SHA2-256 hash) via the `multiformats` library:
+
+```python
+from multiformats import CID
+import hashlib
+
+sha256 = hashlib.sha256(content.encode('utf-8')).digest()
+cid = CID("base32", 1, "raw", ("sha2-256", sha256))
+# Result: "bafkreihdwdcefgh4dqkjv67uzcmw7o..." (base32 encoded)
+```
+
+### REPRODUCE-ME Provenance
+
+Provenance follows the **REPRODUCE-ME ontology** (https://w3id.org/reproduceme), an extension of PROV-O designed for scientific computation with Jupyter notebooks. Signatures are stored as **JSON-LD** documents using standard PROV-O vocabulary.
+
+### JSON-LD Signature Format
+
+Signatures use JSON-LD with PROV-O/REPRODUCE-ME vocabulary, making them directly usable as linked data:
 
 ```json
 {
-  "cell": 1,
-  "type": "chunk|facts|rdf",
-  "cid": "<SHA256 hash of cell content>",
-  "from_cid": "<SHA256 hash of source cell content>"
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "repro": "https://w3id.org/reproduceme#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prov:wasDerivedFrom": {"@type": "@id"}
+  },
+  "@id": "ipfs://bafkreihdwdcefgh4dqkjv67uzcmw7o...",
+  "@type": ["prov:Entity", "repro:InputData"],
+  "dcterms:identifier": "bafkreihdwdcefgh4dqkjv67uzcmw7o...",
+  "prov:label": "source:Albert Einstein",
+  "prov:wasDerivedFrom": {"@id": "ipfs://bafkreiabcdef..."},
+  "_cell": 1,
+  "_type": "source"
 }
 ```
 
-For RDF cells, signatures also include statement-level tracking:
+**Key JSON-LD properties:**
+- `@id` - IPFS URI of this entity (`ipfs://<CID>`)
+- `@type` - RDF types (`prov:Entity` + REPRODUCE-ME subclass)
+- `dcterms:identifier` - Raw CID string for indexing
+- `prov:label` - Human-readable label
+- `prov:wasDerivedFrom` - Link to source entity (the provenance chain)
+
+**Pipeline metadata properties** (prefixed with `_`):
+- `_cell` - Cell number in notebook
+- `_type` - Content type (source, chunk, facts, rdf)
+- `_stmt_key`, `_chunk_num`, `_stmt_idx` - RDF statement tracking
+
+For RDF cells, signatures include statement-level tracking:
 
 ```json
 {
-  "cell": 5,
-  "stmt_key": "3_2",
-  "chunk_num": 3,
-  "stmt_idx": 2,
-  "type": "rdf",
-  "cid": "<SHA256 hash of RDF content>",
-  "from_cid": "<SHA256 hash of source statement>"
+  "@context": {...},
+  "@id": "ipfs://bafkreixyz...",
+  "@type": ["prov:Entity", "repro:OutputData"],
+  "dcterms:identifier": "bafkreixyz...",
+  "prov:label": "rdf:3_2",
+  "prov:wasDerivedFrom": {"@id": "ipfs://bafkreiabc..."},
+  "_cell": 5,
+  "_type": "rdf",
+  "_stmt_key": "3_2",
+  "_chunk_num": 3,
+  "_stmt_idx": 2
 }
 ```
+
+### REPRODUCE-ME Class Mapping
+
+| Pipeline Stage | REPRODUCE-ME Class | Notes |
+|---------------|-------------------|-------|
+| `source.ipynb` | `repro:InputData` | Raw Wikipedia content |
+| `chunks.ipynb` | `repro:Data` | Chunked text with context |
+| `facts.ipynb` | `repro:Data` | Extracted factual statements |
+| `rdf.ipynb` | `repro:OutputData` | Final RDF triples |
 
 ### CID Functions (src/cid.py)
 
-- `compute_cid(content)` - SHA256 hash of string content
-- `make_signature(cell_num, type, cid, from_cid)` - Create signature dict
-- `parse_signature(raw_content)` - Parse JSON signature from raw cell
+- `compute_cid(content)` - Compute IPFS CID (CIDv1, raw, SHA2-256) for string/bytes content
+- `cid_to_uri(cid)` - Convert CID string to `ipfs://` URI
+- `uri_to_cid(uri)` - Extract CID from `ipfs://` URI
+- `make_signature(...)` - Create JSON-LD signature with PROV-O/REPRODUCE-ME vocabulary
+- `parse_signature(raw_content)` - Parse JSON-LD signature from raw cell (with legacy format support)
 - `extract_signatures(notebook)` - Extract all signatures keyed by cell number
 - `extract_statement_signatures(notebook)` - Extract RDF signatures keyed by `stmt_key`
+- `generate_provenance_ttl(signatures)` - Generate Turtle format from JSON-LD signatures
+- `collect_pipeline_signatures(output_dir)` - Collect all signatures from pipeline notebooks
 
 ### Incremental Processing Logic
 
@@ -172,6 +234,17 @@ This ensures:
 
 ## Intermediate Notebook Structure
 
+### Source Notebook (`source.ipynb`)
+
+| Cell # | Type | Content |
+|--------|------|---------|
+| 0 | Markdown | Provenance metadata (YAML) |
+| 1 | Raw | Entity registry (JSON) |
+| 2 | Code | Raw Wikipedia content as Python string |
+| 3 | Raw | Source CID signature |
+
+The source notebook preserves the exact Wikipedia content as fetched, before any chunking or processing. The `from_cid` is the hash of the source URL. This provides the root of the provenance chain.
+
 ### Chunks Notebook (`chunks.ipynb`)
 
 | Cell # | Type | Content |
@@ -179,9 +252,9 @@ This ensures:
 | 0 | Markdown | Provenance metadata (YAML) |
 | 1 | Raw | Entity registry (JSON) |
 | 2 | Markdown | Chunk 1 content with context |
-| 3 | Raw | Chunk 1 CID signature |
+| 3 | Raw | Chunk 1 CID signature (`from_cid` = source CID) |
 | 4 | Markdown | Chunk 2 content with context |
-| 5 | Raw | Chunk 2 CID signature |
+| 5 | Raw | Chunk 2 CID signature (`from_cid` = source CID) |
 | ... | ... | ... |
 
 **Chunk cell format:**
@@ -283,6 +356,10 @@ class EntityRegistry:
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix wiki3: <https://wiki3.ai/vocab/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix repro: <https://w3id.org/reproduceme#> .
+@prefix pplan: <http://purl.org/net/p-plan#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <{source_url}> .
 ```
 
@@ -360,6 +437,7 @@ Files are organized by article in timestamped subdirectories:
 
 | File Pattern | Description |
 |------|-------------|
+| `data/{article}/{timestamp}/source.ipynb` | Raw Wikipedia content (before chunking) |
 | `data/{article}/{timestamp}/chunks.ipynb` | Chunked source text with context |
 | `data/{article}/{timestamp}/facts.ipynb` | Extracted factual statements |
 | `data/{article}/{timestamp}/rdf.ipynb` | RDF triples (per-statement cells) |
@@ -632,6 +710,7 @@ emit_triples([
 | `schema_matcher.py` | Embedding-based vocabulary matcher |
 | `src/` | Python modules (see Source Code Modules above) |
 | `DESIGN.md` | This design document |
+| `data/{article}/{timestamp}/source.ipynb` | Raw Wikipedia content (provenance root) |
 | `data/{article}/{timestamp}/chunks.ipynb` | Chunked source text with context |
 | `data/{article}/{timestamp}/facts.ipynb` | Extracted factual statements |
 | `data/{article}/{timestamp}/rdf.ipynb` | RDF triples (per-statement) |

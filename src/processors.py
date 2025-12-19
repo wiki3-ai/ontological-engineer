@@ -86,7 +86,14 @@ def process_facts_extraction(
 {facts_content}
 """
         facts_cid = compute_cid(facts_cell_content)
-        signature = make_signature(cell_num, "facts", facts_cid, source_cid)
+        signature = make_signature(
+            cell_num=cell_num,
+            cell_type="facts",
+            cid=facts_cid,
+            from_cid=source_cid,
+            repro_class="Data",
+            label=f"facts:{cell_num}"
+        )
         
         # Remove old cells if regenerating
         if existing_sig:
@@ -110,7 +117,7 @@ def process_facts_extraction(
         
         # Append new content and signature
         facts_nb.cells.append(new_markdown_cell(facts_cell_content))
-        facts_nb.cells.append(new_raw_cell(json.dumps(signature)))
+        facts_nb.cells.append(new_raw_cell(json.dumps(signature, indent=2)))
         
         # Update signatures dict
         facts_signatures[cell_num] = signature
@@ -363,21 +370,23 @@ def process_rdf_generation(
                             rdf_lines.append(f"#   {call['name']}: {args_str}")
                 rdf_content = "\n".join(rdf_lines)
                 
-                # Build signature
+                # Build JSON-LD signature with PROV-O/REPRODUCE-ME provenance
                 rdf_cid = compute_cid(rdf_content)
-                signature = {
-                    "cell": len(rdf_nb.cells),
-                    "stmt_key": stmt_key,
-                    "chunk_num": chunk_num,
-                    "stmt_idx": int(stmt_id),
-                    "type": "rdf",
-                    "cid": rdf_cid,
-                    "from_cid": stmt_cid,
-                }
+                signature = make_signature(
+                    cell_num=len(rdf_nb.cells),
+                    cell_type="rdf",
+                    cid=rdf_cid,
+                    from_cid=stmt_cid,
+                    repro_class="OutputData",
+                    label=f"rdf:{stmt_key}",
+                    stmt_key=stmt_key,
+                    chunk_num=chunk_num,
+                    stmt_idx=int(stmt_id),
+                )
                 
                 # Append new content and signature
                 rdf_nb.cells.append(new_raw_cell(rdf_content))
-                rdf_nb.cells.append(new_raw_cell(json.dumps(signature)))
+                rdf_nb.cells.append(new_raw_cell(json.dumps(signature, indent=2)))
                 
                 # Update signatures dict
                 rdf_signatures[stmt_key] = signature

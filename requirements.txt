@@ -1,0 +1,22 @@
+# Wiki3 Knowledge Graph Pipeline Dependencies
+
+# LLM and text processing
+langchain>=0.3.0
+langchain-text-splitters>=0.3.0
+langchain-openai>=0.2.0
+langchain-community>=0.3.0
+wikipedia
+
+# Notebooks
+nbformat>=5.0
+jupyter
+
+# Embeddings
+numpy
+openai
+
+# IPFS Content IDs (CIDv1, raw, SHA2-256)
+multiformats>=0.3.0
+
+# Type checking
+pydantic>=2.0
