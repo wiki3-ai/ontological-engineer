@@ -96,6 +96,32 @@ URI RULES:
 - For new entities not in either: Use fragment URIs like <#entity_name>
 - NEVER invent Wikidata URIs (wd:Q...) unless explicitly provided
 
+TEMPORAL/QUALIFIED RELATIONSHIPS (schema.org Role pattern):
+When a relationship has temporal bounds (dates) or qualifiers (role name, context), use an intermediate Role node.
+This is the standard schema.org pattern - see https://schema.org/Role
+
+Example: "Einstein worked at University of Zurich from 1909 to 1911"
+Instead of a simple triple that loses the dates:
+  <wiki:Albert_Einstein> schema:worksFor <wiki:University_of_Zurich> .  # WRONG - loses dates!
+
+Use the Role pattern with a blank node:
+  <wiki:Albert_Einstein> schema:worksFor _:pos1 .
+  _:pos1 a schema:OrganizationRole .
+  _:pos1 schema:worksFor <wiki:University_of_Zurich> .
+  _:pos1 schema:startDate "1909"^^xsd:gYear .
+  _:pos1 schema:endDate "1911"^^xsd:gYear .
+
+Role types to use:
+- schema:OrganizationRole - for employment, membership, affiliation with organizations
+- schema:Role - general purpose for other qualified relationships (citizenship, etc.)
+
+Role properties:
+- schema:startDate, schema:endDate - temporal bounds (use xsd:date, xsd:gYear, or xsd:gYearMonth)
+- schema:roleName - the position/title (e.g., "Professor", "Quarterback")
+- schema:description - additional context (e.g., "during the Weimar Republic")
+
+The property is REPEATED inside the Role (e.g., worksFor → Role → worksFor → Organization).
+
 IMPORTANT:
 - Do NOT write Turtle syntax in your response - use the emit tools instead
 - ALWAYS include the statement_id when emitting triples (e.g., "1", "2", "3")
@@ -103,7 +129,8 @@ IMPORTANT:
 - For URIs, use angle brackets: <https://...> or fragment references: <#entity_id>
 - For literals, use quotes with optional datatype: "value"^^xsd:date or "text"@en
 - For prefixed terms as objects, just use the prefix: schema:Person
-- Each statement is self-contained - extract all facts from each one"""
+- Each statement is self-contained - extract all facts from each one
+- Use the Role pattern whenever temporal bounds or qualifiers would otherwise be lost"""
 
 RDF_STATEMENT_HUMAN_PROMPT = """Convert these factual statements to RDF triples.
 
@@ -116,13 +143,27 @@ Entity Registry (use these URIs for known entities):
 Statements to convert (each has a unique ID you must include when emitting triples):
 {statements}
 
-IMPORTANT: Statements contain markdown links like [Entity](/wiki/Path). Convert these to Wikipedia URIs:
-[Albert Einstein](/wiki/Albert_Einstein) → <https://en.wikipedia.org/wiki/Albert_Einstein>
+IMPORTANT RULES:
 
-For EACH statement:
-1. Extract entity URIs from markdown links
-2. Look up appropriate schema.org classes and properties
-3. Emit triples using emit_triple or emit_triples, ALWAYS including the statement_id
+1. URI EXTRACTION: Statements contain markdown links like [Entity](/wiki/Path). Convert these to Wikipedia URIs:
+   [Albert Einstein](/wiki/Albert_Einstein) → <https://en.wikipedia.org/wiki/Albert_Einstein>
+
+2. TEMPORAL RELATIONSHIPS: When a statement includes dates or time periods for a relationship,
+   use the schema.org Role pattern to preserve the temporal information:
+   
+   Example: "Einstein worked at University of Zurich from 1909 to 1911"
+   Emit these triples:
+   - subject: wiki:Albert_Einstein, predicate: schema:worksFor, object: _:pos1
+   - subject: _:pos1, predicate: rdf:type, object: schema:OrganizationRole
+   - subject: _:pos1, predicate: schema:worksFor, object: wiki:University_of_Zurich
+   - subject: _:pos1, predicate: schema:startDate, object: "1909"^^xsd:gYear
+   - subject: _:pos1, predicate: schema:endDate, object: "1911"^^xsd:gYear
+
+3. WORKFLOW for each statement:
+   a. Extract entity URIs from markdown links
+   b. Look up appropriate schema.org classes and properties
+   c. If temporal bounds exist, use Role pattern with blank nodes (_:pos1, _:pos2, etc.)
+   d. Emit triples using emit_triple or emit_triples, ALWAYS including the statement_id
 
 Process all statements, then provide a brief summary."""
 
