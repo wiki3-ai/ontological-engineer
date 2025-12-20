@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "sampled_at": "2025-12-20T01:12:12.373569",
+    "sampled_at": "2025-12-20T05:00:38.011158",
     "source": "Wikipedia Pageviews API",
     "sample_size": 100,
     "sampling_method": "power_law",
@@ -8,608 +8,409 @@
     "seed": 42,
     "excluded_few_shot": [
       "Albert Einstein"
-    ]
+    ],
+    "provenance_notebook": "/workspaces/wiki3-kg-project/data/training/wikipedia_sample.ipynb"
   },
   "pages": [
     {
       "title": "Zohran Mamdani",
-      "title_normalized": "Zohran_Mamdani",
-      "views": 9344963,
-      "url": "https://en.wikipedia.org/wiki/Zohran_Mamdani"
+      "views": 9344963
     },
     {
       "title": "ChatGPT",
-      "title_normalized": "ChatGPT",
-      "views": 3639485,
-      "url": "https://en.wikipedia.org/wiki/ChatGPT"
+      "views": 3639485
     },
     {
       "title": "James A. Garfield",
-      "title_normalized": "James_A._Garfield",
-      "views": 3524531,
-      "url": "https://en.wikipedia.org/wiki/James_A._Garfield"
+      "views": 3524531
     },
     {
       "title": "1989 Tiananmen Square protests and massacre",
-      "title_normalized": "1989_Tiananmen_Square_protests_and_massacre",
-      "views": 2867005,
-      "url": "https://en.wikipedia.org/wiki/1989_Tiananmen_Square_protests_and_massacre"
+      "views": 2867005
     },
     {
       "title": "2025 Bihar Legislative Assembly election",
-      "title_normalized": "2025_Bihar_Legislative_Assembly_election",
-      "views": 2555071,
-      "url": "https://en.wikipedia.org/wiki/2025_Bihar_Legislative_Assembly_election"
+      "views": 2555071
     },
     {
       "title": "Mira Nair",
-      "title_normalized": "Mira_Nair",
-      "views": 2503516,
-      "url": "https://en.wikipedia.org/wiki/Mira_Nair"
+      "views": 2503516
     },
     {
       "title": "Dick Cheney",
-      "title_normalized": "Dick_Cheney",
-      "views": 2186840,
-      "url": "https://en.wikipedia.org/wiki/Dick_Cheney"
+      "views": 2186840
     },
     {
       "title": "2026 FIFA World Cup",
-      "title_normalized": "2026_FIFA_World_Cup",
-      "views": 2155565,
-      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup"
+      "views": 2155565
     },
     {
       "title": "1xBet",
-      "title_normalized": "1xBet",
-      "views": 1831684,
-      "url": "https://en.wikipedia.org/wiki/1xBet"
+      "views": 1831684
     },
     {
       "title": "Survivor Series: WarGames (2025)",
-      "title_normalized": "Survivor_Series:_WarGames_(2025)",
-      "views": 1590263,
-      "url": "https://en.wikipedia.org/wiki/Survivor_Series:_WarGames_(2025)"
+      "views": 1590263
     },
     {
       "title": "The Beast in Me (TV series)",
-      "title_normalized": "The_Beast_in_Me_(TV_series)",
-      "views": 1533565,
-      "url": "https://en.wikipedia.org/wiki/The_Beast_in_Me_(TV_series)"
+      "views": 1533565
     },
     {
       "title": "Wicked (2024 film)",
-      "title_normalized": "Wicked_(2024_film)",
-      "views": 1319838,
-      "url": "https://en.wikipedia.org/wiki/Wicked_(2024_film)"
+      "views": 1319838
     },
     {
       "title": "The Running Man (2025 film)",
-      "title_normalized": "The_Running_Man_(2025_film)",
-      "views": 1298779,
-      "url": "https://en.wikipedia.org/wiki/The_Running_Man_(2025_film)"
+      "views": 1298779
     },
     {
       "title": "One Battle After Another",
-      "title_normalized": "One_Battle_After_Another",
-      "views": 1295622,
-      "url": "https://en.wikipedia.org/wiki/One_Battle_After_Another"
+      "views": 1295622
     },
     {
       "title": "Virginia Giuffre",
-      "title_normalized": "Virginia_Giuffre",
-      "views": 1293143,
-      "url": "https://en.wikipedia.org/wiki/Virginia_Giuffre"
+      "views": 1293143
     },
     {
       "title": "SS Edmund Fitzgerald",
-      "title_normalized": "SS_Edmund_Fitzgerald",
-      "views": 1128926,
-      "url": "https://en.wikipedia.org/wiki/SS_Edmund_Fitzgerald"
+      "views": 1128926
     },
     {
       "title": "Government shutdowns in the United States",
-      "title_normalized": "Government_shutdowns_in_the_United_States",
-      "views": 1084241,
-      "url": "https://en.wikipedia.org/wiki/Government_shutdowns_in_the_United_States"
+      "views": 1084241
     },
     {
       "title": "Marjorie Taylor Greene",
-      "title_normalized": "Marjorie_Taylor_Greene",
-      "views": 1004802,
-      "url": "https://en.wikipedia.org/wiki/Marjorie_Taylor_Greene"
+      "views": 1004802
     },
     {
       "title": "Charlie Kirk",
-      "title_normalized": "Charlie_Kirk",
-      "views": 935344,
-      "url": "https://en.wikipedia.org/wiki/Charlie_Kirk"
+      "views": 935344
     },
     {
       "title": "Wikipedia",
-      "title_normalized": "Wikipedia",
-      "views": 896286,
-      "url": "https://en.wikipedia.org/wiki/Wikipedia"
+      "views": 896286
     },
     {
       "title": "2025 Formula One World Championship",
-      "title_normalized": "2025_Formula_One_World_Championship",
-      "views": 894715,
-      "url": "https://en.wikipedia.org/wiki/2025_Formula_One_World_Championship"
+      "views": 894715
     },
     {
       "title": "Nuremberg (2025 film)",
-      "title_normalized": "Nuremberg_(2025_film)",
-      "views": 881825,
-      "url": "https://en.wikipedia.org/wiki/Nuremberg_(2025_film)"
+      "views": 881825
     },
     {
       "title": "Ruby Wax",
-      "title_normalized": "Ruby_Wax",
-      "views": 813122,
-      "url": "https://en.wikipedia.org/wiki/Ruby_Wax"
+      "views": 813122
     },
     {
       "title": "Bigg Boss (Tamil TV series) season 9",
-      "title_normalized": "Bigg_Boss_(Tamil_TV_series)_season_9",
-      "views": 810419,
-      "url": "https://en.wikipedia.org/wiki/Bigg_Boss_(Tamil_TV_series)_season_9"
+      "views": 810419
     },
     {
       "title": "Nitish Kumar",
-      "title_normalized": "Nitish_Kumar",
-      "views": 805158,
-      "url": "https://en.wikipedia.org/wiki/Nitish_Kumar"
+      "views": 805158
     },
     {
       "title": "Thanksgiving",
-      "title_normalized": "Thanksgiving",
-      "views": 767059,
-      "url": "https://en.wikipedia.org/wiki/Thanksgiving"
+      "views": 767059
     },
     {
       "title": "Oscar Isaac",
-      "title_normalized": "Oscar_Isaac",
-      "views": 679015,
-      "url": "https://en.wikipedia.org/wiki/Oscar_Isaac"
+      "views": 679015
     },
     {
       "title": "List of Hindi films of 2025",
-      "title_normalized": "List_of_Hindi_films_of_2025",
-      "views": 658366,
-      "url": "https://en.wikipedia.org/wiki/List_of_Hindi_films_of_2025"
+      "views": 658366
     },
     {
       "title": "John Wayne Gacy",
-      "title_normalized": "John_Wayne_Gacy",
-      "views": 648461,
-      "url": "https://en.wikipedia.org/wiki/John_Wayne_Gacy"
+      "views": 648461
     },
     {
       "title": "John F. Kennedy",
-      "title_normalized": "John_F._Kennedy",
-      "views": 641211,
-      "url": "https://en.wikipedia.org/wiki/John_F._Kennedy"
+      "views": 641211
     },
     {
       "title": "Opinion polling for the next United Kingdom general election",
-      "title_normalized": "Opinion_polling_for_the_next_United_Kingdom_general_election",
-      "views": 622647,
-      "url": "https://en.wikipedia.org/wiki/Opinion_polling_for_the_next_United_Kingdom_general_election"
+      "views": 622647
     },
     {
       "title": "Lionel Messi",
-      "title_normalized": "Lionel_Messi",
-      "views": 619268,
-      "url": "https://en.wikipedia.org/wiki/Lionel_Messi"
+      "views": 619268
     },
     {
       "title": "Keri Russell",
-      "title_normalized": "Keri_Russell",
-      "views": 599284,
-      "url": "https://en.wikipedia.org/wiki/Keri_Russell"
+      "views": 599284
     },
     {
       "title": "List of World Series champions",
-      "title_normalized": "List_of_World_Series_champions",
-      "views": 589383,
-      "url": "https://en.wikipedia.org/wiki/List_of_World_Series_champions"
+      "views": 589383
     },
     {
       "title": "Barack Obama",
-      "title_normalized": "Barack_Obama",
-      "views": 581568,
-      "url": "https://en.wikipedia.org/wiki/Barack_Obama"
+      "views": 581568
     },
     {
       "title": "Last Samurai Standing (TV series)",
-      "title_normalized": "Last_Samurai_Standing_(TV_series)",
-      "views": 562727,
-      "url": "https://en.wikipedia.org/wiki/Last_Samurai_Standing_(TV_series)"
+      "views": 562727
     },
     {
       "title": "Kessler Twins",
-      "title_normalized": "Kessler_Twins",
-      "views": 559927,
-      "url": "https://en.wikipedia.org/wiki/Kessler_Twins"
+      "views": 559927
     },
     {
       "title": "Mar-a-Lago face",
-      "title_normalized": "Mar-a-Lago_face",
-      "views": 549448,
-      "url": "https://en.wikipedia.org/wiki/Mar-a-Lago_face"
+      "views": 549448
     },
     {
       "title": "Christy Martin",
-      "title_normalized": "Christy_Martin",
-      "views": 517300,
-      "url": "https://en.wikipedia.org/wiki/Christy_Martin"
+      "views": 517300
     },
     {
       "title": "The Diplomat (American TV series)",
-      "title_normalized": "The_Diplomat_(American_TV_series)",
-      "views": 515613,
-      "url": "https://en.wikipedia.org/wiki/The_Diplomat_(American_TV_series)"
+      "views": 515613
     },
     {
       "title": "Down Cemetery Road",
-      "title_normalized": "Down_Cemetery_Road",
-      "views": 507308,
-      "url": "https://en.wikipedia.org/wiki/Down_Cemetery_Road"
+      "views": 507308
     },
     {
       "title": "Aitch (rapper)",
-      "title_normalized": "Aitch_(rapper)",
-      "views": 498985,
-      "url": "https://en.wikipedia.org/wiki/Aitch_(rapper)"
+      "views": 498985
     },
     {
       "title": "Max Scherzer",
-      "title_normalized": "Max_Scherzer",
-      "views": 476572,
-      "url": "https://en.wikipedia.org/wiki/Max_Scherzer"
+      "views": 476572
     },
     {
       "title": "Monster: The Ed Gein Story",
-      "title_normalized": "Monster:_The_Ed_Gein_Story",
-      "views": 449860,
-      "url": "https://en.wikipedia.org/wiki/Monster:_The_Ed_Gein_Story"
+      "views": 449860
     },
     {
       "title": "It (2017 film)",
-      "title_normalized": "It_(2017_film)",
-      "views": 445943,
-      "url": "https://en.wikipedia.org/wiki/It_(2017_film)"
+      "views": 445943
     },
     {
       "title": "XNXX",
-      "title_normalized": "XNXX",
-      "views": 436680,
-      "url": "https://en.wikipedia.org/wiki/XNXX"
+      "views": 436680
     },
     {
       "title": "Jolly LLB 3",
-      "title_normalized": "Jolly_LLB_3",
-      "views": 426496,
-      "url": "https://en.wikipedia.org/wiki/Jolly_LLB_3"
+      "views": 426496
     },
     {
       "title": "Richard Speck",
-      "title_normalized": "Richard_Speck",
-      "views": 417564,
-      "url": "https://en.wikipedia.org/wiki/Richard_Speck"
+      "views": 417564
     },
     {
       "title": "2025 California Proposition 50",
-      "title_normalized": "2025_California_Proposition_50",
-      "views": 404186,
-      "url": "https://en.wikipedia.org/wiki/2025_California_Proposition_50"
+      "views": 404186
     },
     {
       "title": "Mark Kerr (fighter)",
-      "title_normalized": "Mark_Kerr_(fighter)",
-      "views": 403617,
-      "url": "https://en.wikipedia.org/wiki/Mark_Kerr_(fighter)"
+      "views": 403617
     },
     {
       "title": "The Mighty Nein",
-      "title_normalized": "The_Mighty_Nein",
-      "views": 395391,
-      "url": "https://en.wikipedia.org/wiki/The_Mighty_Nein"
+      "views": 395391
     },
     {
       "title": "Charlie Sheen",
-      "title_normalized": "Charlie_Sheen",
-      "views": 392237,
-      "url": "https://en.wikipedia.org/wiki/Charlie_Sheen"
+      "views": 392237
     },
     {
       "title": "Hailee Steinfeld",
-      "title_normalized": "Hailee_Steinfeld",
-      "views": 390646,
-      "url": "https://en.wikipedia.org/wiki/Hailee_Steinfeld"
+      "views": 390646
     },
     {
       "title": "Elaine Hendrix",
-      "title_normalized": "Elaine_Hendrix",
-      "views": 389184,
-      "url": "https://en.wikipedia.org/wiki/Elaine_Hendrix"
+      "views": 389184
     },
     {
       "title": "2021 New York City mayoral election",
-      "title_normalized": "2021_New_York_City_mayoral_election",
-      "views": 387473,
-      "url": "https://en.wikipedia.org/wiki/2021_New_York_City_mayoral_election"
+      "views": 387473
     },
     {
       "title": "Keeper (2025 film)",
-      "title_normalized": "Keeper_(2025_film)",
-      "views": 378964,
-      "url": "https://en.wikipedia.org/wiki/Keeper_(2025_film)"
+      "views": 378964
     },
     {
       "title": "Grand Theft Auto VI",
-      "title_normalized": "Grand_Theft_Auto_VI",
-      "views": 376523,
-      "url": "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI"
+      "views": 376523
     },
     {
       "title": "George H. W. Bush",
-      "title_normalized": "George_H._W._Bush",
-      "views": 372825,
-      "url": "https://en.wikipedia.org/wiki/George_H._W._Bush"
+      "views": 372825
     },
     {
       "title": "F\u00e1tima Bosch",
-      "title_normalized": "F\u00e1tima_Bosch",
-      "views": 364759,
-      "url": "https://en.wikipedia.org/wiki/F\u00e1tima_Bosch"
+      "views": 364759
     },
     {
       "title": "Pete Hegseth",
-      "title_normalized": "Pete_Hegseth",
-      "views": 363623,
-      "url": "https://en.wikipedia.org/wiki/Pete_Hegseth"
+      "views": 363623
     },
     {
       "title": "Robin Williams",
-      "title_normalized": "Robin_Williams",
-      "views": 363485,
-      "url": "https://en.wikipedia.org/wiki/Robin_Williams"
+      "views": 363485
     },
     {
       "title": "Zootopia",
-      "title_normalized": "Zootopia",
-      "views": 362621,
-      "url": "https://en.wikipedia.org/wiki/Zootopia"
+      "views": 362621
     },
     {
       "title": "2026 FIFA World Cup qualification (CONCACAF)",
-      "title_normalized": "2026_FIFA_World_Cup_qualification_(CONCACAF)",
-      "views": 359668,
-      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_qualification_(CONCACAF)"
+      "views": 359668
     },
     {
       "title": "Assassination of James A. Garfield",
-      "title_normalized": "Assassination_of_James_A._Garfield",
-      "views": 358447,
-      "url": "https://en.wikipedia.org/wiki/Assassination_of_James_A._Garfield"
+      "views": 358447
     },
     {
       "title": "Stranger Things season 1",
-      "title_normalized": "Stranger_Things_season_1",
-      "views": 353221,
-      "url": "https://en.wikipedia.org/wiki/Stranger_Things_season_1"
+      "views": 353221
     },
     {
       "title": "The Manipulated",
-      "title_normalized": "The_Manipulated",
-      "views": 348234,
-      "url": "https://en.wikipedia.org/wiki/The_Manipulated"
+      "views": 348234
     },
     {
       "title": "Roofman",
-      "title_normalized": "Roofman",
-      "views": 344570,
-      "url": "https://en.wikipedia.org/wiki/Roofman"
+      "views": 344570
     },
     {
       "title": "Mohd. Ahmed Khan v. Shah Bano Begum",
-      "title_normalized": "Mohd._Ahmed_Khan_v._Shah_Bano_Begum",
-      "views": 340588,
-      "url": "https://en.wikipedia.org/wiki/Mohd._Ahmed_Khan_v._Shah_Bano_Begum"
+      "views": 340588
     },
     {
       "title": "Shah Rukh Khan",
-      "title_normalized": "Shah_Rukh_Khan",
-      "views": 333928,
-      "url": "https://en.wikipedia.org/wiki/Shah_Rukh_Khan"
+      "views": 333928
     },
     {
       "title": "Jennifer Aniston",
-      "title_normalized": "Jennifer_Aniston",
-      "views": 327723,
-      "url": "https://en.wikipedia.org/wiki/Jennifer_Aniston"
+      "views": 327723
     },
     {
       "title": "Pennywise",
-      "title_normalized": "Pennywise",
-      "views": 327661,
-      "url": "https://en.wikipedia.org/wiki/Pennywise"
+      "views": 327661
     },
     {
       "title": "Ejae",
-      "title_normalized": "Ejae",
-      "views": 327018,
-      "url": "https://en.wikipedia.org/wiki/Ejae"
+      "views": 327018
     },
     {
       "title": "Halloween",
-      "title_normalized": "Halloween",
-      "views": 322752,
-      "url": "https://en.wikipedia.org/wiki/Halloween"
+      "views": 322752
     },
     {
       "title": "Molly Rainford",
-      "title_normalized": "Molly_Rainford",
-      "views": 322559,
-      "url": "https://en.wikipedia.org/wiki/Molly_Rainford"
+      "views": 322559
     },
     {
       "title": "John Madden",
-      "title_normalized": "John_Madden",
-      "views": 321751,
-      "url": "https://en.wikipedia.org/wiki/John_Madden"
+      "views": 321751
     },
     {
       "title": "Arsenal F.C.",
-      "title_normalized": "Arsenal_F.C.",
-      "views": 312705,
-      "url": "https://en.wikipedia.org/wiki/Arsenal_F.C."
+      "views": 312705
     },
     {
       "title": "FIFA Men's World Ranking",
-      "title_normalized": "FIFA_Men's_World_Ranking",
-      "views": 309131,
-      "url": "https://en.wikipedia.org/wiki/FIFA_Men's_World_Ranking"
+      "views": 309131
     },
     {
       "title": "I'm a Celebrity...Get Me Out of Here! (British TV series) series 25",
-      "title_normalized": "I'm_a_Celebrity...Get_Me_Out_of_Here!_(British_TV_series)_series_25",
-      "views": 308806,
-      "url": "https://en.wikipedia.org/wiki/I'm_a_Celebrity...Get_Me_Out_of_Here!_(British_TV_series)_series_25"
+      "views": 308806
     },
     {
       "title": "Aaron Rodgers",
-      "title_normalized": "Aaron_Rodgers",
-      "views": 308650,
-      "url": "https://en.wikipedia.org/wiki/Aaron_Rodgers"
+      "views": 308650
     },
     {
       "title": "Materialists (film)",
-      "title_normalized": "Materialists_(film)",
-      "views": 308080,
-      "url": "https://en.wikipedia.org/wiki/Materialists_(film)"
+      "views": 308080
     },
     {
       "title": "Liz Cheney",
-      "title_normalized": "Liz_Cheney",
-      "views": 304065,
-      "url": "https://en.wikipedia.org/wiki/Liz_Cheney"
+      "views": 304065
     },
     {
       "title": "Odessa A'zion",
-      "title_normalized": "Odessa_A'zion",
-      "views": 300327,
-      "url": "https://en.wikipedia.org/wiki/Odessa_A'zion"
+      "views": 300327
     },
     {
       "title": "William, Prince of Wales",
-      "title_normalized": "William,_Prince_of_Wales",
-      "views": 298541,
-      "url": "https://en.wikipedia.org/wiki/William,_Prince_of_Wales"
+      "views": 298541
     },
     {
       "title": "High Potential",
-      "title_normalized": "High_Potential",
-      "views": 297218,
-      "url": "https://en.wikipedia.org/wiki/High_Potential"
+      "views": 297218
     },
     {
       "title": "The Black Phone",
-      "title_normalized": "The_Black_Phone",
-      "views": 293520,
-      "url": "https://en.wikipedia.org/wiki/The_Black_Phone"
+      "views": 293520
     },
     {
       "title": "American Civil War",
-      "title_normalized": "American_Civil_War",
-      "views": 292662,
-      "url": "https://en.wikipedia.org/wiki/American_Civil_War"
+      "views": 292662
     },
     {
       "title": "Roy Cohn",
-      "title_normalized": "Roy_Cohn",
-      "views": 286782,
-      "url": "https://en.wikipedia.org/wiki/Roy_Cohn"
+      "views": 286782
     },
     {
       "title": "Demon Slayer: Kimetsu no Yaiba \u2013 The Movie: Infinity Castle",
-      "title_normalized": "Demon_Slayer:_Kimetsu_no_Yaiba_\u2013_The_Movie:_Infinity_Castle",
-      "views": 286113,
-      "url": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_\u2013_The_Movie:_Infinity_Castle"
+      "views": 286113
     },
     {
       "title": "Interstellar (film)",
-      "title_normalized": "Interstellar_(film)",
-      "views": 281466,
-      "url": "https://en.wikipedia.org/wiki/Interstellar_(film)"
+      "views": 281466
     },
     {
       "title": "Nicki Minaj",
-      "title_normalized": "Nicki_Minaj",
-      "views": 279420,
-      "url": "https://en.wikipedia.org/wiki/Nicki_Minaj"
+      "views": 279420
     },
     {
       "title": "Rashmika Mandanna",
-      "title_normalized": "Rashmika_Mandanna",
-      "views": 275316,
-      "url": "https://en.wikipedia.org/wiki/Rashmika_Mandanna"
+      "views": 275316
     },
     {
       "title": "France",
-      "title_normalized": "France",
-      "views": 274917,
-      "url": "https://en.wikipedia.org/wiki/France"
+      "views": 274917
     },
     {
       "title": "Palak Muchhal",
-      "title_normalized": "Palak_Muchhal",
-      "views": 273583,
-      "url": "https://en.wikipedia.org/wiki/Palak_Muchhal"
+      "views": 273583
     },
     {
       "title": "Cher",
-      "title_normalized": "Cher",
-      "views": 270888,
-      "url": "https://en.wikipedia.org/wiki/Cher"
+      "views": 270888
     },
     {
       "title": "Madonna",
-      "title_normalized": "Madonna",
-      "views": 268534,
-      "url": "https://en.wikipedia.org/wiki/Madonna"
+      "views": 268534
     },
     {
       "title": "28 Years Later",
-      "title_normalized": "28_Years_Later",
-      "views": 268373,
-      "url": "https://en.wikipedia.org/wiki/28_Years_Later"
+      "views": 268373
     },
     {
       "title": "Chainsaw Man \u2013 The Movie: Reze Arc",
-      "title_normalized": "Chainsaw_Man_\u2013_The_Movie:_Reze_Arc",
-      "views": 265349,
-      "url": "https://en.wikipedia.org/wiki/Chainsaw_Man_\u2013_The_Movie:_Reze_Arc"
+      "views": 265349
     },
     {
       "title": "Mahatma Gandhi",
-      "title_normalized": "Mahatma_Gandhi",
-      "views": 264516,
-      "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+      "views": 264516
     },
     {
       "title": "South Africa",
-      "title_normalized": "South_Africa",
-      "views": 264392,
-      "url": "https://en.wikipedia.org/wiki/South_Africa"
+      "views": 264392
     },
     {
       "title": "Mel Gibson",
-      "title_normalized": "Mel_Gibson",
-      "views": 262774,
-      "url": "https://en.wikipedia.org/wiki/Mel_Gibson"
+      "views": 262774
     }
   ]
 }
