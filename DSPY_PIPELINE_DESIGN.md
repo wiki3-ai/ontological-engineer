@@ -113,6 +113,16 @@ wiki3-kg-project/
 │   └── training/
 │       ├── __init__.py
 │       └── bootstrap.py            # Load training data from notebooks
+├── tests/                          # pytest test suite
+│   ├── __init__.py
+│   ├── test_bootstrap.py           # Training data loading (13 tests)
+│   ├── test_config.py              # LM configuration (12 tests)
+│   ├── test_extractors.py          # StatementExtractor (7 tests)
+│   ├── test_judges.py              # Quality judges (14 tests)
+│   ├── test_rdf_generator.py       # RDF generation (8 tests)
+│   ├── test_schema_context.py      # Schema context builder (11 tests)
+│   ├── test_schema_library.py      # Schema library (16 tests)
+│   └── test_signatures.py          # DSPy signatures (11 tests)
 ├── notebooks/
 │   ├── stage1_statements.ipynb     # Statement extraction experiments
 │   ├── stage2_schema.ipynb         # Schema context experiments (TODO)
