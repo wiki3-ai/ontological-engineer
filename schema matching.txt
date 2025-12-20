@@ -1,0 +1,37 @@
+Have the statement extractor generate a list of triples in english for each sentence,
+then run similarity search against the schema for reasonable matches to add as a set (deduped) to the prompt (via a template var) for each statement set.
+
+
+Gotta have ontology inference to handle cases like these:
+
+
+<https://en.wikipedia.org/wiki/Albert_Einstein#quote6> a schema:Quotation ;
+    schema:text "I observed that without 'ethical culture' there is no salvation for humanity." ;
+    schema:spokenByCharacter <https://en.wikipedia.org/wiki/Albert_Einstein#person_albert_einstein> .
+
+The actual quote is "Without 'ethical culture' there is no salvation for humanity."
+
+<https://en.wikipedia.org/wiki/Albert_Einstein#quote3> a schema:Quotation ;
+    schema:text "I described my view of God as naïve and preferred to call myself an agnostic or a 'deeply religious nonbeliever'." ;
+    schema:spokenByCharacter <https://en.wikipedia.org/wiki/Albert_Einstein#person_albert_einstein> .
+
+
+# Statement [1.30]: [Albert Einstein](/wiki/Albert_Einstein) was a physicist.
+<https://en.wikipedia.org/wiki/Albert_Einstein> rdf:type schema:Person .
+
+
+The actual quotes are "I am not an atheist" and "deeply religious nonbeliever" from:
+
+He did not believe in a personal god who concerns himself with fates and actions of human beings, a view which he described as naïve.[190]  He clarified, however, that "I am not an atheist",[191] preferring to call himself an agnostic,[192][193] or a "deeply religious nonbeliever".
+
+We should be able to get the verification property that quotations are verbatim copies of suitably sourced material given the context (i.e. microtheory).   Here we're making claims/an analysis/inference based on what Wikipedia says.  Wikipedia intends that they follow a similar consensus editorial policy so it (usually) provides sources for all statements of "fact".  Next level for our output is to then go (attempt to) retrieve those sources and mine them for their quality, corrections, etc.
+
+Real time Snopes (snoping?) captions for live (and of course redistributed) broadcasts.
+And of course wiki3.ai is there is help anyone who has a different PoV to make their claims.
+
+
+
+Need to use an RL framework for prompting and the schema tool.
+DSPy, prime-RL, verifiers?
+The reproducible compute graph and LLM and human / agent feedback for wiki3.ai.
+
