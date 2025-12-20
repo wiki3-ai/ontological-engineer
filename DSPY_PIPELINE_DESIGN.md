@@ -315,22 +315,71 @@ lm = dspy.LM(
 
 ---
 
-## Human Feedback Integration
+## MLflow Observability & Human Feedback
 
-Human feedback is **external to the training loop** but influences future training:
+We use [MLflow](https://mlflow.org/docs/latest/genai/) for tracing, evaluation, and human feedback collection. MLflow integrates natively with DSPy via `mlflow.dspy.autolog()`.
 
-1. **Notebooks expose all intermediate data**
-   - `statements.ipynb`: Extracted statements per chunk
-   - `rdf.ipynb`: Generated triples with provenance
-   
-2. **Wiki3.ai interface allows**
-   - Viewing any intermediate output
-   - Marking agree/disagree on judge decisions
-   - Providing corrections/improvements
-   
-3. **Feedback collection**
-   - Store feedback alongside outputs
-   - Periodically incorporate into training data
+### Setup (Local Development)
+
+1. **Install MLflow**:
+   ```bash
+   pip install "mlflow>=3.0"
+   ```
+
+2. **Start MLflow Server** (in a separate terminal):
+   ```bash
+   cd /workspaces/wiki3-kg-project
+   mlflow server \
+     --backend-store-uri sqlite:///mlflow.sqlite \
+     --default-artifact-root ./mlflow-artifacts \
+     --host 0.0.0.0 \
+     --port 5000
+   ```
+
+3. **Open MLflow UI**: http://localhost:5000
+   - In VS Code devcontainer: use port forwarding or `host.docker.internal`
+
+### What MLflow Provides
+
+| Feature | Description |
+|---------|-------------|
+| **Tracing** | See every LM call with inputs, outputs, latency |
+| **Experiments** | Group runs by experiment (e.g., `wiki3-kg-stage1-statements`) |
+| **Metrics** | Track quality scores across optimization runs |
+| **Human Feedback** | Add assessments/labels directly in the UI |
+| **Artifacts** | Store model checkpoints, evaluation datasets |
+
+### Integration in Notebooks
+
+```python
+import mlflow
+
+mlflow.set_tracking_uri("http://127.0.0.1:5000")
+mlflow.set_experiment("wiki3-kg-stage1-statements")
+mlflow.dspy.autolog()  # Auto-trace all DSPy calls
+
+with mlflow.start_run(run_name="baseline_evaluation"):
+    # Your DSPy code - automatically traced
+    result = extractor(chunk_text=..., section_context=...)
+    
+    # Log custom metrics
+    mlflow.log_metric("quality_score", score)
+```
+
+### Reviewing Predictions in MLflow UI
+
+1. Navigate to the experiment
+2. Click **Traces** tab to see all predictions
+3. Click individual trace to inspect inputs/outputs
+4. Use **Feedback** button to add human assessments
+5. Export labeled data for judge improvement
+
+### Human Feedback Workflow
+
+1. **Run evaluation** → predictions logged to MLflow
+2. **Review in UI** → inspect traces, add feedback labels
+3. **Export annotations** → use MLflow client to retrieve
+4. **Improve judge** → use labeled data as DSPy training examples
 
 ---
 
