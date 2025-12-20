@@ -5,10 +5,29 @@ DSPy modules for evaluating the quality of extracted statements and generated RD
 These judges provide reward signals for GRPO optimization.
 """
 
-from typing import List, Optional, Dict, Any
+from typing import List, Optional, Dict, Any, Tuple
+from dataclasses import dataclass
+import re
 import dspy
 
-from ontological_engineer.signatures import JudgeStatementQuality, JudgeTripleQuality
+from ontological_engineer.signatures import (
+    JudgeStatementQuality, 
+    JudgeTripleQuality,
+    ClassifyStatements,
+)
+
+
+@dataclass
+class StatementClassification:
+    """Classification result for a single statement."""
+    index: int
+    statement: str
+    classification: str  # "GOOD" or "BAD"
+    reason: str
+    
+    @property
+    def is_good(self) -> bool:
+        return self.classification.upper() == "GOOD"
 
 
 class StatementQualityJudge(dspy.Module):
@@ -262,3 +281,155 @@ def triple_quality_metric(
     )
     
     return result.weighted_score
+
+
+# =============================================================================
+# Per-Statement Classification
+# =============================================================================
+
+class StatementClassifier(dspy.Module):
+    """
+    Classify each statement as GOOD or BAD.
+    
+    Unlike StatementQualityJudge which gives aggregate scores,
+    this classifier provides per-statement verdicts for human review
+    and fine-grained training signals.
+    
+    Returns:
+        - List of StatementClassification objects
+        - Missing facts from the source chunk
+        - Aggregate score (fraction of GOOD statements)
+    """
+    
+    def __init__(self):
+        super().__init__()
+        self.classifier = dspy.ChainOfThought(ClassifyStatements)
+    
+    def forward(
+        self,
+        chunk_text: str,
+        section_context: str,
+        statements: List[str],
+    ) -> dspy.Prediction:
+        """
+        Classify each statement.
+        
+        Args:
+            chunk_text: Original Wikipedia chunk
+            section_context: Section breadcrumb
+            statements: List of extracted statements
+            
+        Returns:
+            Prediction with:
+                - classifications: List[StatementClassification]
+                - missing_facts: str (facts not captured)
+                - score: float (fraction of GOOD statements)
+        """
+        # Format statements with indices for the LLM
+        numbered = "\n".join(
+            f"{i}: {stmt}" for i, stmt in enumerate(statements)
+        )
+        
+        # Single LLM call to classify all statements
+        result = self.classifier(
+            chunk_text=chunk_text,
+            section_context=section_context,
+            numbered_statements=numbered,
+        )
+        
+        # Parse the classifications
+        classifications = self._parse_classifications(
+            result.classifications, 
+            statements
+        )
+        
+        # Compute aggregate score
+        n_good = sum(1 for c in classifications if c.is_good)
+        score = n_good / len(statements) if statements else 0.0
+        
+        return dspy.Prediction(
+            classifications=classifications,
+            missing_facts=result.missing_facts,
+            score=score,
+        )
+    
+    def _parse_classifications(
+        self, 
+        raw_output: str, 
+        statements: List[str]
+    ) -> List[StatementClassification]:
+        """
+        Parse the LLM output into StatementClassification objects.
+        
+        Expected format per line: "INDEX: GOOD|BAD - reason"
+        """
+        classifications = []
+        
+        # Pattern: "0: GOOD - reason" or "0: BAD - reason"
+        pattern = r"(\d+):\s*(GOOD|BAD)\s*[-–:]\s*(.+)"
+        
+        for line in raw_output.strip().split("\n"):
+            line = line.strip()
+            if not line:
+                continue
+                
+            match = re.match(pattern, line, re.IGNORECASE)
+            if match:
+                idx = int(match.group(1))
+                classification = match.group(2).upper()
+                reason = match.group(3).strip()
+                
+                # Get the statement text if index is valid
+                stmt_text = statements[idx] if idx < len(statements) else ""
+                
+                classifications.append(StatementClassification(
+                    index=idx,
+                    statement=stmt_text,
+                    classification=classification,
+                    reason=reason,
+                ))
+        
+        # Handle any statements that weren't classified (assume BAD)
+        classified_indices = {c.index for c in classifications}
+        for idx, stmt in enumerate(statements):
+            if idx not in classified_indices:
+                classifications.append(StatementClassification(
+                    index=idx,
+                    statement=stmt,
+                    classification="BAD",
+                    reason="Not explicitly classified by judge",
+                ))
+        
+        # Sort by index
+        classifications.sort(key=lambda c: c.index)
+        
+        return classifications
+
+
+def statement_classification_metric(
+    example: dspy.Example,
+    pred: dspy.Prediction,
+    trace: Optional[Any] = None,
+) -> float:
+    """
+    Compute metric based on per-statement classification.
+    
+    Returns fraction of statements classified as GOOD.
+    
+    Args:
+        example: DSPy Example with inputs (chunk_text, section_context)
+        pred: Prediction with extracted statements
+        trace: Optional trace information (unused)
+        
+    Returns:
+        Float score in range [0, 1]
+    """
+    classifier = StatementClassifier()
+    
+    result = classifier(
+        chunk_text=example.chunk_text,
+        section_context=example.section_context,
+        statements=pred.statements,
+    )
+    
+    return result.score

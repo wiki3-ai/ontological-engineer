@@ -84,6 +84,34 @@ class JudgeStatementQuality(dspy.Signature):
     )
 
 
+class ClassifyStatements(dspy.Signature):
+    """Classify each extracted statement as GOOD or BAD.
+    
+    For each numbered statement, determine if it meets quality criteria:
+    - GOOD: Atomic (one claim), accurate (faithful to source), links preserved
+    - BAD: Multiple claims, inaccurate, missing/broken links, or editorializes
+    
+    Return a classification for each statement by its index number.
+    """
+    
+    chunk_text: str = dspy.InputField(
+        desc="Original Wikipedia chunk that statements were extracted from"
+    )
+    section_context: str = dspy.InputField(
+        desc="Section breadcrumb for context"
+    )
+    numbered_statements: str = dspy.InputField(
+        desc="Statements numbered 0 to N, one per line: '0: statement text'"
+    )
+    
+    classifications: str = dspy.OutputField(
+        desc="One line per statement: 'INDEX: GOOD|BAD - brief reason'. Example: '0: GOOD - atomic, accurate, links preserved'"
+    )
+    missing_facts: str = dspy.OutputField(
+        desc="Key facts from chunk that were NOT captured by any statement (or 'none' if complete)"
+    )
+
+
 # =============================================================================
 # Stage 2: Schema Context
 # =============================================================================

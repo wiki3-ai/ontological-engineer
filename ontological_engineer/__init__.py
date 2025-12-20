@@ -16,6 +16,7 @@ from ontological_engineer.config import (
 from ontological_engineer.signatures import (
     ExtractStatements,
     JudgeStatementQuality,
+    ClassifyStatements,
     SelectSchemaTerms,
     GenerateRDF,
     JudgeTripleQuality,
@@ -23,8 +24,11 @@ from ontological_engineer.signatures import (
 from ontological_engineer.extractors import StatementExtractor, BatchStatementExtractor
 from ontological_engineer.judges import (
     StatementQualityJudge,
+    StatementClassifier,
+    StatementClassification,
     TripleQualityJudge,
     statement_quality_metric,
+    statement_classification_metric,
     triple_quality_metric,
 )
 from ontological_engineer.schema_context import SchemaContextBuilder
@@ -41,6 +45,7 @@ __all__ = [
     # Signatures
     "ExtractStatements",
     "JudgeStatementQuality",
+    "ClassifyStatements",
     "SelectSchemaTerms",
     "GenerateRDF",
     "JudgeTripleQuality",
@@ -48,7 +53,10 @@ __all__ = [
     "StatementExtractor",
     "BatchStatementExtractor",
     "StatementQualityJudge",
+    "StatementClassifier",
+    "StatementClassification",
     "statement_quality_metric",
+    "statement_classification_metric",
     # Stage 2: Schema Context
     "SchemaContextBuilder",
     "SchemaLibrary",
