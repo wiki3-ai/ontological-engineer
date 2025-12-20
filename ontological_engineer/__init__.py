@@ -46,6 +46,22 @@ from ontological_engineer.provenance import (
     get_processed_chunk_cids,
     create_output_directory,
 )
+from ontological_engineer.training.data import (
+    WikipediaPage,
+    WikipediaChunk,
+    fetch_top_pages,
+    fetch_page_content,
+    chunk_article,
+    generate_sample_notebook_header,
+    append_sample_page_cell,
+    generate_chunks_notebook_header,
+    append_chunk_cell,
+    load_sample_from_notebook,
+    load_chunks_from_notebook,
+    get_processed_page_titles,
+    save_notebook,
+    fetch_and_cache_pages,
+)
 
 __version__ = "0.1.0"
 __all__ = [
@@ -89,4 +105,19 @@ __all__ = [
     "load_classifications_from_notebook",
     "get_processed_chunk_cids",
     "create_output_directory",
+    # Training Data
+    "WikipediaPage",
+    "WikipediaChunk",
+    "fetch_top_pages",
+    "fetch_page_content",
+    "chunk_article",
+    "generate_sample_notebook_header",
+    "append_sample_page_cell",
+    "generate_chunks_notebook_header",
+    "append_chunk_cell",
+    "load_sample_from_notebook",
+    "load_chunks_from_notebook",
+    "get_processed_page_titles",
+    "save_notebook",
+    "fetch_and_cache_pages",
 ]

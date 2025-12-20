@@ -4,6 +4,91 @@
 
 ---
 
+## 🚨 Critical Rules
+
+### 1. NO Application Logic in Notebooks
+
+**Notebooks are for orchestration, not implementation.**
+
+❌ **WRONG** - defining functions in notebook cells:
+```python
+# In a notebook cell - DON'T DO THIS
+def fetch_wikipedia_content(title):
+    """This should be in a module!"""
+    url = "https://en.wikipedia.org/w/api.php"
+    ...
+```
+
+✅ **CORRECT** - import from modules:
+```python
+# In a notebook cell - DO THIS
+from ontological_engineer import fetch_page_content, chunk_article
+
+content = fetch_page_content(title)
+chunks = chunk_article(title, content)
+```
+
+**Why?**
+- Functions in notebooks can't be tested with pytest
+- Can't be reused across notebooks
+- Makes notebooks hard to diff/review
+- Violates single responsibility principle
+
+### 2. All External Data Must Be Cached with CID Provenance
+
+When fetching data from the internet, ALWAYS:
+1. Cache it in a Jupyter notebook (if text/JSON)
+2. Include CID signature for provenance
+3. Check if already fetched before re-fetching
+
+```python
+from ontological_engineer import (
+    fetch_top_pages,
+    generate_sample_notebook_header,
+    append_sample_page_cell,
+    save_notebook,
+    load_sample_from_notebook,
+)
+
+# Check if already cached
+output_path = Path("data/training/wikipedia_sample.ipynb")
+if output_path.exists():
+    pages = load_sample_from_notebook(output_path)
+else:
+    # Fetch and cache with provenance
+    pages = fetch_top_pages(limit=100)
+    nb = generate_sample_notebook_header(sampling_method="power_law", sample_size=100)
+    for i, page in enumerate(pages):
+        append_sample_page_cell(nb, page, index=i, total=len(pages))
+    save_notebook(nb, output_path)
+```
+
+### 3. All Tests Go in `tests/`
+
+See [Testing Conventions](#testing-conventions) below.
+
+### 4. Test Code via pytest, NOT Ad-Hoc Python
+
+**When testing code changes, ALWAYS run pytest - never ad-hoc `python -c` commands.**
+
+❌ **WRONG** - ad-hoc testing:
+```bash
+python -c "from ontological_engineer import fetch_page_content; print(fetch_page_content('Test'))"
+```
+
+✅ **CORRECT** - write a test and run pytest:
+```bash
+pytest tests/test_data.py -v
+```
+
+**Why?**
+- Tests are reproducible and documented
+- Tests catch regressions
+- Tests serve as usage examples
+- Ad-hoc commands are forgotten and can't be re-run
+
+---
+
 ## Quick Reference
 
 ### Project Structure
@@ -18,17 +103,20 @@ wiki3-kg-project/
 │   ├── judges.py               # Judge modules + metrics + StatementClassifier
 │   ├── provenance.py           # Notebook generation with CID provenance
 │   └── training/
-│       └── bootstrap.py        # Load training data from notebooks
+│       ├── bootstrap.py        # Load training data from notebooks
+│       └── data.py             # Wikipedia fetching + caching with provenance
 ├── src/                        # Utility modules (non-DSPy)
 │   ├── cid.py                  # CID computation + JSON-LD signatures
+│   ├── wikipedia_loader.py     # Rich Wikipedia loader with links
 │   ├── entity_registry.py      # Entity tracking
 │   └── ...
 ├── tests/                      # pytest test suite
 │   └── test_*.py               # All tests go here
-├── notebooks/                  # Interactive development
-│   └── stage1_statements.ipynb # Stage 1 experiments
+├── notebooks/                  # Interactive development (orchestration only!)
+│   ├── sample_wikipedia_pages.ipynb  # Generate training sample
+│   └── stage1_statements.ipynb       # Stage 1 experiments
 └── data/                       # Output data
-    └── training/               # Training datasets
+    └── training/               # Training datasets (notebooks with CID provenance)
 ```
 
 ---
