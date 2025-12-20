@@ -20,3 +20,6 @@ multiformats>=0.3.0
 
 # Type checking
 pydantic>=2.0
+
+pytest
+dspy
