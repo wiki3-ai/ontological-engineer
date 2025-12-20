@@ -41,6 +41,9 @@ def get_default_lm(
         api_key=os.getenv("LM_STUDIO_API_KEY", "lm-studio"),
         temperature=temperature,
         max_tokens=max_tokens,
+        # Disable response_format - LM Studio doesn't support json_schema mode
+        # DSPy will use text mode and parse structured outputs from text
+        response_format=None,
     )
 
 

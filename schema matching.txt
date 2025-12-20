@@ -35,3 +35,13 @@ Need to use an RL framework for prompting and the schema tool.
 DSPy, prime-RL, verifiers?
 The reproducible compute graph and LLM and human / agent feedback for wiki3.ai.
 
+2025/12/20 08:12:34 ERROR dspy.utils.parallelizer: Error for Example({'chunk_text': '. The Republican-leaning areas will then be split among the strongly Democratic San Diego-based districts.\nThe new map will also decrease the competitiveness of several swing districts held by Democrats:', 'section_context': '2025 California Proposition 50 > Passed map'}) (input_keys={'chunk_text', 'section_context'}): litellm.BadRequestError: OpenAIException - Error code: 400 - {'error': "'response_format.type' must be 'json_schema' or 'text'"}. Set `provide_traceback=True` for traceback.
+
+
+Statement Judge needs to also score whether information came from the chunk and whether all the relevant information in the chunk has statements in the output.
+
+Provenance and dependency needs to have text that changes in notebooks.  
+For functional code not in notebooks we need a way to determine equivalance.
+That's what the formalization is for; statements about behavior.
+Code is equivalent if the theorems/tests that are stated as passing or not passing for it are the same.
+When bugs/unattested behavior is discovered for existing code we make statements about them.

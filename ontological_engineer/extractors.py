@@ -5,10 +5,14 @@ DSPy module for extracting atomic, verifiable statements from Wikipedia chunks.
 Uses ChainOfThought for reasoning through the extraction process.
 """
 
+import logging
 from typing import List, Optional
 import dspy
 
 from ontological_engineer.signatures import ExtractStatements
+
+
+logger = logging.getLogger(__name__)
 
 
 class StatementExtractor(dspy.Module):
@@ -49,10 +53,21 @@ class StatementExtractor(dspy.Module):
         Returns:
             dspy.Prediction with 'statements' field containing list of strings
         """
-        result = self.extract(
-            chunk_text=chunk_text,
-            section_context=section_context,
-        )
+        try:
+            result = self.extract(
+                chunk_text=chunk_text,
+                section_context=section_context,
+            )
+        except Exception as e:
+            # Handle LLM errors gracefully - return empty result with error info
+            logger.warning(
+                f"Extraction failed for {section_context[:50]}...: {type(e).__name__}: {e}"
+            )
+            return dspy.Prediction(
+                statements=[],
+                reasoning=f"Error during extraction: {type(e).__name__}: {e}",
+                error=str(e),
+            )
         
         # Ensure we return a list even if the model returns something else
         statements = result.statements
