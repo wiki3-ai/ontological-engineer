@@ -5,7 +5,7 @@ Generates and manages Jupyter notebooks with CID-based provenance:
 - statements.ipynb: Extracted statements per chunk
 - classifications.ipynb: Per-statement GOOD/BAD classifications
 
-Uses the same CID system as the original pipeline (src/cid.py).
+Uses CID system from ontological_engineer.cid module.
 """
 
 import json
@@ -16,10 +16,7 @@ from typing import List, Dict, Optional, Any, Tuple
 import nbformat
 from nbformat.v4 import new_notebook, new_markdown_cell, new_raw_cell
 
-# Import from the original cid module
-import sys
-sys.path.insert(0, str(Path(__file__).parent.parent))
-from src.cid import compute_cid, make_signature, cid_to_uri, extract_signatures
+from ontological_engineer.cid import compute_cid, make_signature, cid_to_uri, extract_signatures
 
 
 # =============================================================================

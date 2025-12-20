@@ -20,7 +20,7 @@ from urllib.parse import quote
 import nbformat
 from nbformat.v4 import new_notebook, new_markdown_cell, new_raw_cell
 
-from src.cid import compute_cid, make_signature, extract_signatures
+from ontological_engineer.cid import compute_cid, make_signature, extract_signatures
 
 
 # =============================================================================

@@ -1,0 +1,36 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [],
+    "signature": {
+      "instructions": "Extract atomic, verifiable statements from text chunks, particularly from Wikipedia articles or biographical content.\n\nEach statement must:\n- Be self-contained (understandable without the original text)\n- Preserve markdown links: [Entity Name](/wiki/Entity_Name) \n- Contain exactly one verifiable claim\n- Not editorialize or interpret beyond what's stated\n\nWhen processing the text:\n1. Identify distinct factual claims\n2. Decompose compound sentences into individual statements\n3. Ensure each statement is atomic and verifiable\n4. Maintain entity references using markdown link format\n5. Focus on public figures, political events, or institutional changes where applicable\n\nExample input chunk:\n    \"Albert Einstein was born in Ulm, in the Kingdom of Württemberg \n    in the German Empire, on 14 March 1879.\"\n    \nExample output statements:\n    - \"[Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).\"\n    - \"[Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.\"\n    - \"[Ulm](/wiki/Ulm) was in the [Kingdom of Württemberg](/wiki/Kingdom_of_Württemberg).\"\n\nApply this same logic to extract statements from biographical, political, or historical content, ensuring that each claim is isolated and verifiable.",
+      "fields": [
+        {
+          "prefix": "Chunk Text:",
+          "description": "Wikipedia article chunk with markdown links preserved"
+        },
+        {
+          "prefix": "Section Context:",
+          "description": "Breadcrumb showing location: Article > Section > Subsection"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Statements:",
+          "description": "List of atomic statements, each preserving [Entity](/wiki/...) links"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}
