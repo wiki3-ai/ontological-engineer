@@ -1,0 +1,85 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "chunk_text": "During the bidding process, 41 cities with 42 existing, fully functional venues with regular tenants (except Montreal) and two venues under construction (Las Vegas and Los Angeles) submitted to be part of the bid (three venues in three cities in Mexico; six venues in six cities in Canada; 35 venues in 32 cities in the United States). A first-round elimination cut nine venues and nine cities. A second-round elimination cut an additional nine venues in six cities, while three venues in three cities (Chicago, Minneapolis, and Vancouver) dropped out due to FIFA's unwillingness to discuss financial details. After Montreal dropped out in July 2021 due to lack of provincial funding and support to renovate Olympic Stadium, Vancouver rejoined the bid as a candidate city in April 2022, bringing the total number to 24 venues, each in its own city or metropolitan area.\nOn June 16, 2022, the sixteen host cities (two in Canada, three in Mexico, eleven in the United States) were announced by FIFA: Atlanta, Boston, Dallas, Guadalajara, Houston, Kansas City, Los Angeles, Mexico City, Miami, Monterrey, New York/New Jersey, Philadelphia, San Francisco Bay Area, Seattle, Toronto, and Vancouver. Eight of the sixteen chosen stadiums have permanent artificial turf surfaces that are planned to be replaced with grass under the direction of FIFA and a University of Tennessee–Michigan State University research team",
+        "section_context": "2026 FIFA World Cup > Venues",
+        "reasoning": "The chunk text describes the bidding process and final selection of venues for the 2026 FIFA World Cup. I need to extract atomic statements that preserve markdown links and contain single verifiable claims. Key information includes:\n- Number of cities and venues in the initial bid\n- Elimination process and venue withdrawals\n- Montreal's dropout and Vancouver's rejoining\n- Final host cities announcement\n- Stadium surface information\n\nI'll identify each verifiable claim with appropriate links preserved.",
+        "statements": [
+          "41 cities with 42 existing, fully functional venues with regular tenants (except Montreal) and two venues under construction (Las Vegas and Los Angeles) submitted to be part of the bid.",
+          "Three venues in three cities in Mexico submitted to be part of the bid.",
+          "Six venues in six cities in Canada submitted to be part of the bid.",
+          "35 venues in 32 cities in the United States submitted to be part of the bid.",
+          "A first-round elimination cut nine venues and nine cities.",
+          "A second-round elimination cut an additional nine venues in six cities.",
+          "Three venues in three cities (Chicago, Minneapolis, and Vancouver) dropped out due to FIFA's unwillingness to discuss financial details.",
+          "Montreal dropped out in July 2021 due to lack of provincial funding and support to renovate Olympic Stadium.",
+          "Vancouver rejoined the bid as a candidate city in April 2022.",
+          "After Montreal dropped out, Vancouver rejoined the bid as a candidate city in April 2022.",
+          "The total number of venues after Vancouver rejoined was 24 venues, each in its own city or metropolitan area.",
+          "On June 16, 2022, the sixteen host cities were announced by FIFA.",
+          "Two venues in Canada were selected as host cities: Toronto and Vancouver.",
+          "Three venues in Mexico were selected as host cities: Guadalajara, Mexico City, and Monterrey.",
+          "Eleven venues in the United States were selected as host cities: Atlanta, Boston, Dallas, Houston, Kansas City, Los Angeles, Miami, New York/New Jersey, Philadelphia, San Francisco Bay Area, and Seattle.",
+          "Eight of the sixteen chosen stadiums have permanent artificial turf surfaces that are planned to be replaced with grass under the direction of FIFA and a University of Tennessee–Michigan State University research team."
+        ]
+      },
+      {
+        "augmented": true,
+        "chunk_text": ". He was quoted by Xiaoping Li, a former China dissident to have stated: \"Some people said 200 died in the square, and others claimed that as many as 2,000 died. There were also stories of tanks running over students who were trying to leave. I have to say I did not see any of that. I was in the square until 6:30 in the morning.\"\nIn 2011, three secret cables from the United States embassy in Beijing from the time of the events were leaked and published by WikiLeaks, all of which stated that there was no bloodshed inside Tiananmen Square itself. Instead, they said Chinese soldiers opened fire on protesters in Beijing outside the square, around Muxidi station, as they fought their way from the west towards the centre. A Chilean diplomat who had been positioned next to a Red Cross station inside the square told his US counterparts that he did not observe any mass firing of weapons into the crowds in the square itself, although sporadic gunfire was heard. He said that most of the troops who entered the square were armed only with anti-riot gear.",
+        "section_context": "1989 Tiananmen Square protests and massacre > Deaths around and in Tiananmen Square itself",
+        "reasoning": "The chunk text discusses claims and reports about the events surrounding the 1989 Tiananmen Square protests and massacre, particularly focusing on the number of casualties and whether there was bloodshed inside the square. The statements are extracted from the text, preserving the markdown links and ensuring that each statement is atomic and verifiable. The text mentions quotes from Xiaoping Li, the release of secret cables by WikiLeaks, and accounts from a Chilean diplomat. These are translated into self-contained statements that reflect the information provided without editorializing.",
+        "statements": [
+          "[Xiaoping Li](/wiki/Xiaoping_Li) was quoted as saying that some people claimed 200 died in the square, and others claimed as many as 2,000 died.",
+          "[Xiaoping Li](/wiki/Xiaoping_Li) stated that he did not see any of the events described, and was in the square until 6:30 in the morning.",
+          "In 2011, three secret cables from the [United States embassy in Beijing](/wiki/United_States_embassy_in_Beijing) were leaked by [WikiLeaks](/wiki/WikiLeaks).",
+          "The cables stated that there was no bloodshed inside [Tiananmen Square](/wiki/Tiananmen_Square) itself.",
+          "The cables said that Chinese soldiers opened fire on protesters in [Beijing](/wiki/Beijing) outside the square, around [Muxidi station](/wiki/Muxidi_station).",
+          "A [Chilean diplomat](/wiki/Chilean_diplomat) positioned next to a [Red Cross station](/wiki/Red_Cross_station) inside the square did not observe any mass firing of weapons into the crowds in the square itself.",
+          "The Chilean diplomat heard sporadic gunfire inside the square.",
+          "Most of the troops who entered the square were armed only with anti-riot gear."
+        ]
+      },
+      {
+        "chunk_text": "In 2025, OpenAI added several features to make ChatGPT more agentic (capable of autonomously performing longer tasks). In January, Operator was released. It was capable of autonomously performing tasks through web browser interactions, including filling forms, placing online orders, scheduling appointments, and other browser-based tasks. It was controlling a software environment inside a virtual machine with limited internet connectivity and with safety restrictions. It struggled with complex user interfaces.\nIn May 2025, OpenAI introduced an agent for coding named Codex. It is capable of writing software, answering codebase questions, running tests, and proposing pull requests. It is based on a fine-tuned version of OpenAI o3. It has two versions, one running in a virtual machine in the cloud, and one where the agent runs in the cloud, but performs actions on a local machine connected via API.\nIn July 2025, OpenAI released ChatGPT agent, an AI agent that can perform multi-step tasks. Like Operator, it controls a virtual computer. It also inherits from Deep Research's ability to gather and summarize significant volumes of information. The user can interrupt tasks or provide additional instructions as needed.\nIn September 2025, OpenAI partnered with Stripe, Inc. to release Agentic Commerce Protocol, enabling purchases through ChatGPT. At launch, the feature was limited to purchases on Etsy from US users with a payment method linked to their OpenAI account",
+        "section_context": "ChatGPT > Agents"
+      },
+      {
+        "chunk_text": "In 2005, NOAA and the NWS ran a computer simulation, including weather and wave conditions, covering the period from November 9, 1975, until the early morning of November 11. Analysis of the simulation showed that two separate areas of high-speed wind appeared over Lake Superior at 4:00 p.m. on November 10. One had speeds in excess of 43 knots (80 km/h; 49 mph) and the other winds in excess of 40 knots (74 km/h; 46 mph). The southeastern part of the lake, the direction in which Edmund Fitzgerald was heading, had the highest winds. Average wave heights increased to near 19 feet (5.8 m) by 7:00 p.m., November 10, and winds exceeded 50 mph (43 kn; 80 km/h) over most of southeastern Lake Superior.\nEdmund Fitzgerald sank at the eastern edge of the area of high wind where the long fetch, or distance that wind blows over water, produced significant waves averaging over 23 feet (7.0 m) by 7:00 p.m. and over 25 feet (7.6 m) at 8:00 p.m. The simulation also showed one in 100 waves reaching 36 feet (11 m) and one out of every 1,000 reaching 46 feet (14 m). Since the ship was heading east-southeastward, it is likely that the waves caused Edmund Fitzgerald to roll heavily.\nAt the time of the sinking, the ship Arthur M. Anderson reported northwest winds of 57 mph (50 kn; 92 km/h), matching the simulation analysis result of 54 mph (47 kn; 87 km/h)",
+        "section_context": "SS Edmund Fitzgerald > Waves and weather hypothesis"
+      }
+    ],
+    "signature": {
+      "instructions": "Extract atomic, verifiable statements from Wikipedia text chunks while preserving entity links and ensuring each statement conveys a single, self-contained fact.\n\n**Task Overview:**\nYou are given a chunk of text from a Wikipedia article and a section context (breadcrumb showing location: Article > Section > Subsection). Your goal is to extract individual, verifiable claims from this text as atomic statements.\n\n**Instructions:**\n1. **Each statement must be self-contained**: Understandable without referring back to the original text.\n2. **Preserve markdown links**: If entities are linked using [Entity Name](/wiki/Entity_Name) format, maintain these links exactly as they appear in the source.\n3. **One claim per statement**: Each output statement should contain only one verifiable fact.\n4. **Avoid editorializing**: Do not add interpretation, opinion, or extra explanation beyond what is directly stated in the text.\n5. **Maintain factual integrity**: Ensure all extracted statements reflect information explicitly present in the chunk.\n\n**Example Input:**\nChunk Text:\n\"Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, on 14 March 1879.\"\n\nSection Context:\n\"Albert Einstein > Early life\"\n\n**Expected Output:**\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).\"\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.\"\n- \"[Ulm](/wiki/Ulm) was in the [Kingdom of Württemberg](/wiki/Kingdom_of_Württemberg).\"\n\n**Processing Notes:**\n- If no markdown links are present, do not add any.\n- Statements should be logically independent and concise.\n- Handle multi-sentence input by identifying each distinct claim.",
+      "fields": [
+        {
+          "prefix": "Chunk Text:",
+          "description": "Wikipedia article chunk with markdown links preserved"
+        },
+        {
+          "prefix": "Section Context:",
+          "description": "Breadcrumb showing location: Article > Section > Subsection"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Statements:",
+          "description": "List of atomic statements, each preserving [Entity](/wiki/...) links"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

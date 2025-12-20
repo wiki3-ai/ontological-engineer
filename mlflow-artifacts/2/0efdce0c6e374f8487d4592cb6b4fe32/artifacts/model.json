@@ -1,0 +1,85 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "chunk_text": ". Antonucci continued working for PDM for nine months after this incident, and Gacy made no further attempts to assault him.\nOn July 26, 1976, Gacy picked up 18-year-old hitchhiker David Cram and offered him a job with PDM; he began work the same evening. On August 21, Cram moved into Gacy's house. The next day, Cram and Gacy had several drinks to celebrate his 19th birthday, with Gacy dressed as Pogo. Gacy tricked Cram into donning handcuffs, his wrists cuffed in front of his body rather than behind. He swung Cram around while holding the chain linking the cuffs, then said he intended to rape him. Cram kicked Gacy in the face and freed himself.\nA month later, Gacy appeared at Cram's bedroom door intending to rape him, saying, \"Dave, you really don't know who I am. Maybe it would be good if you give me what I want.\" Cram resisted, straddling Gacy, who left the bedroom, stating, \"You ain't no fun.\" Cram moved out on October 5 and left PDM (although he periodically worked for Gacy over the following two years). Shortly afterwards, another employee, 18-year-old Michael Rossi, moved in. Rossi had worked for PDM since May 23, 1976. He lived with Gacy until April 1977. Rossi sometimes assisted Gacy in clowning at grand openings of businesses: Gacy as Pogo and Rossi as Patches.",
+        "section_context": "John Wayne Gacy > Employees",
+        "reasoning": "The chunk describes events related to John Wayne Gacy's employees, specifically focusing on incidents involving David Cram and Michael Rossi. The text details assault attempts, work relationships, living arrangements, and interactions between Gacy and his employees. Each sentence contains verifiable claims about these events that can be extracted as atomic statements while preserving the markdown links to entities.\n\nThe key claims are:\n1. Antonucci continued working for PDM after an incident.\n2. Gacy picked up David Cram on July 26, 1976.\n3. Cram began working for PDM the same evening.\n4. Cram moved into Gacy's house on August 21.\n5. Cram and Gacy celebrated Cram's 19th birthday with drinks, with Gacy dressed as Pogo.\n6. Gacy tricked Cram into wearing handcuffs.\n7. Gacy swung Cram around while holding the chain linking the cuffs.\n8. Gacy said he intended to rape Cram.\n9. Cram kicked Gacy in the face and freed himself.\n10. A month later, Gacy appeared at Cram's bedroom door intending to rape him.\n11. Gacy told Cram, \"Dave, you really don't know who I am. Maybe it would be good if you give me what I want.\"\n12. Cram resisted and straddled Gacy.\n13. Gacy left the bedroom saying, \"You ain't no fun.\"\n14. Cram moved out on October 5 and left PDM.\n15. Another employee, Michael Rossi, moved in shortly after Cram left.\n16. Rossi had worked for PDM since May 23, 1976.\n17. Rossi lived with Gacy until April 1977.\n18. Rossi sometimes assisted Gacy in clowning at grand openings of businesses.\n19. Gacy dressed as Pogo and Rossi as Patches.\n\nEach of these claims is atomic, self-contained, and verifiable based on the text.",
+        "statements": [
+          "[Antonucci](/wiki/Antonucci) continued working for [PDM](/wiki/PDM) for nine months after this incident.",
+          "[Gacy](/wiki/John_Wayne_Gacy) picked up [18-year-old hitchhiker David Cram](/wiki/David_Cram) on July 26, 1976.",
+          "[David Cram](/wiki/David_Cram) began work for [PDM](/wiki/PDM) the same evening.",
+          "[David Cram](/wiki/David_Cram) moved into [Gacy](/wiki/John_Wayne_Gacy)'s house on August 21.",
+          "[David Cram](/wiki/David_Cram) and [Gacy](/wiki/John_Wayne_Gacy) had several drinks to celebrate his 19th birthday, with [Gacy](/wiki/John_Wayne_Gacy) dressed as [Pogo](/wiki/Pogo).",
+          "[Gacy](/wiki/John_Wayne_Gacy) tricked [David Cram](/wiki/David_Cram) into donning handcuffs.",
+          "[Gacy](/wiki/John_Wayne_Gacy) swung [David Cram](/wiki/David_Cram) around while holding the chain linking the cuffs.",
+          "[Gacy](/wiki/John_Wayne_Gacy) said he intended to rape [David Cram](/wiki/David_Cram).",
+          "[David Cram](/wiki/David_Cram) kicked [Gacy](/wiki/John_Wayne_Gacy) in the face and freed himself.",
+          "A month later, [Gacy](/wiki/John_Wayne_Gacy) appeared at [David Cram](/wiki/David_Cram)'s bedroom door intending to rape him.",
+          "[Gacy](/wiki/John_Wayne_Gacy) told [David Cram](/wiki/David_Cram), \"Dave, you really don't know who I am. Maybe it would be good if you give me what I want.\"",
+          "[David Cram](/wiki/David_Cram) resisted and straddled [Gacy](/wiki/John_Wayne_Gacy).",
+          "[Gacy](/wiki/John_Wayne_Gacy) left the bedroom, stating, \"You ain't no fun.\"",
+          "[David Cram](/wiki/David_Cram) moved out on October 5 and left [PDM](/wiki/PDM).",
+          "Shortly afterwards, another employee, 18-year-old [Michael Rossi](/wiki/Michael_Rossi), moved in.",
+          "[Michael Rossi](/wiki/Michael_Rossi) had worked for [PDM](/wiki/PDM) since May 23, 1976.",
+          "[Michael Rossi](/wiki/Michael_Rossi) lived with [Gacy](/wiki/John_Wayne_Gacy) until April 1977.",
+          "[Michael Rossi](/wiki/Michael_Rossi) sometimes assisted [Gacy](/wiki/John_Wayne_Gacy) in clowning at grand openings of businesses.",
+          "[Gacy](/wiki/John_Wayne_Gacy) as [Pogo](/wiki/Pogo) and [Michael Rossi](/wiki/Michael_Rossi) as [Patches](/wiki/Patches)."
+        ]
+      },
+      {
+        "augmented": true,
+        "chunk_text": "Kennedy's elder brother, Joe Jr., had been the family's political standard-bearer and was tapped by their father to seek the presidency. After Joe's death, the assignment fell to John as the second eldest. Boston mayor Maurice J. Tobin discussed the possibility of John becoming his running mate in 1946 as a candidate for Massachusetts lieutenant governor, but Joe Sr. preferred a congressional campaign that could send John to Washington, where he could have national visibility.",
+        "section_context": "John F. Kennedy > U.S. House of Representatives (1947–1953)",
+        "reasoning": "The chunk text describes the political trajectory of John F. Kennedy, focusing on his early political ambitions and family influence. Key claims include: 1) Kennedy's elder brother Joe Jr. was the family's political standard-bearer, 2) Joe Jr. was tapped by their father to seek the presidency, 3) After Joe's death, the assignment fell to John as the second eldest, 4) Boston mayor Maurice J. Tobin discussed the possibility of John becoming his running mate in 1946, 5) Joe Sr. preferred a congressional campaign for John to gain national visibility in Washington.\n\nEach of these claims is atomic and verifiable, with appropriate markdown links preserved where needed. The statements are self-contained and do not include editorialization.",
+        "statements": [
+          "[John F. Kennedy](/wiki/John_F._Kennedy)'s elder brother [Joe Jr.](/wiki/John_F._Kennedy_Sr.#Political_career) was the family's political standard-bearer.",
+          "[Joe Jr.](/wiki/John_F._Kennedy_Sr.#Political_career) was tapped by their father [Joseph P. Kennedy Sr.](/wiki/Joseph_P._Kennedy_Sr.) to seek the presidency.",
+          "After [Joe Jr.'s](/wiki/John_F._Kennedy_Sr.#Political_career) death, the assignment fell to [John F. Kennedy](/wiki/John_F._Kennedy) as the second eldest.",
+          "[Maurice J. Tobin](/wiki/Maurice_J._Tobin) discussed the possibility of [John F. Kennedy](/wiki/John_F._Kennedy) becoming his running mate in 1946 as a candidate for [Massachusetts](/wiki/Massachusetts) lieutenant governor.",
+          "[Joseph P. Kennedy Sr.](/wiki/Joseph_P._Kennedy_Sr.) preferred a congressional campaign for [John F. Kennedy](/wiki/John_F._Kennedy) that could send him to [Washington, D.C.](/wiki/Washington,_D.C.), where he could have national visibility."
+        ]
+      },
+      {
+        "chunk_text": "Nitish was briefly, the Union Minister for Railways and Minister for Surface Transport and later, the Minister for Agriculture in 1998–99, in the NDA government of Atal Bihari Vajpayee. In August 1999, he resigned following the Gaisal train disaster, for which he took responsibility as a minister. However, in his short stint as Railway Minister, he brought in widespread reforms, such as internet ticket booking facility in 2002, opening a record number of railway ticket booking counters and introducing the tatkal scheme for instant booking.\nLater that year, he rejoined the Union Cabinet as Minister for Agriculture. From 2001 to May 2004, he was – again – the Union Minister for Railways. In the 2004 Lok Sabha elections, he contested elections from two places, when he was elected from Nalanda but lost from his traditional constituency, Barh.",
+        "section_context": "Nitish Kumar > Kumar as Union Minister"
+      },
+      {
+        "chunk_text": ". This capacity had to be reduced further during Champions League matches to accommodate additional advertising boards, so much so that for two seasons, from 1998 to 2000, Arsenal played Champions League home matches at Wembley, which could house more than 70,000 spectators.",
+        "section_context": "Arsenal F.C. > Stadiums"
+      }
+    ],
+    "signature": {
+      "instructions": "Extract atomic, verifiable statements from Wikipedia text chunks while preserving entity links and ensuring each statement conveys a single, self-contained fact.\n\n**Task Overview:**\nYou are given a chunk of text from a Wikipedia article and a section context (breadcrumb showing location: Article > Section > Subsection). Your goal is to extract individual, verifiable claims from this text as atomic statements.\n\n**Instructions:**\n1. **Each statement must be self-contained**: Understandable without referring back to the original text.\n2. **Preserve markdown links**: If entities are linked using [Entity Name](/wiki/Entity_Name) format, maintain these links exactly as they appear in the source.\n3. **One claim per statement**: Each output statement should contain only one verifiable fact.\n4. **Avoid editorializing**: Do not add interpretation, opinion, or extra explanation beyond what is directly stated in the text.\n5. **Maintain factual integrity**: Ensure all extracted statements reflect information explicitly present in the chunk.\n\n**Example Input:**\nChunk Text:\n\"Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, on 14 March 1879.\"\n\nSection Context:\n\"Albert Einstein > Early life\"\n\n**Expected Output:**\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).\"\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.\"\n- \"[Ulm](/wiki/Ulm) was in the [Kingdom of Württemberg](/wiki/Kingdom_of_Württemberg).\"\n\n**Processing Notes:**\n- If no markdown links are present, do not add any.\n- Statements should be logically independent and concise.\n- Handle multi-sentence input by identifying each distinct claim.",
+      "fields": [
+        {
+          "prefix": "Chunk Text:",
+          "description": "Wikipedia article chunk with markdown links preserved"
+        },
+        {
+          "prefix": "Section Context:",
+          "description": "Breadcrumb showing location: Article > Section > Subsection"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Statements:",
+          "description": "List of atomic statements, each preserving [Entity](/wiki/...) links"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

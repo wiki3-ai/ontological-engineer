@@ -1,0 +1,70 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "chunk_text": ". Mishra counters him by exposing how most of Khaitan's projects are financed through loans from nationalised banks, and how economic expert Milind Desai's report on the 'Boston to Bikaner' project is biased, since his firm prepares reports almost exclusively for Khaitan's company. He also explains how Khaitan uses small developers like Bharadwaj to defraud indebted farmers like Rajaram Solanki, acquiring land dirt cheap and selling it at a premium. Tyagi then enters the courtroom with a witness—a seriously injured Sengupta, whom Tyagi met while in the hospital, who testifies that he received bribes from Khaitan, and the bullet removed from his body came from Shekhawat's registered rifle. Tyagi concludes his argument by showing Khaitan, Vikram, and Justice Tripathi pictures of their homes and saying that they need to be demolished for progress, asking why only the poor and vulnerable like Rajaram and Janki, should always be the people making sacrifices for the nation, rather than the rich and influential like Khaitan and Vikram.\nJustice Tripathi delivers his verdict, ruling that Khaitan's land purchases for the project are illegal due to multiple violations of the Land Acquisition Act. He also orders a judicial inquiry into the circumstances of Rajaram and Varsha's suicides, and the violence in Parsaul. The film ends with Tyagi and Mishra celebrated by the villagers, the slogan of Jai Jawan, Jai Kisan, and asks viewers to thank a farmer when they have their next meal.",
+        "section_context": "Jolly LLB 3 > Plot",
+        "reasoning": "The chunk_text describes a sequence of events in the plot of \"Jolly LLB 3,\" focusing on legal arguments, courtroom developments, and the final verdict. Each sentence presents a distinct claim that can be broken into atomic statements. These include: Mishra's counterarguments to Khaitan's claims, Tyagi's introduction of a witness, the courtroom testimony and evidence presented, Tyagi's concluding remarks, the judge’s ruling on land purchases, the order for an inquiry into suicides and violence, and the film's ending with celebrations and a message to viewers. All statements must preserve markdown links if any are present, though none appear in this chunk.",
+        "statements": [
+          "[Mishra](/wiki/Mishra) counters [Khaitan](/wiki/Khaitan) by exposing how most of [Khaitan](/wiki/Khaitan)'s projects are financed through loans from nationalised banks.",
+          "[Mishra](/wiki/Mishra) also explains how [Khaitan](/wiki/Khaitan) uses small developers like [Bharadwaj](/wiki/Bharadwaj) to defraud indebted farmers like [Rajaram Solanki](/wiki/Rajaram_Solanki).",
+          "[Tyagi](/wiki/Tyagi) enters the courtroom with a witness—a seriously injured [Sengupta](/wiki/Sengupta), whom [Tyagi](/wiki/Tyagi) met while in the hospital.",
+          "[Sengupta](/wiki/Sengupta) testifies that he received bribes from [Khaitan](/wiki/Khaitan).",
+          "[Sengupta](/wiki/Sengupta) also testifies that the bullet removed from his body came from [Shekhawat](/wiki/Shekhawat)'s registered rifle.",
+          "[Tyagi](/wiki/Tyagi) concludes his argument by showing [Khaitan](/wiki/Khaitan), [Vikram](/wiki/Vikram), and [Tripathi](/wiki/Tripathi) pictures of their homes.",
+          "[Tyagi](/wiki/Tyagi) asks why only the poor and vulnerable like [Rajaram](/wiki/Rajaram) and [Janki](/wiki/Janki) should always be the people making sacrifices for the nation.",
+          "[Justice Tripathi](/wiki/Tripathi) rules that [Khaitan](/wiki/Khaitan)'s land purchases for the project are illegal due to multiple violations of the [Land Acquisition Act](/wiki/Land_Acquisition_Act).",
+          "[Justice Tripathi](/wiki/Tripathi) orders a judicial inquiry into the circumstances of [Rajaram](/wiki/Rajaram) and [Varsha](/wiki/Varsha)'s suicides.",
+          "[Justice Tripathi](/wiki/Tripathi) orders a judicial inquiry into the violence in [Parsaul](/wiki/Parsaul).",
+          "The film ends with [Tyagi](/wiki/Tyagi) and [Mishra](/wiki/Mishra) being celebrated by the villagers.",
+          "The film ends with the slogan [Jai Jawan, Jai Kisan](/wiki/Jai_Jawan,_Jai_Kisan).",
+          "The film asks viewers to thank a farmer when they have their next meal."
+        ]
+      },
+      {
+        "chunk_text": ". The film opened in Germany ($11.6 million) and Greece ($756,000), breaking records for Wednesday night previews, the biggest opening for a horror film, and the top Warner Bros. film thus far in their respective markets. The film's largest markets were the United Kingdom ($42.5 million), Germany ($35.4 million), Mexico ($27.6 million), France ($20.2 million) and Japan ($19.2 million).",
+        "section_context": "It (2017 film) > International run"
+      },
+      {
+        "chunk_text": ". Sheen would later deny these claims, and stated that the FBI was \"aware\" of the allegations and had searched his computers. The divorce was finalized in November 2006 and preceded a custody dispute over their two daughters.\nOn May 30, 2008, Sheen married his third wife, Brooke Mueller. Mueller gave birth to their twin sons, Bob and Max, on March 14, 2009. In November 2010, Sheen filed for divorce. On March 1, 2011, police removed the couple's sons from Sheen's home. Sheen told NBC's Today, \"I stayed very calm and focused.\" According to People, social services took the children after Mueller obtained a restraining order against Sheen. The document said, \"I am very concerned that [Sheen] is currently insane.\" Asked if he would fight for the children, Sheen texted People, \"Born ready. Winning.\" Sheen and Mueller's divorce became final on May 2, 2011.\nOn March 1, 2011, Sheen was concurrently living with 24-year-old pornographic actress Bree Olson and 24-year-old model and graphic designer Natalie Kenly, whom he collectively nicknamed his \"goddesses\". Olson left Sheen in April 2011, and Kenly left in June 2011. In a January 2013 interview on Piers Morgan Tonight, Sheen stated that he was in a relationship with adult film actress and 2011 Penthouse magazine Pet of the Month Georgia Jones.\nIn February 2014, Sheen became engaged to former adult film star Brett Rossi, who began going by her real name, Scottine",
+        "section_context": "Charlie Sheen > Family and relationships"
+      },
+      {
+        "chunk_text": "As a candidate for the Illinois state senate in 1996, Obama stated he favored legalizing same-sex marriage. During his Senate run in 2004, he said he supported civil unions and domestic partnerships for same-sex partners but opposed same-sex marriages. In 2008, he reaffirmed this position by stating \"I believe marriage is between a man and a woman. I am not in favor of gay marriage.\" On May 9, 2012, shortly after the official launch of his campaign for re-election as president, Obama said his views had evolved, and he publicly affirmed his personal support for the legalization of same-sex marriage, becoming the first sitting U.S. president to do so. During his second inaugural address on January 21, 2013, Obama became the first U.S. president in office to call for full equality for gay Americans, and the first to mention gay rights or the word \"gay\" in an inaugural address. In 2013, the Obama administration filed briefs that urged the Supreme Court to rule in favor of same-sex couples in the cases of Hollingsworth v. Perry (regarding same-sex marriage) and United States v. Windsor (regarding the Defense of Marriage Act).",
+        "section_context": "Barack Obama > Same-sex marriage"
+      }
+    ],
+    "signature": {
+      "instructions": "Extract atomic, verifiable statements from Wikipedia text chunks while preserving entity links and ensuring each statement conveys a single, self-contained fact.\n\n**Task Overview:**\nYou are given a chunk of text from a Wikipedia article and a section context (breadcrumb showing location: Article > Section > Subsection). Your goal is to extract individual, verifiable claims from this text as atomic statements.\n\n**Instructions:**\n1. **Each statement must be self-contained**: Understandable without referring back to the original text.\n2. **Preserve markdown links**: If entities are linked using [Entity Name](/wiki/Entity_Name) format, maintain these links exactly as they appear in the source.\n3. **One claim per statement**: Each output statement should contain only one verifiable fact.\n4. **Avoid editorializing**: Do not add interpretation, opinion, or extra explanation beyond what is directly stated in the text.\n5. **Maintain factual integrity**: Ensure all extracted statements reflect information explicitly present in the chunk.\n\n**Example Input:**\nChunk Text:\n\"Albert Einstein was born in Ulm, in the Kingdom of Württemberg in the German Empire, on 14 March 1879.\"\n\nSection Context:\n\"Albert Einstein > Early life\"\n\n**Expected Output:**\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).\"\n- \"[Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.\"\n- \"[Ulm](/wiki/Ulm) was in the [Kingdom of Württemberg](/wiki/Kingdom_of_Württemberg).\"\n\n**Processing Notes:**\n- If no markdown links are present, do not add any.\n- Statements should be logically independent and concise.\n- Handle multi-sentence input by identifying each distinct claim.",
+      "fields": [
+        {
+          "prefix": "Chunk Text:",
+          "description": "Wikipedia article chunk with markdown links preserved"
+        },
+        {
+          "prefix": "Section Context:",
+          "description": "Breadcrumb showing location: Article > Section > Subsection"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Statements:",
+          "description": "List of atomic statements, each preserving [Entity](/wiki/...) links"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}

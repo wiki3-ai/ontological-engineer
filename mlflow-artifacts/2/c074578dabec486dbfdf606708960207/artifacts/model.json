@@ -1,0 +1,103 @@
+{
+  "extract.predict": {
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "chunk_text": "Zohran Kwame Mamdani (born October 18, 1991) is an American politician who is the mayor-elect of New York City. A member of the Democratic Party and the Democratic Socialists of America, he is set to become New York's first Muslim and Asian American mayor. Mamdani has served as a member of the New York State Assembly for the 36th district since 2021, representing the Queens neighborhood of Astoria.\nMamdani was born in Kampala, Uganda, to academic Mahmood Mamdani and filmmaker Mira Nair. After spending three years in Cape Town, South Africa, when Mamdani was five to seven years old, his family moved to the United States, settling in New York City. Mamdani graduated from the Bronx High School of Science before receiving a bachelor's degree with a major in Africana studies from Bowdoin College in 2014.\nAfter working as a housing counselor and musician, Mamdani entered local New York City politics as a campaign manager for Khader El-Yateem and Ross Barkan. He was first elected to the New York State Assembly in 2020, defeating five-term incumbent Aravella Simotas in the Democratic primary. Representing Astoria, he was reelected without opposition in 2022 and 2024.\nIn October 2024, Mamdani announced his candidacy for mayor of New York City in the 2025 election",
+        "section_context": "Zohran Mamdani > Zohran Mamdani",
+        "reasoning": "The chunk provides a biographical and political overview of Zohran Kwame Mamdani, including his background, education, political career, and upcoming mayoral election. To extract atomic statements, I will identify self-contained claims that preserve the markdown links and convey one verifiable fact each. These include his personal details (birth date, place, family), education, professional background, political positions held, and future candidacy.",
+        "statements": [
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) was born on October 18, 1991.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) was born in [Kampala](/wiki/Kampala), [Uganda](/wiki/Uganda).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is an American politician.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is the mayor-elect of [New York City](/wiki/New_York_City).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is a member of the [Democratic Party](/wiki/Democratic_Party).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is a member of the [Democratic Socialists of America](/wiki/Democratic_Socialists_of_America).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is set to become [New York City](/wiki/New_York_City)'s first Muslim mayor.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is set to become [New York City](/wiki/New_York_City)'s first Asian American mayor.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) has served as a member of the [New York State Assembly](/wiki/New_York_State_Assembly) for the 36th district since 2021.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) represents the [Queens](/wiki/Queens) neighborhood of [Astoria](/wiki/Astoria,_New_York).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) is the son of academic [Mahmood Mamdani](/wiki/Mahmood_Mamdani) and filmmaker [Mira Nair](/wiki/Mira_Nair).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) spent three years in [Cape Town](/wiki/Cape_Town), [South Africa](/wiki/South_Africa) when he was five to seven years old.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) moved to the [United States](/wiki/United_States), settling in [New York City](/wiki/New_York_City).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) graduated from the [Bronx High School of Science](/wiki/Bronx_High_School_of_Science).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) received a bachelor's degree with a major in [Africana studies](/wiki/Africana_studies) from [Bowdoin College](/wiki/Bowdoin_College) in 2014.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) worked as a housing counselor and musician.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) entered local [New York City](/wiki/New_York_City) politics as a campaign manager for [Khader El-Yateem](/wiki/Khader_El-Yateem) and [Ross Barkan](/wiki/Ross_Barkan).",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) was first elected to the [New York State Assembly](/wiki/New_York_State_Assembly) in 2020.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) defeated five-term incumbent [Aravella Simotas](/wiki/Aravella_Simotas) in the Democratic primary.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) was reelected without opposition in 2022.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) was reelected without opposition in 2024.",
+          "[Zohran Kwame Mamdani](/wiki/Zohran_Kwame_Mamdani) announced his candidacy for mayor of [New York City](/wiki/New_York_City) in the 2025 election."
+        ]
+      },
+      {
+        "augmented": true,
+        "chunk_text": ". Obstructing President Obama's policies and his agenda isn't actually obstruction; it's patriotism.\" Cheney claimed that Obama had \"literally declared war\" on the First and Second amendments to the United States Constitution as well as the interests of Wyoming ranchers and energy workers who faced regulations from the United States Environmental Protection Agency.\nCheney's campaign was marred by criticism from her championing of \"hawkish\" foreign policy positions to a public spat with her sister over her opposition to same-sex marriage. Enzi's continuing popularity made it difficult for Cheney to make inroads with Wyoming Republicans. On January 6, 2014, Cheney withdrew from the race, citing family health issues.",
+        "section_context": "Liz Cheney > 2014 U.S. Senate bid",
+        "reasoning": "The chunk text discusses Liz Cheney's 2014 U.S. Senate campaign, including her policy positions, challenges within the Republican Party, and her withdrawal from the race. The statements must be atomic and verifiable, preserving markdown links where applicable. However, there are no explicit [Entity](/wiki/...) links in the text, so no links will be preserved. The key claims are about Cheney's political positions, her campaign difficulties, and her withdrawal due to health issues.",
+        "statements": [
+          "Obstructing President Obama's policies and his agenda isn't actually obstruction; it's patriotism.",
+          "Cheney claimed that Obama had 'literally declared war' on the First and Second amendments to the United States Constitution.",
+          "Cheney claimed that Obama had declared war on the interests of Wyoming ranchers and energy workers.",
+          "Cheney's campaign was marred by criticism from her championing of 'hawkish' foreign policy positions.",
+          "Cheney had a public spat with her sister over her opposition to same-sex marriage.",
+          "Enzi's continuing popularity made it difficult for Cheney to make inroads with Wyoming Republicans.",
+          "On January 6, 2014, Cheney withdrew from the race.",
+          "Cheney cited family health issues as the reason for her withdrawal from the race."
+        ]
+      },
+      {
+        "augmented": true,
+        "chunk_text": ". In July 2021, Gibson was recorded saluting Trump while attending UFC 264, which went viral over the Internet.\nIn October 2020, Gibson released a statement regarding the Second Nagorno-Karabakh War and expressing solidarity with the Armenian people.\nGibson endorsed Trump in the 2024 United States presidential election, adding that Kamala Harris had \"the IQ of a fence post\".\nOn January 16, 2025, it was announced by president-elect Donald Trump that Gibson would serve in a new role as one of three \"special ambassadors\" to Hollywood, sharing the role with fellow actors Jon Voight and Sylvester Stallone. Trump stated that he wants these actors to make Hollywood \"stronger than ever before\" by bringing back business lost to \"foreign countries\". Trump said that the three would be his \"eyes and ears\" and he would act on their suggestions, but their duties were not specified.",
+        "section_context": "Mel Gibson > Politics",
+        "reasoning": "The chunk presents a series of factual events related to Mel Gibson's political activities and appointments. Each sentence contains a verifiable claim that can be extracted as an atomic statement. The statements must preserve markdown links if any were present (though none are in this text), and each should stand alone as a self-contained fact. The key claims include Gibson's actions in 2020 and 2021, his endorsement of Trump in 2024, and his appointment by Trump in early 2025 as a \"special ambassador\" to Hollywood.",
+        "statements": [
+          "[Mel Gibson](/wiki/Mel_Gibson) was recorded saluting [Donald Trump](/wiki/Donald_Trump) while attending [UFC 264](/wiki/UFC_264) in July 2021.",
+          "[Mel Gibson](/wiki/Mel_Gibson) released a statement in October 2020 regarding the [Second Nagorno-Karabakh War](/wiki/Second_Nagorno-Karabakh_War) and expressed solidarity with the [Armenian people](/wiki/Armenians).",
+          "[Mel Gibson](/wiki/Mel_Gibson) endorsed [Donald Trump](/wiki/Donald_Trump) in the [2024 United States presidential election](/wiki/2024_United_States_presidential_election).",
+          "[Mel Gibson](/wiki/Mel_Gibson) stated that [Kamala Harris](/wiki/Kamala_Harris) had 'the IQ of a fence post'.",
+          "On January 16, 2025, [president-elect Donald Trump](/wiki/Donald_Trump) announced that [Mel Gibson](/wiki/Mel_Gibson) would serve as one of three 'special ambassadors' to [Hollywood](/wiki/Hollywood).",
+          "[Jon Voight](/wiki/Jon_Voight) and [Sylvester Stallone](/wiki/Sylvester_Stallone) were also named as special ambassadors to [Hollywood](/wiki/Hollywood) by [Donald Trump](/wiki/Donald_Trump).",
+          "[Donald Trump](/wiki/Donald_Trump) stated that the special ambassadors would make [Hollywood](/wiki/Hollywood) 'stronger than ever before' by bringing back business lost to 'foreign countries'.",
+          "[Donald Trump](/wiki/Donald_Trump) said that the three special ambassadors would be his 'eyes and ears' and he would act on their suggestions."
+        ]
+      },
+      {
+        "chunk_text": "In conjunction with the plan to clear the square by force, the Politburo received word from army headquarters stating that troops were ready to help stabilize the capital and that they understood the necessity and legality of martial law to overcome the turmoil.\nOn 2 June, with increasing action on the part of protesters, the government saw that it was time to act. Protests broke out as newspapers published articles that called for the students to leave Tiananmen Square and end the movement. Many of the students in the square were not willing to leave and were outraged by the articles. They were also outraged by the Beijing Daily's 1 June article \"Tiananmen, I Cry for You\", which was written by a fellow student who had become disillusioned with the movement, as he thought it was chaotic and disorganised. In response to the articles, thousands of students lined the streets of Beijing to protest against leaving the square.\nThree intellectuals—Liu Xiaobo, Zhou Duo, and Gao Xin—and Taiwanese singer Hou Dejian declared a second hunger strike to revive the movement. After weeks of occupying the square, the students were tired, and internal rifts opened between moderate and hardline student groups",
+        "section_context": "1989 Tiananmen Square protests and massacre > 2–3 June"
+      }
+    ],
+    "signature": {
+      "instructions": "Extract atomic, verifiable statements from Wikipedia text chunks.\n\nEach statement must:\n- Be self-contained (understandable without the original text)\n- Preserve markdown links: [Entity Name](/wiki/Entity_Name)\n- Contain exactly one verifiable claim\n- Not editorialize or interpret beyond what's stated\n\nExample input chunk:\n    \"Albert Einstein was born in Ulm, in the Kingdom of Württemberg \n    in the German Empire, on 14 March 1879.\"\n    \nExample output statements:\n    - \"[Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).\"\n    - \"[Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.\"\n    - \"[Ulm](/wiki/Ulm) was in the [Kingdom of Württemberg](/wiki/Kingdom_of_Württemberg).",
+      "fields": [
+        {
+          "prefix": "Chunk Text:",
+          "description": "Wikipedia article chunk with markdown links preserved"
+        },
+        {
+          "prefix": "Section Context:",
+          "description": "Breadcrumb showing location: Article > Section > Subsection"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Statements:",
+          "description": "List of atomic statements, each preserving [Entity](/wiki/...) links"
+        }
+      ]
+    },
+    "lm": null
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.10",
+      "dspy": "3.0.4",
+      "cloudpickle": "3.1"
+    }
+  }
+}
