@@ -203,6 +203,11 @@ def chunk_article(
                 if break_point == -1:
                     break_point = current_text.rfind('. ', 0, max_chunk_size)
                 if break_point == -1:
+                    # No good break point - force split at max_chunk_size
+                    break_point = max_chunk_size
+                
+                # Ensure we make progress (avoid infinite loop)
+                if break_point <= 0:
                     break_point = max_chunk_size
                 
                 chunk_text = current_text[:break_point].strip()
@@ -211,7 +216,14 @@ def chunk_article(
                         "text": chunk_text,
                         "section": current_section,
                     })
-                current_text = current_text[break_point:].strip()
+                
+                # Move past the break point - ensure we always advance
+                remaining = current_text[break_point:].lstrip()
+                if len(remaining) >= len(current_text):
+                    # Safety: if we're not making progress, force advance
+                    current_text = current_text[max_chunk_size:]
+                else:
+                    current_text = remaining
     
     # Don't forget the last chunk
     if current_text.strip() and len(current_text.strip()) >= min_chunk_size:
@@ -582,3 +594,82 @@ def fetch_and_cache_pages(
         all_chunks.extend(chunks)
     
     return all_chunks
+
+
+def process_wikipedia_sample(
+    pages: List[WikipediaPage],
+    output_dir: Path,
+    max_pages: Optional[int] = None,
+    min_chunk_length: int = 60,
+) -> Tuple[List[WikipediaChunk], int]:
+    """Process Wikipedia pages: fetch, chunk, and save with CID provenance.
+    
+    This is the main entry point for processing a Wikipedia sample.
+    Handles incremental processing - skips pages that already have chunks.
+    
+    Args:
+        pages: List of WikipediaPage objects to process
+        output_dir: Directory to save per-page chunks notebooks
+        max_pages: Maximum pages to process (default: all)
+        min_chunk_length: Minimum chunk text length to keep
+        
+    Returns:
+        Tuple of (list of all WikipediaChunks, pages_processed count)
+    """
+    from tqdm import tqdm
+    
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    training_chunks = []
+    pages_processed = 0
+    pages_to_process = pages[:max_pages] if max_pages else pages
+    
+    for page in tqdm(pages_to_process, desc="Processing pages"):
+        # Check if already processed
+        page_slug = page.title.lower().replace(' ', '_').replace('/', '_')
+        chunks_path = output_dir / f"{page_slug}_chunks.ipynb"
+        
+        if chunks_path.exists():
+            # Load from existing notebook (skip re-fetching)
+            existing_chunks = load_chunks_from_notebook(chunks_path)
+            for c in existing_chunks:
+                training_chunks.append(WikipediaChunk(
+                    text=c['text'],
+                    section_context=c['section_context'],
+                    chunk_num=c['chunk_num'],
+                    total_chunks=len(existing_chunks),
+                    page_title=page.title,
+                ))
+            pages_processed += 1
+            continue
+        
+        # Fetch and chunk
+        content = fetch_page_content(page.title)
+        if not content:
+            continue
+        
+        chunks = chunk_article(page.title, content)
+        chunks = [c for c in chunks if len(c.text) >= min_chunk_length]
+        if not chunks:
+            continue
+        
+        # Create chunks notebook with CID provenance
+        nb = generate_chunks_notebook_header(
+            page_title=page.title,
+            source_url=f"https://en.wikipedia.org/wiki/{quote(page.title.replace(' ', '_'))}",
+        )
+        
+        # Compute a CID for the full page content (source provenance)
+        page_cid = compute_cid(content)
+        
+        # Add each chunk with CID signature
+        for chunk in chunks:
+            chunk_cid, _ = append_chunk_cell(nb, chunk, source_cid=page_cid)
+        
+        # Save the chunks notebook
+        save_notebook(nb, chunks_path)
+        
+        training_chunks.extend(chunks)
+        pages_processed += 1
+    
+    return training_chunks, pages_processed

@@ -61,6 +61,7 @@ from ontological_engineer.training.data import (
     get_processed_page_titles,
     save_notebook,
     fetch_and_cache_pages,
+    process_wikipedia_sample,
 )
 
 __version__ = "0.1.0"
@@ -120,4 +121,5 @@ __all__ = [
     "get_processed_page_titles",
     "save_notebook",
     "fetch_and_cache_pages",
+    "process_wikipedia_sample",
 ]

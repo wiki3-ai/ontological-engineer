@@ -133,6 +133,31 @@ Content for section 2 which is also reasonably long.
             assert chunk.chunk_num == i
             assert chunk.total_chunks == len(chunks)
 
+    def test_large_chunk_splitting_no_infinite_loop(self):
+        """Test that very large chunks are split without infinite loop."""
+        # Create a large text block without paragraph breaks
+        large_text = "x" * 5000  # 5000 chars with no breaks
+        
+        # This should complete (not hang) and produce chunks
+        chunks = chunk_article("Test", large_text, max_chunk_size=1000, min_chunk_size=10)
+        
+        # Should have created multiple chunks
+        assert len(chunks) >= 1
+        # All chunks should be under max size
+        for chunk in chunks:
+            assert len(chunk.text) <= 1000
+
+    def test_whitespace_only_chunk_no_infinite_loop(self):
+        """Test that whitespace-heavy content doesn't cause infinite loop."""
+        # Text with lots of whitespace that could cause strip() issues
+        text = "   " * 1000 + "Actual content here" + "   " * 1000
+        
+        # This should complete without hanging
+        chunks = chunk_article("Test", text, max_chunk_size=100, min_chunk_size=5)
+        
+        # Should handle gracefully
+        assert isinstance(chunks, list)
+
 
 class TestSampleNotebookGeneration:
     """Tests for sample notebook generation."""
