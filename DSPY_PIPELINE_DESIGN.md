@@ -1,5 +1,7 @@
 # Wiki3.ai Ontological Engineer - DSPy Pipeline Design
 
+> **See also**: [DEVELOPMENT_PRACTICES.md](DEVELOPMENT_PRACTICES.md) for coding conventions, common mistakes, and patterns.
+
 ## Overview
 
 The **Ontological Engineer (OE)** transforms Wikipedia articles into high-quality RDF knowledge graphs using DSPy and Arbor GRPO for reinforcement learning-based optimization.
@@ -312,6 +314,180 @@ lm = dspy.LM(
     max_tokens=2048,
 )
 ```
+
+---
+
+## Data Provenance & Persistence
+
+The DSPy training pipeline integrates with the existing CID-based provenance system from the original pipeline. All intermediate data is persisted to Jupyter notebooks with cryptographic content identifiers (CIDs) and REPRODUCE-ME provenance metadata.
+
+### Why Provenance Matters
+
+1. **Reproducibility**: Every piece of data links back to its source
+2. **Incremental Processing**: Skip already-processed content based on CID matches
+3. **Auditability**: Full chain of custody from Wikipedia to RDF
+4. **Human Feedback**: Labels link to specific CIDs, not ephemeral IDs
+
+### Data Flow with CIDs
+
+```
+Wikipedia Article
+    ↓  fetch + CID
+┌─────────────────────────────────────────────────────────────────┐
+│  data/{article_slug}/{timestamp}/source.ipynb                   │
+│    - Raw article content                                        │
+│    - CID: bafkrei... (source_cid)                              │
+│    - from_cid: hash(wikipedia_url)                             │
+└─────────────────────────────────────────────────────────────────┘
+    ↓  chunk + CID per chunk
+┌─────────────────────────────────────────────────────────────────┐
+│  data/{article_slug}/{timestamp}/chunks.ipynb                   │
+│    - Chunked content with section context                       │
+│    - Each chunk has CID + from_cid → source_cid                │
+└─────────────────────────────────────────────────────────────────┘
+    ↓  extract statements + CID per chunk
+┌─────────────────────────────────────────────────────────────────┐
+│  data/{article_slug}/{timestamp}/statements.ipynb               │
+│    - Extracted statements per chunk                             │
+│    - Each statement set has CID + from_cid → chunk_cid         │
+└─────────────────────────────────────────────────────────────────┘
+    ↓  classify statements + CID per classification
+┌─────────────────────────────────────────────────────────────────┐
+│  data/{article_slug}/{timestamp}/classifications.ipynb          │
+│    - Per-statement GOOD/BAD classifications                     │
+│    - Each classification has CID + from_cid → statements_cid   │
+└─────────────────────────────────────────────────────────────────┘
+    ↓  generate RDF + CID per triple set
+┌─────────────────────────────────────────────────────────────────┐
+│  data/{article_slug}/{timestamp}/rdf.ipynb                      │
+│    - RDF triples in Turtle format                               │
+│    - Each triple set has CID + from_cid → statements_cid       │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### CID Signature Format (JSON-LD)
+
+Each content cell is followed by a signature in a raw cell:
+
+```json
+{
+  "@context": {
+    "prov": "http://www.w3.org/ns/prov#",
+    "repro": "https://w3id.org/reproduceme#"
+  },
+  "@id": "ipfs://bafkreihdwdcefgh4dqkjv67uzcmw7o...",
+  "@type": ["prov:Entity", "repro:Data"],
+  "dcterms:identifier": "bafkreihdwdcefgh4dqkjv67uzcmw7o...",
+  "prov:label": "statements:chunk_3",
+  "prov:wasDerivedFrom": {"@id": "ipfs://bafkreiabc..."},
+  "_cell": 5,
+  "_type": "statements",
+  "_chunk_num": 3
+}
+```
+
+### New Notebook Types for Stage 1
+
+#### statements.ipynb
+
+| Cell # | Type | Content |
+|--------|------|---------|
+| 0 | Markdown | Provenance metadata (YAML) |
+| 1 | Raw | Entity registry (JSON) |
+| 2 | Markdown | Statements for chunk 1 |
+| 3 | Raw | Statements 1 CID signature (from_cid → chunk CID) |
+| 4 | Markdown | Statements for chunk 2 |
+| 5 | Raw | Statements 2 CID signature |
+| ... | ... | ... |
+
+**Statements cell format:**
+```markdown
+**Context:** Albert Einstein > Early life
+**Chunk:** 1 of 63
+**Statements:** 8
+
+---
+
+1. [Albert Einstein](/wiki/Albert_Einstein) was born on 14 March 1879.
+2. [Albert Einstein](/wiki/Albert_Einstein) was born in [Ulm](/wiki/Ulm).
+3. ...
+```
+
+#### classifications.ipynb
+
+| Cell # | Type | Content |
+|--------|------|---------|
+| 0 | Markdown | Provenance metadata (YAML) |
+| 1 | Raw | Classifier config (JSON) |
+| 2 | Markdown | Classifications for chunk 1 statements |
+| 3 | Raw | Classifications 1 CID signature (from_cid → statements CID) |
+| ... | ... | ... |
+
+**Classifications cell format:**
+```markdown
+**Context:** Albert Einstein > Early life
+**Chunk:** 1 of 63
+**Score:** 87.5% (7/8 GOOD)
+
+---
+
+| # | Classification | Statement | Reason |
+|---|----------------|-----------|--------|
+| 0 | ✅ GOOD | [Albert Einstein] was born on 14 March 1879. | atomic, accurate |
+| 1 | ✅ GOOD | [Albert Einstein] was born in [Ulm]. | atomic, links preserved |
+| 2 | ❌ BAD | Albert Einstein was a famous physicist... | missing entity link |
+| ... | ... | ... | ... |
+
+**Missing facts:** none
+```
+
+### Incremental Processing with CIDs
+
+The training pipeline supports incremental updates:
+
+1. **Load existing notebooks** and extract CID signatures
+2. **For each source chunk**:
+   - Compute what the from_cid would be
+   - If matching signature exists → skip (already processed)
+   - If no match → generate and append new content + signature
+3. **Save notebook** after each chunk for resumability
+
+```python
+from src.cid import compute_cid, make_signature, extract_signatures
+
+# Load existing signatures
+existing_sigs = extract_signatures(statements_nb)
+existing_from_cids = {sig['prov:wasDerivedFrom']['@id'] for sig in existing_sigs.values()}
+
+# Check if chunk already processed
+chunk_cid = compute_cid(chunk_content)
+if f"ipfs://{chunk_cid}" in existing_from_cids:
+    print(f"Chunk {i} already processed, skipping")
+    continue
+
+# Process and save
+statements = extractor(chunk_text=..., section_context=...)
+stmt_cid = compute_cid(statements_content)
+signature = make_signature(
+    cell_num=cell_num,
+    cell_type="statements",
+    cid=stmt_cid,
+    from_cid=chunk_cid,
+    repro_class="Data",
+    label=f"statements:chunk_{i}"
+)
+```
+
+### Human Feedback Integration
+
+When humans provide feedback (via MLflow UI or direct annotation):
+
+1. **Feedback links to CID**: The statement being judged has a CID
+2. **Feedback stored with from_cid**: Links back to the statement CID
+3. **Training data export**: Load all feedback for statements with matching CIDs
+4. **Judge improvement**: Use feedback as DSPy training examples
+
+This ensures feedback remains valid even if the pipeline reruns - feedback is attached to content, not positions.
 
 ---
 

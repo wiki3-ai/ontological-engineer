@@ -34,6 +34,18 @@ from ontological_engineer.judges import (
 from ontological_engineer.schema_context import SchemaContextBuilder
 from ontological_engineer.schema_library import SchemaLibrary, create_default_schema_library
 from ontological_engineer.rdf_generator import RDFGenerator, BatchRDFGenerator
+from ontological_engineer.provenance import (
+    generate_statements_notebook_header,
+    append_statements_cell,
+    save_statements_notebook,
+    load_statements_from_notebook,
+    generate_classifications_notebook_header,
+    append_classifications_cell,
+    save_classifications_notebook,
+    load_classifications_from_notebook,
+    get_processed_chunk_cids,
+    create_output_directory,
+)
 
 __version__ = "0.1.0"
 __all__ = [
@@ -66,4 +78,15 @@ __all__ = [
     "BatchRDFGenerator",
     "TripleQualityJudge",
     "triple_quality_metric",
+    # Provenance
+    "generate_statements_notebook_header",
+    "append_statements_cell",
+    "save_statements_notebook",
+    "load_statements_from_notebook",
+    "generate_classifications_notebook_header",
+    "append_classifications_cell",
+    "save_classifications_notebook",
+    "load_classifications_from_notebook",
+    "get_processed_chunk_cids",
+    "create_output_directory",
 ]
