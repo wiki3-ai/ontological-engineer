@@ -181,6 +181,237 @@ class TestBaselineResultsPersistence:
         
         assert results["score"] == 0.75
         assert results["eval_size"] == 10
+    
+    def test_save_includes_input_cid(self, tmp_path):
+        """Test that save includes input_cid when all params provided."""
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.75,
+            eval_size=10,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+        )
+        
+        with open(tmp_path / "baseline_results.json") as f:
+            results = json.load(f)
+        
+        assert results["input_cid"] is not None
+        assert results["devset_cid"] == "bafdevset456"
+
+
+class TestBaselineCacheCheck:
+    """Tests for CID-based cache validation."""
+    
+    def test_cache_hit_on_matching_inputs(self, tmp_path):
+        """Test that cache returns results when inputs match."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        # Save with specific inputs
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with same inputs
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+            eval_size=10,
+        )
+        
+        assert cached is not None
+        assert cached["score"] == 0.85
+    
+    def test_cache_miss_on_different_config(self, tmp_path):
+        """Test that cache returns None when config changes."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        # Save with specific inputs
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with different config
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig_DIFFERENT",
+            devset_cid="bafdevset456",
+            eval_size=10,
+        )
+        
+        assert cached is None
+    
+    def test_cache_miss_on_different_devset(self, tmp_path):
+        """Test that cache returns None when devset changes."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        # Save with specific inputs
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with different devset
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset_DIFFERENT",
+            eval_size=10,
+        )
+        
+        assert cached is None
+    
+    def test_cache_miss_on_different_eval_size(self, tmp_path):
+        """Test that cache returns None when eval_size changes."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        # Save with specific inputs
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with different eval_size
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+            eval_size=20,  # Different!
+        )
+        
+        assert cached is None
+    
+    def test_cache_miss_on_no_file(self, tmp_path):
+        """Test that cache returns None when no file exists."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+            eval_size=10,
+        )
+        
+        assert cached is None
+
+
+class TestModuleCID:
+    """Tests for compute_module_cid function."""
+    
+    def test_computes_cid_for_dspy_module(self):
+        """Test that compute_module_cid returns a valid CID."""
+        from ontological_engineer.training.persistence import compute_module_cid
+        from ontological_engineer.extractors import StatementExtractor
+        
+        extractor = StatementExtractor()
+        cid = compute_module_cid(extractor)
+        
+        assert cid is not None
+        assert cid.startswith("baf")  # CIDv1 prefix
+    
+    def test_same_module_same_cid(self):
+        """Test that same module definition produces same CID."""
+        from ontological_engineer.training.persistence import compute_module_cid
+        from ontological_engineer.extractors import StatementExtractor
+        
+        ext1 = StatementExtractor()
+        ext2 = StatementExtractor()
+        
+        cid1 = compute_module_cid(ext1)
+        cid2 = compute_module_cid(ext2)
+        
+        assert cid1 == cid2
+    
+    def test_module_with_demos_different_cid(self):
+        """Test that adding demos changes the CID."""
+        from ontological_engineer.training.persistence import compute_module_cid
+        from ontological_engineer.extractors import StatementExtractor
+        
+        ext_no_demos = StatementExtractor()
+        ext_with_demos = StatementExtractor()
+        
+        # Add demos to the predictor via named_predictors()
+        for name, pred in ext_with_demos.named_predictors():
+            pred.demos = [{"chunk_text": "Demo chunk", "statements": ["Demo statement."]}]
+        
+        cid_no_demos = compute_module_cid(ext_no_demos)
+        cid_with_demos = compute_module_cid(ext_with_demos)
+        
+        # CIDs should be different because demos are part of the module
+        assert cid_no_demos != cid_with_demos
+
+
+class TestBaselineCacheWithExtractor:
+    """Tests for cache validation including extractor_cid."""
+    
+    def test_cache_hit_with_extractor_cid(self, tmp_path):
+        """Test cache hit when extractor_cid matches."""
+        from ontological_engineer.training.persistence import check_baseline_cache, compute_module_cid
+        from ontological_engineer.extractors import StatementExtractor
+        
+        extractor = StatementExtractor()
+        extractor_cid = compute_module_cid(extractor)
+        
+        # Save with extractor_cid
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            extractor_cid=extractor_cid,
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with same extractor_cid
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+            eval_size=10,
+            extractor_cid=extractor_cid,
+        )
+        
+        assert cached is not None
+        assert cached["score"] == 0.85
+    
+    def test_cache_miss_on_different_extractor(self, tmp_path):
+        """Test cache miss when extractor_cid changes."""
+        from ontological_engineer.training.persistence import check_baseline_cache
+        
+        # Save with one extractor_cid
+        save_baseline_results(
+            output_dir=tmp_path,
+            score=0.85,
+            eval_size=10,
+            config_cid="bafconfig123",
+            extractor_cid="bafextractor_OLD",
+            devset_cid="bafdevset456",
+        )
+        
+        # Check cache with different extractor_cid
+        cached = check_baseline_cache(
+            training_dir=tmp_path,
+            config_cid="bafconfig123",
+            devset_cid="bafdevset456",
+            eval_size=10,
+            extractor_cid="bafextractor_NEW",  # Different!
+        )
+        
+        assert cached is None
 
 
 class TestCIDConsistency:

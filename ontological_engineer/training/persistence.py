@@ -251,28 +251,182 @@ def load_fewshot_examples(training_dir: Path) -> list[dspy.Example]:
     return examples
 
 
+def compute_module_cid(module: dspy.Module) -> str:
+    """
+    Compute a CID for a DSPy module based on its definition.
+    
+    Captures:
+    - The signature(s) used (field names, descriptions)
+    - Any demonstrations attached to the module
+    - The module class name and structure
+    
+    This ensures cache invalidation when the module changes.
+    """
+    module_spec = {
+        "class": module.__class__.__name__,
+        "module": module.__class__.__module__,
+    }
+    
+    # Capture signature info from predictors
+    predictors = []
+    for name, predictor in module.named_predictors():
+        sig_info = {"name": name}
+        
+        # Get signature class and fields
+        if hasattr(predictor, 'signature'):
+            sig = predictor.signature
+            sig_info["signature_class"] = sig.__class__.__name__
+            sig_info["signature_doc"] = sig.__doc__ or ""
+            
+            # Capture input/output field definitions
+            if hasattr(sig, 'input_fields'):
+                sig_info["input_fields"] = {
+                    k: {"desc": getattr(v, 'desc', '')} 
+                    for k, v in sig.input_fields.items()
+                }
+            if hasattr(sig, 'output_fields'):
+                sig_info["output_fields"] = {
+                    k: {"desc": getattr(v, 'desc', '')} 
+                    for k, v in sig.output_fields.items()
+                }
+        
+        # Capture demos if any
+        if hasattr(predictor, 'demos') and predictor.demos:
+            sig_info["num_demos"] = len(predictor.demos)
+            # Hash demo content for change detection
+            demo_strs = []
+            for demo in predictor.demos:
+                demo_dict = {k: str(v) for k, v in demo.items()}
+                demo_strs.append(json.dumps(demo_dict, sort_keys=True))
+            sig_info["demos_hash"] = compute_cid("".join(demo_strs).encode())
+        
+        predictors.append(sig_info)
+    
+    module_spec["predictors"] = predictors
+    
+    return compute_cid(json.dumps(module_spec, sort_keys=True).encode())
+
+
+def compute_baseline_input_cid(
+    config_cid: str,
+    devset_cid: str,
+    eval_size: int,
+    extractor_cid: str | None = None,
+) -> str:
+    """
+    Compute a CID representing the inputs to baseline evaluation.
+    
+    This allows checking if cached results match current inputs.
+    Includes extractor_cid to invalidate cache when module definition changes.
+    """
+    input_spec = {
+        "config_cid": config_cid,
+        "devset_cid": devset_cid,
+        "eval_size": eval_size,
+    }
+    if extractor_cid:
+        input_spec["extractor_cid"] = extractor_cid
+    
+    return compute_cid(json.dumps(input_spec, sort_keys=True).encode())
+
+
+def load_baseline_results(training_dir: Path) -> dict | None:
+    """
+    Load baseline results if they exist.
+    
+    Returns the results dict or None if not found.
+    """
+    results_path = Path(training_dir) / "baseline_results.json"
+    if not results_path.exists():
+        return None
+    
+    with open(results_path) as f:
+        return json.load(f)
+
+
+def check_baseline_cache(
+    training_dir: Path,
+    config_cid: str,
+    devset_cid: str,
+    eval_size: int,
+    extractor_cid: str | None = None,
+) -> dict | None:
+    """
+    Check if cached baseline results match current inputs.
+    
+    Returns the cached results if input CIDs match, None otherwise.
+    This uses CID-based dependency checking (not timestamps).
+    
+    Args:
+        training_dir: Directory containing baseline_results.json
+        config_cid: CID of the stage1 config
+        devset_cid: CID of the dev set
+        eval_size: Number of examples evaluated
+        extractor_cid: CID of the StatementExtractor module (optional but recommended)
+    """
+    cached = load_baseline_results(training_dir)
+    if cached is None:
+        return None
+    
+    # Check if the inputs match
+    cached_input_cid = cached.get("input_cid")
+    if cached_input_cid is None:
+        # Old format without input_cid - can't verify, skip cache
+        return None
+    
+    current_input_cid = compute_baseline_input_cid(
+        config_cid, devset_cid, eval_size, extractor_cid
+    )
+    
+    if cached_input_cid == current_input_cid:
+        return cached
+    
+    return None
+
+
 def save_baseline_results(
     output_dir: Path,
     score: float,
     eval_size: int,
     config_cid: str | None = None,
+    extractor_cid: str | None = None,
+    devset_cid: str | None = None,
 ) -> str:
     """
     Save baseline evaluation results with CID provenance.
     
+    Includes input_cid for cache validation on future runs.
     Returns the CID of the saved results.
+    
+    Args:
+        output_dir: Directory to save results
+        score: Baseline evaluation score
+        eval_size: Number of examples evaluated
+        config_cid: CID of the stage1 config
+        extractor_cid: CID of the StatementExtractor module
+        devset_cid: CID of the dev set
     """
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Compute input CID for cache validation
+    input_cid = None
+    if config_cid and devset_cid:
+        input_cid = compute_baseline_input_cid(
+            config_cid, devset_cid, eval_size, extractor_cid
+        )
     
     results = {
         "score": score,
         "eval_size": eval_size,
         "config_cid": config_cid,
+        "extractor_cid": extractor_cid,
+        "devset_cid": devset_cid,
+        "input_cid": input_cid,
         "timestamp": datetime.now().isoformat(),
     }
     
-    # Compute CID
+    # Compute CID for the results themselves
     results_str = json.dumps(results, sort_keys=True)
     cid = compute_cid(results_str.encode())
     results["cid"] = cid

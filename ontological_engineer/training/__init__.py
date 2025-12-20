@@ -9,6 +9,9 @@ from .persistence import (
     load_devset,
     save_fewshot_examples,
     load_fewshot_examples,
+    check_baseline_cache,
+    compute_module_cid,
+    load_baseline_results,
     save_baseline_results,
     save_optimized_extractor,
 )
@@ -22,6 +25,9 @@ __all__ = [
     "load_devset",
     "save_fewshot_examples",
     "load_fewshot_examples",
+    "check_baseline_cache",
+    "compute_module_cid",
+    "load_baseline_results",
     "save_baseline_results",
     "save_optimized_extractor",
 ]
