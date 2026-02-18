@@ -24,3 +24,9 @@ pydantic>=2.0
 pytest
 dspy
 mlflow
+
+# RAG Q&A over Docling papers
+weaviate-client>=4.0
+langchain-weaviate
+langchain-ollama
+langchain-docling

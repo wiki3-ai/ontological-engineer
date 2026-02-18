@@ -146,6 +146,51 @@ docker run -d \
   weaviate-local-ollama
 ```
 
+## RAG Q&A over Docling Papers
+
+A retrieval-augmented Q&A pipeline that ingests [Docling](https://github.com/DS4SD/docling) JSON
+outputs (from parsed academic PDFs) into Weaviate, then answers questions using a local LLM via
+LM Studio.
+
+**Stack:**
+- **Document parsing**: Docling JSON → text extraction → LangChain `RecursiveCharacterTextSplitter`
+- **Embeddings**: Ollama `nomic-embed-text` (768-dim)
+- **Vector store**: Weaviate (local, with `text2vec-ollama` module)
+- **Q&A LLM**: LM Studio (OpenAI-compatible API)
+
+### Ingest
+
+Load all Docling JSON files from `/workspaces/pup/docling` into Weaviate:
+
+```bash
+python rag_ingest.py --recreate
+```
+
+Options:
+- `--docs-dir` — path to Docling JSON files (default: `/workspaces/pup/docling`)
+- `--collection` — Weaviate collection name (default: `DoclingPapers`)
+- `--embed-model` — Ollama embedding model (default: `nomic-embed-text:latest`)
+- `--recreate` — delete and recreate the collection
+
+### Query
+
+Ask a single question:
+
+```bash
+python rag_qa.py -q "What is APT in ACL2?"
+```
+
+Interactive session:
+
+```bash
+python rag_qa.py --interactive
+```
+
+Options:
+- `--lm-studio-model` — model name (auto-detected from LM Studio if not set)
+- `--top-k` — number of chunks to retrieve (default: 6)
+- `--no-sources` — hide source paper citations
+
 ## References
 
 - [LangChain JS](https://js.langchain.com/)
@@ -153,6 +198,7 @@ docker run -d \
 - [Deno Jupyter](https://docs.deno.com/runtime/reference/cli/jupyter/)
 - [neo4j-labs/llm-graph-builder](https://github.com/neo4j-labs/llm-graph-builder)
 - [Weaviate Docker configurator](https://docs.weaviate.io/deploy/installation-guides/docker-installation)
+- [langchain-docling](https://pypi.org/project/langchain-docling/)
 
 ## License
 
