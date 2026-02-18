@@ -106,13 +106,54 @@ const results = await conn.query(`
 `, { vec: queryEmbedding });
 ```
 
+## Weaviate
+
+Hybrid KG is available with Weaviate.  See Dockerfile-weaviate.
+
+It is configured as:
+
+```
+# Tell the container to listen on both main API ports
+EXPOSE 8080 50051
+
+# Default environment for Weaviate
+ENV AUTHENTICATION_ANONYMOUS_ACCESS_ENABLED=true
+ENV QUERY_DEFAULTS_LIMIT=25
+ENV PERSISTENCE_DATA_PATH=/var/lib/weaviate
+
+# Enable Ollama modules for embeddings + generative RAG
+ENV ENABLE_MODULES=text2vec-ollama,generative-ollama
+```
+
+From within this Docker container those ports are accessed using `http://host.docker.internal`.
+
+It was set up using:
+
+```bash
+docker volume create weaviate_data
+```
+
+```bash
+docker build -t weaviate-local-ollama .
+```
+
+```bash
+docker run -d \
+  --name weaviate_local \
+  -p 8080:8080 \
+  -p 50051:50051 \
+  --mount type=volume,src=weaviate_data,dst=/var/lib/weaviate \
+  weaviate-local-ollama
+```
+
 ## References
 
 - [LangChain JS](https://js.langchain.com/)
 - [DuckDB-Wasm](https://duckdb.org/docs/api/wasm)
 - [Deno Jupyter](https://docs.deno.com/runtime/reference/cli/jupyter/)
 - [neo4j-labs/llm-graph-builder](https://github.com/neo4j-labs/llm-graph-builder)
+- [Weaviate Docker configurator](https://docs.weaviate.io/deploy/installation-guides/docker-installation)
 
 ## License
 
-MIT
+Apache
