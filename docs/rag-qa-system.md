@@ -277,6 +277,7 @@ docker logs weaviate
 |------|---------|
 | `rag_ingest.py` | Ingestion pipeline: Docling JSON → chunks → Weaviate |
 | `rag_qa.py` | Query pipeline: question → hybrid retrieval → LLM answer |
+| `rag_research.py` | Deep research agent: multi-step search → synthesis → report |
 | `Dockerfile-weaviate` | Weaviate Docker image with Ollama modules enabled |
 | `requirements.txt` | Python dependencies |
 
@@ -292,3 +293,107 @@ docker logs weaviate
    python rag_ingest.py --recreate
    ```
 4. Query as usual.
+
+---
+
+## Deep Research Agent
+
+The deep research agent (`rag_research.py`) goes beyond single-shot Q&A by
+running a **multi-step agentic loop** that decomposes questions, searches with
+multiple query angles, drills into specific papers, and synthesizes structured
+reports with citations.
+
+### Architecture
+
+```
+┌─────────────────────────────────────────────────────┐
+│               LangGraph ReAct Agent                 │
+│                                                     │
+│  1. Decompose question into sub-queries             │
+│  2. Call tools iteratively:                         │
+│     ┌────────────────┐  ┌──────────────────┐        │
+│     │ search_papers  │  │ get_paper_chunks │        │
+│     │ (hybrid search)│  │ (deep read)      │        │
+│     └────────────────┘  └──────────────────┘        │
+│     ┌────────────────┐                              │
+│     │ list_papers    │                              │
+│     │ (discovery)    │                              │
+│     └────────────────┘                              │
+│  3. Synthesize report with citations                │
+└──────────────────────┬──────────────────────────────┘
+                       │
+         ┌─────────────┼─────────────┐
+         ▼             ▼             ▼
+   ┌──────────┐  ┌──────────┐  ┌──────────┐
+   │ Weaviate │  │  Ollama  │  │LM Studio │
+   │  hybrid  │  │  embed   │  │  LLM     │
+   │  search  │  │  queries │  │  reason  │
+   └──────────┘  └──────────┘  └──────────┘
+```
+
+Built on LangGraph `create_agent` (ReAct pattern), inspired by
+[langchain-ai/open_deep_research](https://github.com/langchain-ai/open_deep_research).
+
+### Tools
+
+| Tool | Purpose |
+|------|---------|
+| `search_papers(query)` | Hybrid search (BM25 + vector, alpha=0.25) returning top-k chunks with paper titles |
+| `get_paper_chunks(paper_title)` | Fetch up to N chunks from a specific paper for deep reading |
+| `list_papers()` | List all paper titles in the knowledge base for discovery |
+
+### Model Selection
+
+The agent auto-detects the best model in LM Studio, preferring:
+1. `qwen3-next` (reasoning models — best for research synthesis)
+2. `qwen3-coder` (coding models — good tool calling)
+3. Other large models (skips tiny/embedding models)
+
+For deep research, **`qwen/qwen3-next-80b`** is recommended over coding models
+because it excels at multi-step reasoning, evidence synthesis, and structured
+report generation. Override with `--lm-studio-model`.
+
+### Usage
+
+**Single question:**
+```bash
+python rag_research.py -q "Compare approaches to code generation from ACL2"
+```
+
+**Verbose mode** (shows tool inputs/outputs):
+```bash
+python rag_research.py -q "What formal verification techniques are used?" -v
+```
+
+**Interactive session:**
+```bash
+python rag_research.py -i
+```
+
+**Override model:**
+```bash
+python rag_research.py -q "..." --lm-studio-model qwen/qwen3-coder-next
+```
+
+### Options
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `-q` / `--question` | — | Research question (single-shot mode) |
+| `-i` / `--interactive` | — | Interactive research session |
+| `-v` / `--verbose` | off | Show tool call results in output |
+| `--lm-studio-model` | auto-detect | LM Studio model name |
+| `--alpha` | 0.25 | Hybrid search blend (0=BM25, 1=vector) |
+| `--top-k` | 8 | Chunks per search call |
+| `--max-iterations` | 15 | Max agent tool-call loops |
+
+### How It Differs from rag_qa.py
+
+| | `rag_qa.py` | `rag_research.py` |
+|---|---|---|
+| **Search** | Single retrieval pass | Multiple searches with varied queries |
+| **Depth** | Top-k chunks → answer | Drills into papers, reads more chunks |
+| **Reasoning** | Prompt template (LCEL chain) | ReAct agent with tool calling |
+| **Output** | Brief answer | Structured report with citations, tables |
+| **Model** | Any LLM | Needs tool-calling support (Qwen3+, etc.) |
+| **Use case** | Quick factual lookup | Cross-paper synthesis and comparison |

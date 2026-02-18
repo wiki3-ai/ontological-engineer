@@ -30,3 +30,4 @@ weaviate-client>=4.0
 langchain-weaviate
 langchain-ollama
 langchain-docling
+langgraph>=1.0
