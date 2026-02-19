@@ -4,9 +4,8 @@ Weaviate connected at host.docker.internal:8080
 ```
 
 * Research question: 
-```
-What is the Plan Calculus? There are pubs like Code Generation in the PA, Formalizing Reusable Software, Inspection Methods in Programming, etc.  Please provide details of the design and all of the avablable use cases and examples.
-```
+
+>What is the Plan Calculus? There are pubs like Code Generation in the PA, Formalizing Reusable Software, Inspection Methods in Programming, etc.  Please provide details of the design and all of the avablable use cases and examples.
 
 * 🔧 search_papers({"query": "Plan Calculus"})
 
